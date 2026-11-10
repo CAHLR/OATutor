@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a890bb7physApp8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Work in terms of k",
+        "text": "The work to stretch from $$0$$ to $$0.5$$ is $$\\int_{0}^{0.5} k x \\,dx$$, which equals $$\\frac{{0.5}^2k}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a890bb7physApp8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{8}$$"
+        ],
+        "dependencies": [
+            "a890bb7physApp8a-h1"
+        ],
+        "title": "Work formula",
+        "text": "If k were $$1$$, what would $$\\int_{0}^{0.5} x \\,dx$$ be?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a890bb7physApp8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a890bb7physApp8a-h2"
+        ],
+        "title": "Solve for k",
+        "text": "Set $$\\frac{k}{8}$$ equal to $$10$$ and solve for k.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

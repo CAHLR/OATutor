@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a377158altSeries2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check absolute convergence",
+        "text": "Take absolute values to get sum of $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries2a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "diverges"
+        ],
+        "dependencies": [
+            "a377158altSeries2a-h1"
+        ],
+        "title": "Absolute series",
+        "text": "Does sum of $$\\frac{1}{n}$$ converge?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "diverges",
+            "converges"
+        ]
+    },
+    {
+        "id": "a377158altSeries2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries2a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The series converges by the alternating series test, but not absolutely.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

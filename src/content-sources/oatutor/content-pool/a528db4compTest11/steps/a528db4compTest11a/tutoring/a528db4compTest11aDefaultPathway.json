@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a528db4compTest11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose $$b_n$$",
+        "text": "The term behaves like $$\\frac{\\sqrt{n}}{n^2}=\\frac{1}{n^{\\frac{3}{2}}}$$. Use that as $$b_n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest11a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{a_n}{b_n}=\\frac{n^2}{n^2+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest11a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a528db4compTest11a-h2"
+        ],
+        "title": "$$p-value$$",
+        "text": "What is $$p$$ for the comparison series $$\\frac{1}{n^p}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

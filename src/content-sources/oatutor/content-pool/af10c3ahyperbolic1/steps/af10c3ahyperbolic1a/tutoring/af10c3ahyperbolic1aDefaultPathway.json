@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af10c3ahyperbolic1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative of sinh",
+        "text": "The derivative of sinh(u) is cosh(u) times u'. Here $$u=3x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic1a-h1"
+        ],
+        "title": "Inner derivative",
+        "text": "What is the derivative of $$3x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3cosh\\left(3x\\right)$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic1a-h2"
+        ],
+        "title": "Derivative",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

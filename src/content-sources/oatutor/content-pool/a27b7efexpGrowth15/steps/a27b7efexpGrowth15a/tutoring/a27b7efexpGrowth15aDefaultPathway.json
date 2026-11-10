@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for P",
+        "text": "Set $$P e^{0.04\\times10}=5000$$ and divide both sides by $$e^{0.4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.4$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth15a-h1"
+        ],
+        "title": "Exponent",
+        "text": "What is $$r t$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5000e^{-0.4}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth15a-h2"
+        ],
+        "title": "Present value",
+        "text": "What is P?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

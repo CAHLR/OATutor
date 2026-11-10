@@ -1,0 +1,29 @@
+[
+    {
+        "id": "af10c3ahyperbolic6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Antiderivative",
+        "text": "An antiderivative of cosh(x) is sinh(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{e-\\frac{1}{e}}{2}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic6a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$sinh(1)-sinh(0)$$, written with e?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the ratio",
+        "text": "Since $$2^{3n}=8^n$$, the ratio of consecutive coefficients is $$\\frac{8\\left(n+1\\right)^3}{\\left(3n+3\\right) \\left(3n+2\\right) \\left(3n+1\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries15a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "This approaches $$\\frac{8}{27}$$, so $$R=\\frac{27}{8}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

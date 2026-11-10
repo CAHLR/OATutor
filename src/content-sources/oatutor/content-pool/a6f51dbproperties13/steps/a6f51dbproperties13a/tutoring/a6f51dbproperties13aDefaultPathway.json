@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Differentiate the geometric series",
+        "text": "The derivative of $$\\frac{1}{1-x}$$ is $$\\frac{1}{\\left(1-x\\right)^2}$$, which equals the sum of $$n x^{n-1}$$ for $$n \\geq 1$$. Multiplying by $$x$$, the sum of $$n x^n$$ is $$\\frac{x}{\\left(1-x\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties13a-h1"
+        ],
+        "title": "Plug in $$x=\\frac{1}{2}$$",
+        "text": "At $$x=\\frac{1}{2}$$ this is $$\\frac{\\frac{1}{2}}{\\left(1-\\frac{1}{2}\\right)^2}=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

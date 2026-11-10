@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the estimate",
+        "text": "Every derivative of $$e^{\\left(-x\\right)}$$ is plus or minus $$e^{\\left(-x\\right)}$$, which is largest at $$x=-3$$, so $$M=e^3$$. Since $$|x| \\leq 3$$ on the interval, we need $$e^3 3^{n+1}$$ divided by the factorial of $$n+1$$ to be at most $$\\frac{1}{1000}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor10a-h1"
+        ],
+        "title": "Test values of $$n$$",
+        "text": "For $$n=13$$ the bound is about $$0.0011$$, which is too big, and for $$n=14$$ it is about $$0.00022$$. So the smallest $$n$$ is $$14$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

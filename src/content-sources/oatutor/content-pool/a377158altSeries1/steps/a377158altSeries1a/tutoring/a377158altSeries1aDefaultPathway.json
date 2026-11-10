@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Alternating series test",
+        "text": "An alternating series converges if $$b_n$$ is decreasing and approaches $$0$$. Here $$b_n=\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a377158altSeries1a-h1"
+        ],
+        "title": "Limit of $$b_n$$",
+        "text": "What is the limit of $$\\frac{1}{n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries1a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{1}{n}$$ decreases and approaches $$0$$, so the test applies.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

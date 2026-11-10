@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6e4cd3trigsub10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$x=3\\operatorname{sec}\\left(\\theta\\right)$$. Then the integral becomes the integral of $$\\frac{1}{9} \\operatorname{csc}\\left(\\theta\\right) \\operatorname{cot}\\left(\\theta\\right)$$ with respect to \u03b8.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e4cd3trigsub10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e4cd3trigsub10a-h1"
+        ],
+        "title": "Integrate and convert back",
+        "text": "The integral is $$-\\left(\\frac{1}{9}\\right) \\operatorname{csc}\\left(\\theta\\right)$$, and csc(\u03b8) is $$\\frac{x}{\\sqrt{x^2-9}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

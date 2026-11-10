@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and dv",
+        "text": "Let $$u={\\ln\\left(x\\right)}^2$$ and $$dv=dx$$, so $$du=\\frac{2\\ln\\left(x\\right)}{x} dx$$ and $$v=x$$. This gives $$x {\\ln\\left(x\\right)}^2$$ minus the integral of $$2\\ln\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts8a-h1"
+        ],
+        "title": "Finish the integral",
+        "text": "The integral of ln(x) is $$x \\ln\\left(x\\right)-x$$, so the integral of $$2\\ln\\left(x\\right)$$ is $$2x \\ln\\left(x\\right)-2x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

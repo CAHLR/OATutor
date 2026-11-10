@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Remainder estimate",
+        "text": "You need $$b_N+1=\\frac{1}{\\left(N+1\\right)^2}<0.01$$, which means $$\\left(N+1\\right)^2>100$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "a377158altSeries15a-h1"
+        ],
+        "title": "Inequality",
+        "text": "$$N+1$$ must be greater than what number?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries15a-h2"
+        ],
+        "title": "Smallest N",
+        "text": "The smallest whole number $$N+1$$ greater than $$10$$ is $$11$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

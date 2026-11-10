@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the estimate",
+        "text": "Every derivative of sin(x) is plus or minus sin(x) or cos(x), so $$M=1$$. Since $$|x|$$ can be as large as the endpoints of the interval, we need $${\\pi}^{n+1}$$ divided by the factorial of $$n+1$$ to be at most $$\\frac{1}{1000}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor8a-h1"
+        ],
+        "title": "Test values of $$n$$",
+        "text": "For $$n=11$$ the bound is about $$0.0019$$, which is too big, and for $$n=12$$ it is about $$0.00047$$. So the smallest $$n$$ is $$12$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a747151numerical15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the subintervals",
+        "text": "Here $$f(x)=\\frac{1}{x} cos\\left(x\\right)$$. The width of each subinterval is $$\\frac{0.5-0.1}{4}=0.1$$. The endpoints of the subintervals are $$0.1$$, $$0.2$$, $$0.3$$, $$0.4$$ and $$0.5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a747151numerical15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a747151numerical15a-h1"
+        ],
+        "title": "Apply the rule",
+        "text": "Compute $$S_4=\\frac{1}{30} \\left(f{\\left(0.1\\right)}+4f{\\left(0.2\\right)}+2f{\\left(0.3\\right)}+4f{\\left(0.4\\right)}+f{\\left(0.5\\right)}\\right)$$, which comes out to about $$1.563$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

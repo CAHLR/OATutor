@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a202258strategy1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$w=1+2x$$, so $$x=\\frac{w-1}{2}$$ and $$dx=\\frac{1}{2} dw$$. The limits become $$w=1$$ and $$w=9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a202258strategy1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a202258strategy1a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral becomes $$\\frac{1}{4}$$ times the integral of $$w^{\\frac{1}{2}}-w^{\\left(-\\frac{1}{2}\\right)}$$ from $$1$$ to $$9$$, which is $$\\frac{1}{4} \\left(12+\\frac{4}{3}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

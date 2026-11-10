@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a31c3a1seq22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Absolute value",
+        "text": "If the absolute value |a_n| approaches $$0$$, then $$a_n$$ approaches $$0$$ too.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq22a-h1"
+        ],
+        "title": "Absolute value limit",
+        "text": "What is the limit of |a_n|=1/n?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31c3a1seq22a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms get closer and closer to $$0$$ from both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

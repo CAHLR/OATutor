@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the cosine",
+        "text": "Replace u with $$2x$$ in $$cos(u)=1-\\frac{u^2}{2}+\\frac{u^4}{24}-\\frac{u^6}{720}$$ to get $$cos\\left(2x\\right)=1-2x^2+\\frac{2x^4}{3}-\\frac{4x^6}{45}$$ plus higher powers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking13a-h1"
+        ],
+        "title": "Use the identity",
+        "text": "Then $$\\frac{1}{2}-\\frac{1}{2} cos\\left(2x\\right)=x^2-\\frac{x^4}{3}+\\frac{2x^6}{45}$$ plus higher powers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

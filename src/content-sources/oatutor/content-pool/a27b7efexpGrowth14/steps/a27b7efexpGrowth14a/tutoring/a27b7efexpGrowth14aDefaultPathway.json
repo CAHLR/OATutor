@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "Tripling means $$e^{0.06t}=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ln(3)"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth14a-h1"
+        ],
+        "title": "Take logarithms",
+        "text": "After taking ln, $$0.06t$$ equals what?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{50\\ln\\left(3\\right)}{3}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth14a-h2"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "What is $$t$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

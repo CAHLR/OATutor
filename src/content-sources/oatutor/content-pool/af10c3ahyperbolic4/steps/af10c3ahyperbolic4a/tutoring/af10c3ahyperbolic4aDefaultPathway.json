@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af10c3ahyperbolic4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Chain rule",
+        "text": "The derivative of ln(u) is $$\\frac{u'}{u}$$. Here $$u=cosh(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "sinh(x)"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic4a-h1"
+        ],
+        "title": "Inner derivative",
+        "text": "What is the derivative of cosh(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "tanh(x)"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic4a-h2"
+        ],
+        "title": "Derivative",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

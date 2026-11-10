@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the fraction",
+        "text": "Write the term as $$1+\\left(\\frac{2}{3}\\right)^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq20a-h1"
+        ],
+        "title": "Geometric part",
+        "text": "What is the limit of $$\\left(\\frac{2}{3}\\right)^n$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq20a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq20a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of the sequence?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

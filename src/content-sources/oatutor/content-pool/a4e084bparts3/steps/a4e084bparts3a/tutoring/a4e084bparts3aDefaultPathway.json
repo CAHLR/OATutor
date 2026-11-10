@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and dv",
+        "text": "Let $$u=x$$ and $$dv=sin\\left(2x\\right) dx$$, so $$du=dx$$ and $$v=-\\left(\\frac{1}{2}\\right) cos\\left(2x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts3a-h1"
+        ],
+        "title": "Apply integration by parts",
+        "text": "The integral equals $$-\\left(\\frac{1}{2}\\right) x cos\\left(2x\\right)$$ plus the integral of $$\\frac{1}{2} cos\\left(2x\\right)$$, which is $$\\frac{1}{4} sin\\left(2x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

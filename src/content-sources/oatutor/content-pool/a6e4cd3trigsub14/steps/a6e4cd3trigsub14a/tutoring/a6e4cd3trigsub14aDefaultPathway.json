@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6e4cd3trigsub14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Complete the square",
+        "text": "Rewrite $$-x^2+10x$$ as $$25-\\left(x-5\\right)^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e4cd3trigsub14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e4cd3trigsub14a-h1"
+        ],
+        "title": "Use a known integral",
+        "text": "The integral of $$\\frac{1}{\\sqrt{a^2-u^2}}$$ is $$\\arcsin\\left(\\frac{u}{a}\\right)$$. Use $$a=5$$ and $$u=x-5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

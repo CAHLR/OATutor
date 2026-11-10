@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two checks",
+        "text": "$$b_n=\\frac{1}{2n-1}$$ decreases to $$0$$. For absolute convergence, compare sum of $$\\frac{1}{2n-1}$$ with sum of $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a377158altSeries7a-h1"
+        ],
+        "title": "Limit comparison",
+        "text": "What is the limit of $$\\frac{\\frac{1}{2n-1}}{\\frac{1}{n}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries7a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The absolute series diverges like the harmonic series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

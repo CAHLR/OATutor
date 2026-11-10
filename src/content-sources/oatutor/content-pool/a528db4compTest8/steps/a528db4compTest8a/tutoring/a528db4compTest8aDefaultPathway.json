@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a528db4compTest8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose $$b_n$$",
+        "text": "For large $$n$$ the term behaves like $$\\frac{1}{n^2}$$. Compute the limit of $$\\frac{a_n}{b_n}$$ with $$b_n=\\frac{1}{n^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest8a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{n^2}{n^2-n+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest8a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The limit is a positive finite number, and the sum of $$\\frac{1}{n^2}$$ converges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

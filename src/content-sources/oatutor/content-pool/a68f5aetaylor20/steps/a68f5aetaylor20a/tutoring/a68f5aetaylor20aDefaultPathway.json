@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the numerator",
+        "text": "Replace u with $$-x^2$$ in the series for $$\\ln\\left(1+u\\right)$$, which starts $$u-\\frac{u^2}{2}$$. So $$\\ln\\left(1-x^2\\right)$$ starts $$-x^2-\\frac{x^4}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor20a-h1"
+        ],
+        "title": "Simplify and take the limit",
+        "text": "Dividing by $$x^2$$ gives $$-1-\\frac{x^2}{2}$$ plus higher powers of $$x$$, which approaches $$-1$$ as $$x$$ approaches $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

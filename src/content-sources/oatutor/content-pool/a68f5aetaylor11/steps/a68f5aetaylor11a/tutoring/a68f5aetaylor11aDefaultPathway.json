@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "Every derivative of $$e^x$$ is $$e^x$$, so every derivative at $$-1$$ equals $$e^{\\left(-1\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor11a-h1"
+        ],
+        "title": "Find the coefficient",
+        "text": "The coefficient of $$\\left(x+1\\right)^4$$ is the fourth derivative at $$-1$$ divided by $$24$$, which is $$4$$ factorial. That gives $$\\frac{e^{\\left(-1\\right)}}{24}=\\frac{1}{24e}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

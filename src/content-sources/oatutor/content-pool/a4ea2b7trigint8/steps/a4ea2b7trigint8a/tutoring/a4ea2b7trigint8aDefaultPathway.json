@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "Write $${\\operatorname{sec}\\left(x\\right)}^4$$ as $$\\left(1+tan^2\\left(x\\right)\\right) {\\operatorname{sec}\\left(x\\right)}^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint8a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=tan(x)$$, so $$du={\\operatorname{sec}\\left(x\\right)}^2 dx$$. The integral becomes the integral of $$1+u^2$$, which is $$u+\\frac{u^3}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

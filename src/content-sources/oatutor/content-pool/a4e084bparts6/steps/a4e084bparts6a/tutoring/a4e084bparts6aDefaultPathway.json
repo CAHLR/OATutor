@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integrate by parts twice",
+        "text": "Let $$u=sin(x)$$ and $$dv=e^x dx$$. Then use integration by parts a second time with $$u=cos(x)$$ and $$dv=e^x dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts6a-h1"
+        ],
+        "title": "Solve for the integral",
+        "text": "Calling the original integral I, the two rounds give $$I=e^x sin\\left(x\\right)-e^x cos\\left(x\\right)-I$$. Solve this equation for I.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

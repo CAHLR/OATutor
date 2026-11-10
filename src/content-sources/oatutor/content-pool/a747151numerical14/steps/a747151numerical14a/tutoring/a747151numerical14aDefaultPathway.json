@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a747151numerical14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the subintervals",
+        "text": "Here $$f(x)=sin\\left(x^2\\right)$$. The width of each subinterval is $$\\frac{0.4-0}{4}=0.1$$. The endpoints of the subintervals are $$0$$, $$0.1$$, $$0.2$$, $$0.3$$ and $$0.4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a747151numerical14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a747151numerical14a-h1"
+        ],
+        "title": "Apply the rule",
+        "text": "Compute $$S_4=\\frac{1}{30} \\left(f{\\left(0\\right)}+4f{\\left(0.1\\right)}+2f{\\left(0.2\\right)}+4f{\\left(0.3\\right)}+f{\\left(0.4\\right)}\\right)$$, which comes out to about $$0.021$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

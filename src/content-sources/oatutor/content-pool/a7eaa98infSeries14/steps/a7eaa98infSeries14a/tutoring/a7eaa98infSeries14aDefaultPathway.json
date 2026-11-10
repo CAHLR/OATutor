@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Up and down",
+        "text": "After the first drop of $$10$$ $$m$$, the ball goes up and comes back down each rebound height, so the total is 10+2*(sum of the rebound heights).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$30$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries14a-h1"
+        ],
+        "title": "Rebound heights",
+        "text": "The rebound heights are $$10\\left(\\frac{3}{4}\\right)^n$$ for $$n \\geq 1$$. What is their sum?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$70$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries14a-h2"
+        ],
+        "title": "Total distance",
+        "text": "What is the total distance?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

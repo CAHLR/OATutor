@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "$$f'(x)=2cos\\left(2x\\right)$$ and $$f''(x)=-4sin\\left(2x\\right)$$. Since $$sin\\left(2x\\right)$$ is $$0$$ and $$cos\\left(2x\\right)$$ is $$-1$$ at $$x=\\frac{\\pi}{2}$$, the function and its first two derivatives equal $$0$$, $$-2$$ and $$0$$ there.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor3a-h1"
+        ],
+        "title": "Build the polynomial",
+        "text": "Only the linear term survives, so the polynomial is $$-2\\left(x-\\frac{\\pi}{2}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start from a geometric series",
+        "text": "For $$|t|<1$$, $$\\frac{1}{1+t^2}$$ is the sum of $${\\left(-1\\right)}^n t^{2n}$$. Integrating each term from $$0$$ to $$1$$ gives $$\\frac{{\\left(-1\\right)}^n}{2n+1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties16a-h1"
+        ],
+        "title": "Evaluate the integral",
+        "text": "So the series equals the integral of $$\\frac{1}{1+t^2}$$ from $$0$$ to $$1$$, which is $$arctan(1)-arctan(0)=\\frac{\\pi}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

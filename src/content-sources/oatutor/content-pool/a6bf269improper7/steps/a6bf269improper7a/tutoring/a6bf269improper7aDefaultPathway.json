@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "An antiderivative of ln(x) is $$x \\ln\\left(x\\right)-x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper7a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "At $$x=1$$ the antiderivative is $$-1$$. As $$x$$ approaches $$0$$ from the right, $$x \\ln\\left(x\\right)-x$$ goes to $$0$$. So the integral is $$-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

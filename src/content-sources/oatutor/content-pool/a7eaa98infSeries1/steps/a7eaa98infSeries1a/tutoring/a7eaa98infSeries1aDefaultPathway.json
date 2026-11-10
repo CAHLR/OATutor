@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Geometric series",
+        "text": "A geometric series sum of $$a r^n$$ from $$n=0$$ converges to $$\\frac{a}{1-r}$$ when the absolute value of $$r$$ is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries1a-h1"
+        ],
+        "title": "Ratio",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries1a-h2"
+        ],
+        "title": "Sum",
+        "text": "What is the sum?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

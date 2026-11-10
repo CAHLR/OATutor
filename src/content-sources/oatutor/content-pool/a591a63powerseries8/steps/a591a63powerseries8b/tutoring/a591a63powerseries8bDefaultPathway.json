@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries8b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the endpoints",
+        "text": "At $$x=\\frac{1}{\\pi}$$ or $$x=\\frac{-1}{\\pi}$$, the absolute values of the terms are $$\\frac{1}{k^{\\pi}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries8b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries8b-h1"
+        ],
+        "title": "Compare with a known series",
+        "text": "The sum of $$\\frac{1}{k^{\\pi}}$$ converges because $$\\pi>1$$, so the series converges absolutely at both endpoints. The interval is $$[\\frac{-1}{\\pi},\\frac{1}{\\pi}]$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

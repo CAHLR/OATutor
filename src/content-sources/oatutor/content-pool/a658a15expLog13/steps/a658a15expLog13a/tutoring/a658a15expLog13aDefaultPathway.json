@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a658a15expLog13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take logarithms",
+        "text": "Take ln of both sides: $$ln(y)=x \\ln\\left(x\\right)$$. Differentiate both sides to get $$\\frac{y'}{y}=\\ln\\left(x\\right)+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(2\\right)+1$$"
+        ],
+        "dependencies": [
+            "a658a15expLog13a-h1"
+        ],
+        "title": "Right side",
+        "text": "What is $$\\ln\\left(x\\right)+1$$ at $$x=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4$$"
+        ],
+        "dependencies": [
+            "a658a15expLog13a-h2"
+        ],
+        "title": "Value of $$y$$",
+        "text": "What is $$y$$ at $$x=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog13a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$4\\left(\\ln\\left(2\\right)+1\\right)$$"
+        ],
+        "dependencies": [
+            "a658a15expLog13a-h3"
+        ],
+        "title": "Derivative",
+        "text": "What is $$\\frac{dy}{dx}$$ at $$x=2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

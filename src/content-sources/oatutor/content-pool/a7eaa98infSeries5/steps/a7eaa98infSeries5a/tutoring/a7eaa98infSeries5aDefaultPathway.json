@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Partial fractions",
+        "text": "Write $$\\frac{1}{n \\left(n+1\\right)}=\\frac{1}{n}-\\frac{1}{n+1}$$. In the partial sum, most terms cancel.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{9}{10}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries5a-h1"
+        ],
+        "title": "Partial sum",
+        "text": "The partial sum is $$S_N=1-\\frac{1}{N+1}$$. What is $$S_9$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries5a-h2"
+        ],
+        "title": "Sum",
+        "text": "What is the limit of $$S_N$$ as N goes to $$\\infty$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

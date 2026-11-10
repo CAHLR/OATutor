@@ -1,0 +1,63 @@
+[
+    {
+        "id": "a7eaa98infSeries12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the series",
+        "text": "Write $$\\frac{2^n+3^n}{6^n}=\\left(\\frac{1}{3}\\right)^n+\\left(\\frac{1}{2}\\right)^n$$ and sum each geometric series separately.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries12a-h1"
+        ],
+        "title": "First series",
+        "text": "What is the sum of $$\\left(\\frac{1}{3}\\right)^n$$ from $$n=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries12a-h2"
+        ],
+        "title": "Second series",
+        "text": "What is the sum of $$\\left(\\frac{1}{2}\\right)^n$$ from $$n=0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{2}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries12a-h3"
+        ],
+        "title": "Sum",
+        "text": "What is the total?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

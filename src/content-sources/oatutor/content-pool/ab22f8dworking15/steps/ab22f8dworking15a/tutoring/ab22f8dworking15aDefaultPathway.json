@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the integrand",
+        "text": "The geometric series gives $$\\frac{1}{1+t^2}=1-t^2+t^4$$ plus higher powers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking15a-h1"
+        ],
+        "title": "Integrate term by term",
+        "text": "Integrating each term from $$0$$ to $$x$$ gives $$x-\\frac{x^3}{3}+\\frac{x^5}{5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

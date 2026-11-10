@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a7eaa98infSeries10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the ratio",
+        "text": "A geometric series converges only when the absolute value of the ratio is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries10a-h1"
+        ],
+        "title": "Ratio",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7eaa98infSeries10a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Since $$r$$ is greater than $$1$$, the terms grow without bound.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

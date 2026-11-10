@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the function",
+        "text": "Expanding $$\\left(1+x^2\\right)^{13}$$ gives a polynomial in which every power of $$x$$ is even.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking7a-h1"
+        ],
+        "title": "Relate the derivative to a coefficient",
+        "text": "The 25th derivative at $$0$$ equals the coefficient of $$x^{25}$$ times $$25$$ factorial. There is no $$x^{25}$$ term, so the answer is $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

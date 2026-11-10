@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the function",
+        "text": "Write $$\\frac{1}{1+x^2}$$ as $$\\frac{1}{1-\\left(-x^2\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries17a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Replace $$x$$ with $$-x^2$$ in the geometric series for $$\\frac{1}{1-x}$$. Each term becomes $${\\left(-x^2\\right)}^n={\\left(-1\\right)}^n x^{2n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the known radius",
+        "text": "The series for $$-ln(1-u)$$ converges when $$|u|<1$$, so we need $$|x^3|<1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties18b-h1"
+        ],
+        "title": "State the radius",
+        "text": "That means $$|x|<1$$, so $$R=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

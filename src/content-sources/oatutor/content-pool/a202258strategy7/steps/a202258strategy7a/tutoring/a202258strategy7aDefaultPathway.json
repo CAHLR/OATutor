@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a202258strategy7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check symmetry",
+        "text": "$${\\operatorname{sec}\\left(\\pi x\\right)}^2$$ is even and $$tan\\left(\\pi x\\right)$$ is odd, so the integrand is an odd function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a202258strategy7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a202258strategy7a-h1"
+        ],
+        "title": "Use symmetry",
+        "text": "The integral of an odd function over an interval centered at $$0$$ is $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

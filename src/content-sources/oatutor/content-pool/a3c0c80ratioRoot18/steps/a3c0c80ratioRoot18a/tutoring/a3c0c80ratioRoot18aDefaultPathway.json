@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ratio test",
+        "text": "Simplify $$a_n+\\frac{1}{a_n}$$. The factorials and powers of $$2$$ mostly cancel.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot18a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{n}{2}$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot18a-h1"
+        ],
+        "title": "Ratio",
+        "text": "What is $$a_n+\\frac{1}{a_n}$$ in terms of $$n$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot18a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot18a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{n}{2}$$ grows without bound.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

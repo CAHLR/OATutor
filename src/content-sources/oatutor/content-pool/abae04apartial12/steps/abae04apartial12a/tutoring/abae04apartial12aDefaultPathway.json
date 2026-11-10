@@ -1,0 +1,24 @@
+[
+    {
+        "id": "abae04apartial12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "Multiply the top and bottom by $$e^{2t}$$ to get $$\\frac{e^{2t}}{\\left(e^{2t}-1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abae04apartial12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abae04apartial12a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=e^{2t}$$, so $$du=2e^{2t} dt$$. The integral becomes $$\\frac{1}{2}$$ times the integral of $$\\frac{1}{\\left(u-1\\right)^2}$$, which is $$\\frac{-1}{2\\left(u-1\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

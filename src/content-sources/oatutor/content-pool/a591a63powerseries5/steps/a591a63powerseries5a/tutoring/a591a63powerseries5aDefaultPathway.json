@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the coefficients",
+        "text": "The coefficients are $$a_n=\\frac{2^n}{n}$$. The ratio of consecutive coefficients is $$\\frac{2n}{n+1}$$, which approaches $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries5a-h1"
+        ],
+        "title": "Solve for $$x$$",
+        "text": "The series converges when $$2|x|<1$$, so $$R=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

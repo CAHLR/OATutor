@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a528db4compTest4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bound the numerator",
+        "text": "Since $$cos(n) \\leq 1$$, the numerator $$2+cos\\left(n\\right)$$ is at most a constant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a528db4compTest4a-h1"
+        ],
+        "title": "Largest numerator",
+        "text": "What is the largest possible value of $$2+cos\\left(n\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest4a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms are at most $$\\frac{3}{n^2}$$, which gives a convergent series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

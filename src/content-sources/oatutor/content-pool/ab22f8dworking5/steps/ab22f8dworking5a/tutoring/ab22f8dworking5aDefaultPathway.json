@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "Write $$\\sqrt{x}=3\\sqrt{1+\\frac{x-9}{9}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking5a-h1"
+        ],
+        "title": "Expand",
+        "text": "Use $$\\sqrt{1+u}=1+\\frac{u}{2}-\\frac{u^2}{8}$$ with $$u=\\frac{x-9}{9}$$, then multiply by $$3$$ to get $$3+\\frac{x-9}{6}-\\frac{\\left(x-9\\right)^2}{216}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

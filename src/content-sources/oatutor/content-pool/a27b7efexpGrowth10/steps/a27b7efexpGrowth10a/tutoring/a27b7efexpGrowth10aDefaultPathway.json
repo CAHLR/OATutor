@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "$$500e^{4k}=1500$$, so $$e^{4k}=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ln(3)"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth10a-h1"
+        ],
+        "title": "Take logarithms",
+        "text": "After taking ln, $$4k$$ equals what?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(3\\right)}{4}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth10a-h2"
+        ],
+        "title": "Solve for k",
+        "text": "What is k?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

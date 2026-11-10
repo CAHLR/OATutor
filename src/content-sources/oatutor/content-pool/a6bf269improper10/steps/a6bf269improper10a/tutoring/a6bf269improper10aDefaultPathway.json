@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the problem point",
+        "text": "The integrand is undefined at $$x=-1$$, which is inside the interval from $$-2$$ to $$2$$. Split the integral at $$x=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper10a-h1"
+        ],
+        "title": "Check one piece",
+        "text": "The integral from $$t$$ to $$2$$ is $$\\frac{-1}{3}+\\frac{1}{1+t}$$. As $$t$$ approaches $$-1$$ from the right, this goes to $$\\infty$$, so the whole integral diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a747151numerical9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the subintervals",
+        "text": "Here $$f(x)=\\frac{1}{1+x^3}$$. The width of each subinterval is $$\\frac{3-0}{6}=0.5$$. The endpoints of the subintervals are $$0$$, $$0.5$$, $$1$$, $$1.5$$, $$2$$, $$2.5$$ and $$3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a747151numerical9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a747151numerical9a-h1"
+        ],
+        "title": "Apply the rule",
+        "text": "Compute $$T_6=0.25\\left(f{\\left(0\\right)}+2f{\\left(0.5\\right)}+2f{\\left(1\\right)}+2f{\\left(1.5\\right)}+2f{\\left(2\\right)}+2f{\\left(2.5\\right)}+f{\\left(3\\right)}\\right)$$, which comes out to about $$1.153$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

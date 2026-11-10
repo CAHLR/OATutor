@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Count doublings",
+        "text": "With $$k=\\frac{\\ln\\left(2\\right)}{3}$$, $$y=100e^{9k}=100\\times2^{\\frac{9}{3}}$$. Nine hours is three doubling times.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth2a-h1"
+        ],
+        "title": "Number of doublings",
+        "text": "How many doubling periods are in $$9$$ hours?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$800$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth2a-h2"
+        ],
+        "title": "Population",
+        "text": "What is the population after $$9$$ hours?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

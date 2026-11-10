@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$y=\\frac{1}{1+x^2}$$, the series is a geometric series with first term $$y$$ and ratio $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties19a-h1"
+        ],
+        "title": "Sum it",
+        "text": "Its sum is $$\\frac{y}{1-y}=\\frac{\\frac{1}{1+x^2}}{\\frac{x^2}{1+x^2}}=\\frac{1}{x^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

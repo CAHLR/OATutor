@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a31c3a1seq15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compare consecutive terms",
+        "text": "Compute $$a_n+1-a_n=\\frac{n+1}{n+2}-\\frac{n}{n+1}$$ and check its sign.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{6}$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq15a-h1"
+        ],
+        "title": "Difference",
+        "text": "$$a_n+1-a_n$$ simplifies to $$\\frac{1}{\\left(n+1\\right) \\left(n+2\\right)}$$. What is this when $$n=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a31c3a1seq15a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The difference is always positive, so each term is larger than the one before.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

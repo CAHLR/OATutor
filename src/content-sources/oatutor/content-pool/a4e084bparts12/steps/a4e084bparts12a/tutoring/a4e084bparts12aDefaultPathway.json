@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "Let $$u=x$$ and $$dv=e^{\\left(-2x\\right)} dx$$. An antiderivative is $$-\\left(\\frac{1}{2}\\right) x e^{\\left(-2x\\right)}-\\frac{1}{4} e^{\\left(-2x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts12a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "At $$x=1$$ the antiderivative is $$\\frac{-3}{4e^2}$$. At $$x=0$$ it is $$\\frac{-1}{4}$$. Subtract to get $$\\frac{1}{4}-\\frac{3}{4e^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

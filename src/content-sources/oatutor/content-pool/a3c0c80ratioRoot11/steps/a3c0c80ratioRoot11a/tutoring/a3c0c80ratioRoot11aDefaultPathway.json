@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Root test",
+        "text": "The nth root of $$a_n$$ is $$\\frac{n}{2n+1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot11a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{n}{2n+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot11a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The limit is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

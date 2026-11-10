@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a5bebcbareaBetween16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the crossing",
+        "text": "Solve $$sin(x)=cos(x)$$, which is the same as $$tan(x)=1$$, on [0,pi].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween16a-h1"
+        ],
+        "title": "Crossing point",
+        "text": "In [0,pi], at what x-value do the curves cross?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween16a-h2"
+        ],
+        "title": "Split the region",
+        "text": "Split the region at $$\\frac{\\pi}{4}$$ and check which curve is on top on $$[0,\\frac{\\pi}{4}]$$ and on $$[\\frac{\\pi}{4},pi]$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "sin(x)"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween16a-h3"
+        ],
+        "title": "Top curve on the right",
+        "text": "Which curve is on top on $$[\\frac{\\pi}{4},pi]$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "sin(x)",
+            "cos(x)"
+        ]
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}-1$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween16a-h4"
+        ],
+        "title": "Left piece",
+        "text": "On $$[0,\\frac{\\pi}{4}]$$ cos(x) is on top. What is $$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}+1$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween16a-h5"
+        ],
+        "title": "Right piece",
+        "text": "What is $$\\int_{\\frac{\\pi}{4}}^{pi} sin(x)-cos(x) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween16a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween16a-h6"
+        ],
+        "title": "Add the pieces",
+        "text": "Add the areas of the two pieces to get the total area.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

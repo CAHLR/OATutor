@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divide by the highest power",
+        "text": "Divide the numerator and denominator by $$n$$, the highest power of $$n$$ in the denominator.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq1a-h1"
+        ],
+        "title": "Small terms",
+        "text": "As $$n$$ goes to $$\\infty$$, what does $$\\frac{1}{n}$$ approach?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq1a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{3+\\frac{1}{n}}{2-\\frac{5}{n}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

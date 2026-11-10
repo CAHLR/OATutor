@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the power",
+        "text": "Write $$\\left(1+\\frac{1}{n}\\right)^{3n}$$ as $$\\left(\\left(1+\\frac{1}{n}\\right)^n\\right)^3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "e"
+        ],
+        "dependencies": [
+            "a31c3a1seq4a-h1"
+        ],
+        "title": "Inner limit",
+        "text": "What is the limit of $$\\left(1+\\frac{1}{n}\\right)^n$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e^3$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq4a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of the sequence?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

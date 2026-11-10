@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the function",
+        "text": "Write $$\\frac{1}{x}=\\frac{1}{1+x-1}$$, a geometric series with ratio $$-(x-1)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor14a-h1"
+        ],
+        "title": "Read off the coefficient",
+        "text": "The terms are $${\\left(-1\\right)}^n \\left(x-1\\right)^n$$, so the coefficient of $$\\left(x-1\\right)^5$$ is $$-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

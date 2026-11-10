@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the division",
+        "text": "Since tan(x) is odd, write it as $$a x+b x^3+c x^5$$ plus higher powers. Then $$\\left(a x+b x^3+c x^5\\right) \\left(1-\\frac{x^2}{2}+\\frac{x^4}{24}\\right)$$ must match $$x-\\frac{x^3}{6}+\\frac{x^5}{120}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking17a-h1"
+        ],
+        "title": "Match coefficients",
+        "text": "Matching the coefficients of $$x$$, $$x^3$$ and $$x^5$$ gives $$a=1$$, $$b=\\frac{1}{3}$$ and $$c=\\frac{2}{15}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

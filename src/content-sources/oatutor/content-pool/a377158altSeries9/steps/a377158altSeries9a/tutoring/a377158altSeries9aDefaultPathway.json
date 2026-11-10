@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two checks",
+        "text": "$$b_n=\\frac{n}{n^2+1}$$ decreases to $$0$$. For absolute convergence, compare with $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a377158altSeries9a-h1"
+        ],
+        "title": "Limit comparison",
+        "text": "What is the limit of $$\\frac{n^2}{n^2+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries9a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The absolute series diverges by limit comparison with the harmonic series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

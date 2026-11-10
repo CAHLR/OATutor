@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a747151numerical11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the subintervals",
+        "text": "Here $$f(x)=e^{\\left(-x^2\\right)}$$. The width of each subinterval is $$\\frac{0.8-0}{4}=0.2$$. The endpoints of the subintervals are $$0$$, $$0.2$$, $$0.4$$, $$0.6$$ and $$0.8$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a747151numerical11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a747151numerical11a-h1"
+        ],
+        "title": "Apply the rule",
+        "text": "Compute $$T_4=0.1\\left(f{\\left(0\\right)}+2f{\\left(0.2\\right)}+2f{\\left(0.4\\right)}+2f{\\left(0.6\\right)}+f{\\left(0.8\\right)}\\right)$$, which comes out to about $$0.655$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

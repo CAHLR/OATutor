@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "The center of mass of a rod is $$\\int_{a}^{b} x \\operatorname{\\rho}\\left(x\\right) \\,dx$$ divided by the mass $$\\int_{a}^{b} rho(x) \\,dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass5a-h1"
+        ],
+        "title": "Mass",
+        "text": "What is the mass $$\\int_{0}^{4} x \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass5a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{64}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass5a-h2"
+        ],
+        "title": "Moment",
+        "text": "What is the moment $$\\int_{0}^{4} x^2 \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass5a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass5a-h3"
+        ],
+        "title": "Center of mass",
+        "text": "What is the center of mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

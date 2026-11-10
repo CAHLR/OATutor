@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af10c3ahyperbolic2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Derivative of cosh",
+        "text": "The derivative of cosh(u) is sinh(u) times u'. Notice there is no minus sign, unlike cos.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic2a-h1"
+        ],
+        "title": "Inner derivative",
+        "text": "What is the derivative of $$x^2$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic2a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x sinh\\left(x^2\\right)$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic2a-h2"
+        ],
+        "title": "Derivative",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af10c3ahyperbolic12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the definition",
+        "text": "$$tanh(x)=\\frac{e^x-e^{\\left(-x\\right)}}{e^x+e^{\\left(-x\\right)}}$$. At $$x=ln(2)$$, $$e^x=2$$ and $$e^{\\left(-x\\right)}=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic12a-h1"
+        ],
+        "title": "Numerator",
+        "text": "What is $$2-\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{5}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic12a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is tanh(ln(2))?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

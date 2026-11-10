@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divergence test",
+        "text": "If the terms do not approach $$0$$, the series diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest1a-h1"
+        ],
+        "title": "Limit of the terms",
+        "text": "What is the limit of $$\\frac{n}{n+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest1a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms approach $$1$$, not $$0$$, so the divergence test applies.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

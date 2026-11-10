@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a202258strategy9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "Write $$cos^3\\left(x\\right)$$ as $$\\left(1-sin^2\\left(x\\right)\\right) cos\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a202258strategy9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a202258strategy9a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=sin(x)$$, so $$du=cos\\left(x\\right) dx$$. The integral becomes the integral of $$1-u^2$$, which is $$u-\\frac{u^3}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

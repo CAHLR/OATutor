@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$u=e^x$$, so $$du=e^x dx$$. An antiderivative is $$\\arctan\\left(e^x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper12a-h1"
+        ],
+        "title": "Take the limits",
+        "text": "As $$x$$ goes to $$\\infty$$, $$\\arctan\\left(e^x\\right)$$ approaches $$\\frac{\\pi}{2}$$. As $$x$$ goes to negative $$\\infty$$, it approaches $$arctan(0)=0$$. So the integral is $$\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

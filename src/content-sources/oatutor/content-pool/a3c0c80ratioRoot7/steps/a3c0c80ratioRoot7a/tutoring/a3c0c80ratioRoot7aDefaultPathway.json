@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ratio test",
+        "text": "After simplifying, $$a_n+\\frac{1}{a_n}=\\left(1+\\frac{1}{n}\\right)^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "e"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot7a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of the ratio?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot7a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "e is greater than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Root test",
+        "text": "The nth root of $$a_n$$ is $$\\left(1-\\frac{1}{n}\\right)^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{e}$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot15a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\left(1-\\frac{1}{n}\\right)^n$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot15a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot15a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{1}{e}$$ is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

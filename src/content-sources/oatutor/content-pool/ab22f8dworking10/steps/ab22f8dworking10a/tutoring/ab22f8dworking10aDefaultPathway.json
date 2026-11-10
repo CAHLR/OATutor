@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite the function",
+        "text": "Write $$2^x=e^{x \\ln\\left(2\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking10a-h1"
+        ],
+        "title": "Use a known series",
+        "text": "Use $$e^u=1+u+\\frac{u^2}{2}$$ and so on, with $$u=x \\ln\\left(2\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

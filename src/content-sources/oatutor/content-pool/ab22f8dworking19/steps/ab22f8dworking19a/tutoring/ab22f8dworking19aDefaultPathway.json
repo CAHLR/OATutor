@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Multiply the series",
+        "text": "Multiply $$e^x=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}$$ by $$cos(x)=1-\\frac{x^2}{2}$$ and keep the low powers of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking19a-h1"
+        ],
+        "title": "Collect terms",
+        "text": "The $$x^2$$ terms cancel, and the $$x^3$$ coefficient is $$\\frac{1}{6}-\\frac{1}{2}=\\frac{-1}{3}$$. So the first three nonzero terms are $$1+x-\\frac{x^3}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

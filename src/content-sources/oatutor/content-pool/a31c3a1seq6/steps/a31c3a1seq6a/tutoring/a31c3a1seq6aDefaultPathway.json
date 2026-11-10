@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a31c3a1seq6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "L'Hopital's rule",
+        "text": "Treat $$n$$ as a continuous variable $$x$$. The limit of $$\\frac{\\ln\\left(x\\right)}{x}$$ has the form $$\\frac{\\infty}{\\infty}$$, so differentiate the top and bottom.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq6a-h1"
+        ],
+        "title": "Derivative ratio",
+        "text": "After differentiating, the expression becomes $$\\frac{\\frac{1}{x}}{1}$$. What is its limit as $$x$$ goes to $$\\infty$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

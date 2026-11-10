@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a658a15expLog12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Let $$u=1+e^x$$, so $$du=e^x dx$$. The integral of $$\\frac{1}{u}$$ is ln(u).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a658a15expLog12a-h1"
+        ],
+        "title": "Lower limit",
+        "text": "When $$x=0$$, what is u?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\ln\\left(\\frac{1+e}{2}\\right)$$"
+        ],
+        "dependencies": [
+            "a658a15expLog12a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is the value of the integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

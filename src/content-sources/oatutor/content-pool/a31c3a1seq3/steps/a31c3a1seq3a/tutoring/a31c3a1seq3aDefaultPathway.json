@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Known limit",
+        "text": "For any constant a, $$\\left(1+\\frac{a}{n}\\right)^n$$ approaches $$e^a$$ as $$n$$ goes to $$\\infty$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq3a-h1"
+        ],
+        "title": "Identify a",
+        "text": "In $$\\left(1+\\frac{2}{n}\\right)^n$$, what is a?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$e^2$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq3a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

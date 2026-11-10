@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a5bebcbareaBetween4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the intersections",
+        "text": "Find where the curves intersect by solving $$x^3=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween4a-h1"
+        ],
+        "title": "Middle intersection",
+        "text": "Besides $$x=-1$$ and $$x=1$$, at what x-value do the curves intersect?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween4a-h2"
+        ],
+        "title": "Split the region",
+        "text": "The curves cross at $$x=0$$, so check which curve is on top on [-1,0] and on [0,1] separately.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$x^3$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween4a-h3"
+        ],
+        "title": "Test point",
+        "text": "At $$x=-0.5$$, which is greater: $$x^3$$ or $$x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$x^3$$",
+            "$$x$$"
+        ]
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween4a-h4"
+        ],
+        "title": "Left piece",
+        "text": "On [-1,0] the cubic is on top. What is $$\\int_{-1}^{0} x^3-x \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween4a-h5"
+        ],
+        "title": "Right piece",
+        "text": "On [0,1] the line $$y=x$$ is on top. What is $$\\int_{0}^{1} x-x^3 \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween4a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween4a-h6"
+        ],
+        "title": "Add the pieces",
+        "text": "Add the areas of the two pieces to get the total area.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

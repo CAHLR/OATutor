@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the sign",
+        "text": "$$cos\\left(n \\pi\\right)={\\left(-1\\right)}^n$$, so $${\\left(-1\\right)}^n cos\\left(n \\pi\\right)={\\left(-1\\right)}^{2n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a377158altSeries19a-h1"
+        ],
+        "title": "Check one term",
+        "text": "What is $${\\left(-1\\right)}^3 cos\\left(3\\pi\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries19a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Every term is positive, so the series is the harmonic series sum of $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

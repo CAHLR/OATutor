@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "At the half-life, $$e^{-0.05 t}=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-ln(2)$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth6a-h1"
+        ],
+        "title": "Take logarithms",
+        "text": "After taking ln, $$-0.05t$$ equals what?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$20\\ln\\left(2\\right)$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth6a-h2"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "What is the half-life?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify first",
+        "text": "Since $$\\ln\\left(x^2\\right)=2\\ln\\left(x\\right)$$, use the antiderivative of ln(x), which is $$x \\ln\\left(x\\right)-x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts13a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Evaluate $$2\\left(x \\ln\\left(x\\right)-x\\right)$$ from $$x=1$$ to $$x=e$$. At $$x=e$$ it is $$0$$ and at $$x=1$$ it is $$-2$$, so the answer is $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

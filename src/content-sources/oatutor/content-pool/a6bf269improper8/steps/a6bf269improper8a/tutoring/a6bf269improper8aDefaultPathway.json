@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the integral",
+        "text": "Split the integral at $$0$$ and use the antiderivative arctan(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper8a-h1"
+        ],
+        "title": "Take the limits",
+        "text": "arctan(x) approaches $$\\frac{\\pi}{2}$$ as $$x$$ goes to infinity and $$\\frac{-\\pi}{2}$$ as $$x$$ goes to negative $$\\infty$$. So the integral is $$\\frac{\\pi}{2}-\\left(-\\frac{\\pi}{2}\\right)=pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

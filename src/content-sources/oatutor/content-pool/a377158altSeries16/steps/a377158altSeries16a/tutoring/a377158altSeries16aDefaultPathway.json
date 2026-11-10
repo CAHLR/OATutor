@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a377158altSeries16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two checks",
+        "text": "$$b_n=\\frac{1}{n \\ln\\left(n\\right)}$$ decreases to $$0$$, so the alternating series test applies. Then check the absolute series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries16a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "diverges"
+        ],
+        "dependencies": [
+            "a377158altSeries16a-h1"
+        ],
+        "title": "Absolute series",
+        "text": "By the integral test, does sum of $$\\frac{1}{n \\ln\\left(n\\right)}$$ converge or diverge?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "converges",
+            "diverges"
+        ]
+    },
+    {
+        "id": "a377158altSeries16a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries16a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The series converges, but not absolutely.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

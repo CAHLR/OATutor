@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a658a15expLog7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Let $$u=x^2+1$$, so $$du=2x dx$$ and $$x dx=\\frac{du}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a658a15expLog7a-h1"
+        ],
+        "title": "New limits",
+        "text": "When $$x=1$$, what is u?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(2\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a658a15expLog7a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is the value of the integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

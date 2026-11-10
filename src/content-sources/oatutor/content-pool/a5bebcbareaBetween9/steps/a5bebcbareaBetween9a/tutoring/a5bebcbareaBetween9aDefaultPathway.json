@@ -1,0 +1,108 @@
+[
+    {
+        "id": "a5bebcbareaBetween9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the crossing",
+        "text": "Solve $$sin(x)=cos(x)$$, which is the same as $$tan(x)=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween9a-h1"
+        ],
+        "title": "Crossing point",
+        "text": "In $$[0,\\frac{\\pi}{2}]$$, at what x-value do the curves cross?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween9a-h2"
+        ],
+        "title": "Split the region",
+        "text": "Because the curves cross at $$\\frac{\\pi}{4}$$, split the region into $$[0,\\frac{\\pi}{4}]$$ and $$[\\frac{\\pi}{4},\\frac{\\pi}{2}]$$ and check which curve is on top in each piece.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "cos(x)"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween9a-h3"
+        ],
+        "title": "Top curve on the left",
+        "text": "Which curve is on top on $$[0,\\frac{\\pi}{4}]$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "cos(x)",
+            "sin(x)"
+        ]
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h5",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}-1$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween9a-h4"
+        ],
+        "title": "Left piece",
+        "text": "What is $$\\int_{0}^{\\frac{\\pi}{4}} cos(x)-sin(x) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h6",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\sqrt{2}-1$$"
+        ],
+        "dependencies": [
+            "a5bebcbareaBetween9a-h5"
+        ],
+        "title": "Right piece",
+        "text": "On $$[\\frac{\\pi}{4},\\frac{\\pi}{2}]$$ sin(x) is on top. What is $$\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} sin(x)-cos(x) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a5bebcbareaBetween9a-h7",
+        "type": "hint",
+        "dependencies": [
+            "a5bebcbareaBetween9a-h6"
+        ],
+        "title": "Add the pieces",
+        "text": "Add the areas of the two pieces to get the total area.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

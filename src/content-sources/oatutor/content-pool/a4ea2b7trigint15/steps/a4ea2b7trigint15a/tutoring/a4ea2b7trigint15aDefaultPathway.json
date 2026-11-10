@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use product-to-sum",
+        "text": "Use $$sin\\left(x\\right) sin\\left(3x\\right)=\\frac{1}{2} \\left(cos\\left(2x\\right)-cos\\left(4x\\right)\\right)$$, then multiply by $$sin\\left(2x\\right)$$ and use product-to-sum again.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint15a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integrand becomes a sum of multiples of $$sin\\left(2x\\right)$$, $$sin\\left(4x\\right)$$ and $$sin\\left(6x\\right)$$. Each of these integrates to $$0$$ from $$0$$ to $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

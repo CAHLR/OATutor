@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a528db4compTest15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose $$b_n$$",
+        "text": "The highest powers give $$\\frac{3n^2}{n^3}=\\frac{3}{n}$$. Use $$b_n=\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a528db4compTest15a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{n \\left(3n^2+1\\right)}{n^3+4n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

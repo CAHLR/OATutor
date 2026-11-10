@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Moment about the y-axis",
+        "text": "The x-coordinate is $$\\frac{My}{m}$$, where My is the sum of $$m x$$ and $$m$$ is the total mass.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass4a-h1"
+        ],
+        "title": "Moment",
+        "text": "What is My, the sum of $$m x$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass4a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass4a-h2"
+        ],
+        "title": "Total mass",
+        "text": "What is the total mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass4a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{6}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass4a-h3"
+        ],
+        "title": "Center of mass",
+        "text": "What is the x-coordinate of the center of mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

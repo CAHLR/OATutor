@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall a derivative",
+        "text": "The derivative of sec(x) is $$\\operatorname{sec}\\left(x\\right) tan\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint7a-h1"
+        ],
+        "title": "Integrate",
+        "text": "The integrand is exactly the derivative of sec(x), so its antiderivative is $$\\operatorname{sec}\\left(x\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

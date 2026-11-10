@@ -1,0 +1,46 @@
+[
+    {
+        "id": "abaeb89centerMass13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Symmetry and area",
+        "text": "By symmetry the x-coordinate is $$0$$. The region is half of a disk of radius $$2$$, so its area is $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{16}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass13a-h1"
+        ],
+        "title": "Moment",
+        "text": "What is $$\\int_{-2}^{2} \\frac{1}{2} \\left(4-x^2\\right) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{8}{3\\pi}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass13a-h2"
+        ],
+        "title": "Centroid",
+        "text": "Divide by the area $$2\\pi$$. What is the y-coordinate of the centroid?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

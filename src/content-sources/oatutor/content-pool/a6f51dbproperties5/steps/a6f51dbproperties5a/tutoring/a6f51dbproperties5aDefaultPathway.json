@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the sum",
+        "text": "The present value of the payment made $$n$$ years from now is $$\\frac{C}{\\left(1+r\\right)^n}$$. The total is a geometric series with first term $$\\frac{C}{1+r}$$ and ratio $$\\frac{1}{1+r}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties5a-h1"
+        ],
+        "title": "Sum the series",
+        "text": "This geometric series sums to $$\\frac{C}{r}$$. With $$C=9000$$ and $$r=0.05$$, $$P=\\frac{9000}{0.05}=180000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Theorem of Pappus",
+        "text": "The volume equals the area of the triangle times the distance traveled by its centroid. The centroid of a triangle is the average of its vertices.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass16a-h1"
+        ],
+        "title": "Centroid",
+        "text": "What is the x-coordinate of the centroid?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass16a-h2"
+        ],
+        "title": "Area",
+        "text": "What is the area of the triangle?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass16a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{4\\pi}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass16a-h3"
+        ],
+        "title": "Volume",
+        "text": "What is the volume?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

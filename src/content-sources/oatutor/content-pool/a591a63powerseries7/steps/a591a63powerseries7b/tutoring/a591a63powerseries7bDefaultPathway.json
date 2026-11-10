@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries7b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the endpoints",
+        "text": "At $$x=2$$ the terms are $$n$$, and at $$x=-2$$ the terms are $${\\left(-1\\right)}^n n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries7b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries7b-h1"
+        ],
+        "title": "Use the divergence test",
+        "text": "In both cases the terms do not go to $$0$$, so the series diverges at both endpoints. The interval is $$(-2,2)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the problem point",
+        "text": "The integrand is undefined at $$x=3$$, which is inside the interval from $$2$$ to $$4$$. Split the integral at $$x=3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper1a-h1"
+        ],
+        "title": "Check one piece",
+        "text": "The integral from $$2$$ to $$t$$ is $$\\frac{-1}{t-3}-1$$. As $$t$$ approaches $$3$$ from the left, this goes to $$\\infty$$, so the whole integral diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

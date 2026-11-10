@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a658a15expLog15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Let $$u=ln(x)$$, so $$du=\\frac{dx}{x}$$. The integral becomes $$\\int_{1}^{2} \\frac{1}{u} \\,du$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a658a15expLog15a-h1"
+        ],
+        "title": "Upper limit",
+        "text": "When $$x=e^2$$, what is $$u=ln(x)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "ln(2)"
+        ],
+        "dependencies": [
+            "a658a15expLog15a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$\\int_{1}^{2} \\frac{1}{u} \\,du$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

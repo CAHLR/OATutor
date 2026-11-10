@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a1a3d49divIntTest15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Remainder bound",
+        "text": "The remainder after N terms is at most the integral of $$\\frac{1}{x^2}$$ from N to $$\\infty$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{N}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest15a-h1"
+        ],
+        "title": "Integral",
+        "text": "What is $$\\int_{N}^{\\infty} \\frac{1}{x^2} \\,dx$$ in terms of N?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{10}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest15a-h2"
+        ],
+        "title": "Bound",
+        "text": "What is the bound when $$N=10$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the integrand",
+        "text": "Replace u with $$-t^2$$ in $$e^u=1+u+\\frac{u^2}{2}$$ to get $$e^{\\left(-t^2\\right)}=1-t^2+\\frac{t^4}{2}$$ plus higher powers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking14a-h1"
+        ],
+        "title": "Integrate term by term",
+        "text": "Integrating each term from $$0$$ to $$x$$ gives $$x-\\frac{x^3}{3}+\\frac{x^5}{10}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

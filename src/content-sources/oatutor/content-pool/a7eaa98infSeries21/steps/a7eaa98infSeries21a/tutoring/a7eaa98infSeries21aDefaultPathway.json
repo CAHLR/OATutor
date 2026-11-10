@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a7eaa98infSeries21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the ratio",
+        "text": "Since e is about $$2.718$$, the ratio $$\\frac{e}{3}$$ is less than $$1$$ and the series converges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{3-e}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries21a-h1"
+        ],
+        "title": "Sum",
+        "text": "What is $$\\frac{1}{1-\\frac{e}{3}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

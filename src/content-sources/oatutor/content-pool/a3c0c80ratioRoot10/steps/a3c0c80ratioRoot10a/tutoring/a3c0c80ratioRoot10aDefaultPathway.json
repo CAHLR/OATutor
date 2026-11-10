@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ratio test",
+        "text": "$$a_n+\\frac{1}{a_n}=\\frac{n^2}{\\left(n+1\\right)^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot10a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of the ratio?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot10a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "When the limit equals $$1$$, the ratio test gives no conclusion, even though this $$p-series$$ actually converges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

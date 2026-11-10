@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "Write $$\\frac{1}{\\sqrt[3]{x}}$$ as $$x^{\\left(-\\frac{1}{3}\\right)}$$. An antiderivative is $$\\frac{3}{2} x^{\\frac{2}{3}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper13a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "At $$x=1$$ the antiderivative is $$\\frac{3}{2}$$, and as $$x$$ approaches $$0$$ from the right it goes to $$0$$. So the integral is $$\\frac{3}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

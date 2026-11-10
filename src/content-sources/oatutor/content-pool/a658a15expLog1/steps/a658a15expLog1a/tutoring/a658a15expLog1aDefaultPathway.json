@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a658a15expLog1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Chain rule",
+        "text": "The derivative of ln(u) is $$\\frac{u'}{u}$$. Here $$u=x^2+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2x$$"
+        ],
+        "dependencies": [
+            "a658a15expLog1a-h1"
+        ],
+        "title": "Inner derivative",
+        "text": "What is the derivative of $$u=x^2+1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2x}{x^2+1}$$"
+        ],
+        "dependencies": [
+            "a658a15expLog1a-h2"
+        ],
+        "title": "Derivative",
+        "text": "What is $$\\frac{dy}{dx}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

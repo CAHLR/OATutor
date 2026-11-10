@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a31c3a1seq13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fixed point",
+        "text": "If the limit is L, then taking limits on both sides gives $$L=\\sqrt{2+L}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq13a-h1"
+        ],
+        "title": "Equation",
+        "text": "Squaring gives $$L^2-L-2=0$$. What is the positive solution?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

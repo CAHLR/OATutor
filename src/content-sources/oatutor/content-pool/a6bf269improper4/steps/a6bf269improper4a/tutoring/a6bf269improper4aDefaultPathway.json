@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "Using integration by parts, an antiderivative is $$-x e^{\\left(-x\\right)}-e^{\\left(-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper4a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "As $$x$$ goes to $$\\infty$$, the antiderivative goes to $$0$$. At $$x=1$$ it equals $$\\frac{-2}{e}$$, so the integral is $$0-\\left(-\\frac{2}{e}\\right)=\\frac{2}{e}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

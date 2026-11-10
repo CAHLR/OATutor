@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=tan\\left(2x\\right)$$, so $$du=2{\\operatorname{sec}\\left(2x\\right)}^2 dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint2a-h1"
+        ],
+        "title": "Integrate",
+        "text": "The integral becomes $$\\frac{1}{2}$$ times the integral of $$u^5$$, which is $$\\frac{u^6}{12}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

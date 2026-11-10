@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a7eaa98infSeries7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Telescoping",
+        "text": "Write $$\\ln\\left(\\frac{n}{n+1}\\right)=\\ln\\left(n\\right)-\\ln\\left(n+1\\right)$$. The partial sum collapses.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$-ln(2)$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries7a-h1"
+        ],
+        "title": "Partial sum",
+        "text": "The partial sum is $$S_N=-\\ln\\left(N+1\\right)$$. What is $$S_1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries7a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7eaa98infSeries7a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "As N goes to $$\\infty$$, $$-\\ln\\left(N+1\\right)$$ goes to negative $$\\infty$$, so the partial sums have no limit.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a528db4compTest10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose $$b_n$$",
+        "text": "For large $$n$$ the term behaves like $$\\frac{1}{2n}$$. Use $$b_n=\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a528db4compTest10a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{n}{2n+3}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest10a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest10a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The limit is positive and finite, and the harmonic series diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

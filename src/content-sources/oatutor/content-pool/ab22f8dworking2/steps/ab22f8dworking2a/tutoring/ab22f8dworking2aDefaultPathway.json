@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the binomial series",
+        "text": "The binomial series is $$\\left(1+u\\right)^r=1+r u+\\frac{r \\left(r-1\\right)}{2} u^2$$ and so on. Use $$r=\\frac{-1}{3}$$ and $$u=x^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking2a-h1"
+        ],
+        "title": "Compute the coefficients",
+        "text": "The coefficients are $$1$$, $$\\frac{-1}{3}$$ and $$\\frac{\\left(-\\frac{1}{3}\\right) \\left(-\\frac{4}{3}\\right)}{2}=\\frac{2}{9}$$. With $$u=x^2$$ this gives $$1-\\frac{x^2}{3}+\\frac{2x^4}{9}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find k",
+        "text": "After $$2$$ days 80% remains, so $$e^{\\left(-2k\\right)}=0.8$$. Taking ln gives $$k=\\frac{\\ln\\left(\\frac{5}{4}\\right)}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(\\frac{5}{4}\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth12a-h1"
+        ],
+        "title": "Decay constant",
+        "text": "What is k?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2\\ln\\left(2\\right)}{\\ln\\left(\\frac{5}{4}\\right)}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth12a-h2"
+        ],
+        "title": "Half-life",
+        "text": "The half-life is $$\\frac{\\ln\\left(2\\right)}{k}$$. What is it?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

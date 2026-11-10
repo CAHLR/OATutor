@@ -1,0 +1,46 @@
+[
+    {
+        "id": "af10c3ahyperbolic7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Antiderivative",
+        "text": "An antiderivative of sinh(x) is cosh(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{5}{4}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic7a-h1"
+        ],
+        "title": "Value at ln(2)",
+        "text": "What is $$cosh(ln(2))=\\frac{2+\\frac{1}{2}}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic7a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$cosh(ln(2))-cosh(0)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

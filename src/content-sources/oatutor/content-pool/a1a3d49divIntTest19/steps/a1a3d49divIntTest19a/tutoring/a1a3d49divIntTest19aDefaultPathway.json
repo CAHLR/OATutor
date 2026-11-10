@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integral test",
+        "text": "Use $$\\int_{1}^{\\infty} \\frac{1}{\\left(2x+1\\right)^2} \\,dx$$. Substitute $$u=2x+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{6}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest19a-h1"
+        ],
+        "title": "Integral value",
+        "text": "What is the value of the improper integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest19a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest19a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The integral is finite.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

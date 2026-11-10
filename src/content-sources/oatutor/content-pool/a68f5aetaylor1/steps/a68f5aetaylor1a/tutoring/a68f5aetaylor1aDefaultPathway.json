@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "$$f(1)=3$$. Since $$f'(x)=1+2x$$, $$f'(1)=3$$. Also $$f''(x)=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor1a-h1"
+        ],
+        "title": "Build the polynomial",
+        "text": "Put these values into the Taylor polynomial formula: $$f(1)+f'(1)(x-1)+\\frac{f''(1)}{2}(x-1)**2=3+3(x-1)+(x-1)**2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

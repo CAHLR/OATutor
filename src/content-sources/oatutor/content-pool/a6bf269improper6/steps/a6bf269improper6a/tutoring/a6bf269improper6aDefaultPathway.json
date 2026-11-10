@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "Integrate by parts with $$u=ln(x)$$ and $$dv=x^{\\left(-\\frac{1}{2}\\right)} dx$$. An antiderivative is $$2\\sqrt{x} \\ln\\left(x\\right)-4\\sqrt{x}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper6a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "At $$x=1$$ the antiderivative is $$-4$$. As $$x$$ approaches $$0$$ from the right, it goes to $$0$$. So the integral is $$-4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

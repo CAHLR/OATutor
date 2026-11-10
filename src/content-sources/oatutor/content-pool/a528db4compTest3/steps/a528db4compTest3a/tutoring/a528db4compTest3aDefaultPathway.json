@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a528db4compTest3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose a comparison",
+        "text": "For $$n \\geq 3$$, $$\\ln\\left(n\\right)>1$$, so $$\\frac{\\ln\\left(n\\right)}{n}>\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest3a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\ln\\left(3\\right)>1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest3a-h1"
+        ],
+        "title": "Check",
+        "text": "How does ln(3) compare with 1?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\ln\\left(3\\right)<1$$",
+            "$$\\ln\\left(3\\right)>1$$"
+        ]
+    },
+    {
+        "id": "a528db4compTest3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest3a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "A larger series than a divergent series also diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

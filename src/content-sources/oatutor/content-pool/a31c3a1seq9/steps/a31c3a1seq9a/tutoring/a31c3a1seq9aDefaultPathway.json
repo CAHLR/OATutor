@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take logarithms",
+        "text": "$$\\ln\\left(a_n\\right)=\\frac{\\ln\\left(n\\right)}{n}$$. Find the limit of $$\\ln\\left(a_n\\right)$$, then exponentiate.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq9a-h1"
+        ],
+        "title": "Limit of the logarithm",
+        "text": "What is the limit of $$\\frac{\\ln\\left(n\\right)}{n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq9a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is $$e^0$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

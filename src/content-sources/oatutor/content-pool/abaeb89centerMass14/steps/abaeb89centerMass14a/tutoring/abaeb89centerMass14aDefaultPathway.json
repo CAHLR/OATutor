@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Centroid formula",
+        "text": "The y-coordinate is $$(1/A)*\\int_{0}^{pi} \\frac{1}{2} sin^2\\left(x\\right) \\,dx$$. Use $$sin^2\\left(x\\right)=\\frac{1-cos\\left(2x\\right)}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass14a-h1"
+        ],
+        "title": "Area",
+        "text": "What is the area under one arch of sin(x)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass14a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{4}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass14a-h2"
+        ],
+        "title": "Moment",
+        "text": "What is $$\\int_{0}^{pi} \\frac{1}{2} sin^2\\left(x\\right) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass14a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\pi}{8}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass14a-h3"
+        ],
+        "title": "Centroid",
+        "text": "What is the y-coordinate of the centroid?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

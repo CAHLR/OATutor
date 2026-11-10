@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "$$f'(x)=-2sin\\left(2x\\right)$$ and $$f''(x)=-4cos\\left(2x\\right)$$. Since $$cos\\left(2\\pi\\right)=1$$ and $$sin\\left(2\\pi\\right)=0$$, the function and its first two derivatives equal $$1$$, $$0$$ and $$-4$$ at the center.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor2a-h1"
+        ],
+        "title": "Build the polynomial",
+        "text": "The polynomial is $$1+0\\left(x-\\pi\\right)+\\left(-\\frac{4}{2}\\right) \\left(x-\\pi\\right)^2=1-2\\left(x-\\pi\\right)^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

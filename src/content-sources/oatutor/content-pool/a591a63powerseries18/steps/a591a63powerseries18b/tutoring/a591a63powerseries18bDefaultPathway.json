@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries18b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the geometric series condition",
+        "text": "The series converges when $$|2x|<1$$, that is, when $$|x|<\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries18b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries18b-h1"
+        ],
+        "title": "Check the endpoints",
+        "text": "At $$x=\\frac{1}{2}$$ and $$x=\\frac{-1}{2}$$ the terms are $$1$$ and $${\\left(-1\\right)}^n$$, which do not go to $$0$$, so the interval is $$(\\frac{-1}{2},\\frac{1}{2})$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

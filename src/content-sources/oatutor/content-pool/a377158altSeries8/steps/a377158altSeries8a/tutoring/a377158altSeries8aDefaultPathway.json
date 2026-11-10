@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Alternating series test",
+        "text": "Check that $$b_n=\\frac{\\ln\\left(n\\right)}{n}$$ approaches $$0$$ and is decreasing for $$n \\geq 3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a377158altSeries8a-h1"
+        ],
+        "title": "Limit of $$b_n$$",
+        "text": "What is the limit of $$\\frac{\\ln\\left(n\\right)}{n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries8a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries8a-h2"
+        ],
+        "title": "Decreasing",
+        "text": "The derivative of $$\\frac{\\ln\\left(x\\right)}{x}$$ is $$\\frac{1-\\ln\\left(x\\right)}{x^2}$$, which is negative for $$x>e$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

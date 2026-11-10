@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integral test",
+        "text": "Use the integral of $$\\frac{1}{x {\\ln\\left(x\\right)}^2}$$ from $$2$$ to $$\\infty$$. Substitute $$u=ln(x)$$, which turns it into the integral of $$\\frac{1}{u^2}$$ from ln(2) to $$\\infty$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest11a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{\\ln\\left(2\\right)}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest11a-h1"
+        ],
+        "title": "Integral value",
+        "text": "What is the value of the improper integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest11a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest11a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The integral is finite, so the series has the same behavior.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

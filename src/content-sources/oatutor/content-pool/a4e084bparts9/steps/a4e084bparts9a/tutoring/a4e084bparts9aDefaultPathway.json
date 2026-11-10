@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and dv",
+        "text": "Let $$u=ln(x)$$ and $$dv=x^2 dx$$, so $$du=\\frac{1}{x} dx$$ and $$v=\\frac{x^3}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts9a-h1"
+        ],
+        "title": "Apply integration by parts",
+        "text": "The integral equals $$\\frac{1}{3} x^3 \\ln\\left(x\\right)$$ minus the integral of $$\\frac{x^2}{3}$$, which is $$\\frac{x^3}{9}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

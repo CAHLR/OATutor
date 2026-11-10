@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Squeeze theorem",
+        "text": "Since $$-1 \\leq cos(n) \\leq 1$$, the sequence is squeezed between $$\\frac{-1}{n}$$ and $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq10a-h1"
+        ],
+        "title": "Bound",
+        "text": "What is the limit of $$\\frac{1}{n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq10a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq10a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\fraccos^n\\left(n\\right)}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

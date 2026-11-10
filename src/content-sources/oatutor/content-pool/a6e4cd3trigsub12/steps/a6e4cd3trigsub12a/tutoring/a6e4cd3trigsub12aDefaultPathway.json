@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6e4cd3trigsub12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$x=sin(\\theta)$$. Then the integral becomes the integral of $$cos^4\\left(\\theta\\right)$$ with respect to \u03b8.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6e4cd3trigsub12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6e4cd3trigsub12a-h1"
+        ],
+        "title": "Integrate and convert back",
+        "text": "Using the power-reducing formula twice, the integral is $$\\frac{3}{8} \\theta$$ plus $$\\frac{1}{4} sin\\left(2\\theta\\right)$$ plus $$\\frac{1}{32} sin\\left(4\\theta\\right)$$. Then write everything in terms of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

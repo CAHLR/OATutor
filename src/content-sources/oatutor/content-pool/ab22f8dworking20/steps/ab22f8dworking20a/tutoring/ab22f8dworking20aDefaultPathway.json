@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the series",
+        "text": "Replace u with $$x^2$$ in $$\\ln\\left(1+u\\right)$$, whose series has terms $$\\frac{{\\left(-1\\right)}^{n-1} u^n}{n}$$. This gives terms $$\\frac{{\\left(-1\\right)}^{n-1} x^{2n}}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking20a-h1"
+        ],
+        "title": "Use the ratio test",
+        "text": "The ratio of consecutive terms approaches $$x^2$$, so the series converges when $$x^2<1$$. So $$R=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

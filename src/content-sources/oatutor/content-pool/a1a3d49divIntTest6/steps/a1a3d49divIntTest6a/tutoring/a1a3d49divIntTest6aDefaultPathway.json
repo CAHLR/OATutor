@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "$$p-series$$",
+        "text": "Write $$\\frac{1}{\\sqrt{n}}=\\frac{1}{n^p}$$ and find $$p$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest6a-h1"
+        ],
+        "title": "Value of $$p$$",
+        "text": "What is $$p$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest6a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Since $$p \\leq 1$$, the $$p-series$$ test gives the answer.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

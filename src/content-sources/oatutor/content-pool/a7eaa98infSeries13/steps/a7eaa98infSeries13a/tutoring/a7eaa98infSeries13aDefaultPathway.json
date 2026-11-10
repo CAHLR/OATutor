@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Add the first four terms",
+        "text": "$$S_4=1+\\frac{1}{4}+\\frac{1}{9}+\\frac{1}{16}$$. Use the common denominator $$144$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{25}{144}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries13a-h1"
+        ],
+        "title": "Common denominator",
+        "text": "What is $$\\frac{1}{9}+\\frac{1}{16}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{205}{144}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries13a-h2"
+        ],
+        "title": "Partial sum",
+        "text": "What is $$S_4$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

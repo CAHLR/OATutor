@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the ratio",
+        "text": "Going from k to $$k+1$$ multiplies the top by $$k+1$$ and the bottom by $$2k+1$$, so the ratio of consecutive coefficients is $$\\frac{k+1}{2k+1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries12a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "This approaches $$\\frac{1}{2}$$, so $$R=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

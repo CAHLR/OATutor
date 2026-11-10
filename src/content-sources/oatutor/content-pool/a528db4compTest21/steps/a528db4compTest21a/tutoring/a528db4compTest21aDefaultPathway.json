@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a528db4compTest21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose $$b_n$$",
+        "text": "For large $$n$$, $$3^n$$ dominates $$2^n$$. Use $$b_n=\\left(\\frac{1}{3}\\right)^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest21a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{3^n}{3^n-2^n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

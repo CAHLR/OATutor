@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Weighted average",
+        "text": "The center of mass is the sum of $$m x$$ divided by the total mass.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$10$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass1a-h1"
+        ],
+        "title": "Moment",
+        "text": "What is the sum of $$m x$$ for the two masses?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass1a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass1a-h2"
+        ],
+        "title": "Total mass",
+        "text": "What is the total mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass1a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass1a-h3"
+        ],
+        "title": "Center of mass",
+        "text": "What is the center of mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the right endpoint",
+        "text": "At $$x=1$$ the series is the alternating series of $$\\frac{{\\left(-1\\right)}^n}{\\ln\\left(2n\\right)}$$, which converges by the alternating series test.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries10b-h1"
+        ],
+        "title": "Check the left endpoint",
+        "text": "At $$x=-1$$ the terms are $$\\frac{1}{\\ln\\left(2n\\right)}$$. Since $$\\frac{1}{\\ln\\left(2n\\right)}>\\frac{1}{2n}$$, the series diverges by comparison with the harmonic series. So the interval is (-1,1].",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "Integrate by parts twice. An antiderivative is $$\\frac{1}{2} e^{\\left(-x\\right)} \\left(sin\\left(x\\right)-cos\\left(x\\right)\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper5a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "As $$x$$ goes to $$\\infty$$, the antiderivative goes to $$0$$. At $$x=0$$ it equals $$\\frac{-1}{2}$$, so the integral is $$0-\\left(-\\frac{1}{2}\\right)=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

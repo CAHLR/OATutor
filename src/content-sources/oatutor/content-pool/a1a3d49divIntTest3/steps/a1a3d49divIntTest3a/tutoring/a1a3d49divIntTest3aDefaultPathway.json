@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divergence test",
+        "text": "As $$n$$ grows, $$\\frac{1}{n}$$ approaches $$0$$. What does $$cos\\left(\\frac{1}{n}\\right)$$ approach?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest3a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest3a-h1"
+        ],
+        "title": "Limit of the terms",
+        "text": "What is the limit of $$cos\\left(\\frac{1}{n}\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest3a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest3a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms approach $$1$$, so the series diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

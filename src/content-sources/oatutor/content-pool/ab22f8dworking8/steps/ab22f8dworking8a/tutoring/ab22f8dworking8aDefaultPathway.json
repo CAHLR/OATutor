@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the function",
+        "text": "Expanding $$\\left(1+x^4\\right)^{25}$$ gives a polynomial in which every power of $$x$$ is a multiple of $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking8a-h1"
+        ],
+        "title": "Relate the derivative to a coefficient",
+        "text": "The 99th derivative at $$0$$ equals the coefficient of $$x^{99}$$ times $$99$$ factorial. Since $$99$$ is not a multiple of $$4$$, there is no $$x^{99}$$ term, so the answer is $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

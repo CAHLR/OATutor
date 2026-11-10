@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a591a63powerseries17b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the geometric series condition",
+        "text": "The geometric series converges when $$|-x^2|<1$$, that is, when $$|x|<1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a591a63powerseries17b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a591a63powerseries17b-h1"
+        ],
+        "title": "Check the endpoints",
+        "text": "At $$x=1$$ and $$x=-1$$ the terms are $${\\left(-1\\right)}^n$$, which do not go to $$0$$, so the interval is $$(-1,1)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

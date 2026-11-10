@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Geometric series",
+        "text": "The first term is $$3$$ and the ratio is $$\\frac{-2}{5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries16a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{7}{5}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries16a-h1"
+        ],
+        "title": "Denominator",
+        "text": "What is $$1-r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries16a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{15}{7}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries16a-h2"
+        ],
+        "title": "Sum",
+        "text": "What is $$\\frac{3}{\\frac{7}{5}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

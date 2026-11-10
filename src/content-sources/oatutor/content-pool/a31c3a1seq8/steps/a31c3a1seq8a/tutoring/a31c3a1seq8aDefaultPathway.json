@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Geometric sequence",
+        "text": "Write $$a_n=\\left(\\frac{2}{3}\\right)^n$$. A geometric sequence $$r^n$$ goes to $$0$$ when the absolute value of $$r$$ is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{2}{3}$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq8a-h1"
+        ],
+        "title": "Ratio",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq8a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is the limit?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

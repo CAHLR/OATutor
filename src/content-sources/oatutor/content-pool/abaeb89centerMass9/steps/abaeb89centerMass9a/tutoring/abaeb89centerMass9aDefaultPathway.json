@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Centroid formula",
+        "text": "The y-coordinate of the centroid is $$(1/A)*\\int_{a}^{b} \\frac{1}{2} {f{\\left(x\\right)}}^2 \\,dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{3}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass9a-h1"
+        ],
+        "title": "Area",
+        "text": "What is the area A of the region?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass9a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{10}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass9a-h2"
+        ],
+        "title": "Moment",
+        "text": "What is $$\\int_{0}^{1} \\frac{1}{2} x^4 \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass9a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{10}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass9a-h3"
+        ],
+        "title": "Centroid",
+        "text": "What is the y-coordinate of the centroid?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a7eaa98infSeries6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Partial fractions",
+        "text": "Write $$\\frac{2}{n \\left(n+2\\right)}=\\frac{1}{n}-\\frac{1}{n+2}$$. Now terms cancel two apart, so the first two positive terms survive.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{2}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries6a-h1"
+        ],
+        "title": "Surviving terms",
+        "text": "What is $$\\frac{1}{1}+\\frac{1}{2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries6a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7eaa98infSeries6a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The leftover negative terms $$\\frac{-1}{N+1}-\\frac{1}{N+2}$$ go to $$0$$, so the sum is the surviving terms.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

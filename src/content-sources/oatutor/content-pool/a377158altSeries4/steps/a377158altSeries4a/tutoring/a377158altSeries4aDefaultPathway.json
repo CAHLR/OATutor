@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divergence test",
+        "text": "Before using the alternating series test, check whether the terms approach $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a377158altSeries4a-h1"
+        ],
+        "title": "Limit of $$b_n$$",
+        "text": "What is the limit of $$\\frac{n}{n+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries4a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms swing between values near $$-1$$ and $$1$$ and never approach $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

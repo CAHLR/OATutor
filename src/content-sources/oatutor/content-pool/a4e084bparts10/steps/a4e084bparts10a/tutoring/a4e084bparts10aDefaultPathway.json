@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "First round",
+        "text": "Let $$u=x^2$$ and $$dv=sin\\left(x\\right) dx$$, so $$du=2x dx$$ and $$v=-cos(x)$$. This gives $$-x^2 cos\\left(x\\right)$$ plus the integral of $$2x cos\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts10a-h1"
+        ],
+        "title": "Second round",
+        "text": "Use integration by parts again with $$u=2x$$ and $$dv=cos\\left(x\\right) dx$$. The integral of $$2x cos\\left(x\\right)$$ is $$2x sin\\left(x\\right)+2cos\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

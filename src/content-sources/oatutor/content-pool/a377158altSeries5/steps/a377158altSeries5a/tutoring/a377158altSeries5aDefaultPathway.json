@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two checks",
+        "text": "Check the alternating series test, then check the series of absolute values sum of $$\\frac{1}{\\sqrt{n}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries5a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a377158altSeries5a-h1"
+        ],
+        "title": "$$p-value$$",
+        "text": "For the absolute series $$\\frac{1}{n^p}$$, what is $$p$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries5a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries5a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{1}{\\sqrt{n}}$$ decreases to $$0$$, but the absolute series is a divergent $$p-series$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

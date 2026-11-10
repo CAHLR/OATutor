@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6f51dbproperties15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Differentiate twice",
+        "text": "The second derivative of $$\\frac{1}{1-x}$$ is $$\\frac{2}{\\left(1-x\\right)^3}$$, which equals the sum of $$n \\left(n-1\\right) x^{n-2}$$ for $$n \\geq 2$$. Multiplying by $$x^2$$, the sum of $$n \\left(n-1\\right) x^n$$ is $$\\frac{2x^2}{\\left(1-x\\right)^3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6f51dbproperties15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6f51dbproperties15a-h1"
+        ],
+        "title": "Plug in $$x=\\frac{1}{2}$$",
+        "text": "At $$x=\\frac{1}{2}$$ this is $$\\frac{2\\frac{1}{4}}{\\left(\\frac{1}{2}\\right)^3}=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

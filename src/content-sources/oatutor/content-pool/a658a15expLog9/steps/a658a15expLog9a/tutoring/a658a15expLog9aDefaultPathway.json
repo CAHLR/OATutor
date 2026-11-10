@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a658a15expLog9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Antiderivative",
+        "text": "An antiderivative of $$e^{3x}$$ is $$\\frac{e^{3x}}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog9a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{e^3-1}{3}$$"
+        ],
+        "dependencies": [
+            "a658a15expLog9a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "What is the value of the integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

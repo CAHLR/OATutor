@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor",
+        "text": "Write $$\\sqrt{x+2}=\\sqrt{2} \\sqrt{1+\\frac{x}{2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking3a-h1"
+        ],
+        "title": "Expand",
+        "text": "Use $$\\sqrt{1+u}=1+\\frac{u}{2}-\\frac{u^2}{8}$$ with $$u=\\frac{x}{2}$$ to get $$\\sqrt{2} \\left(1+\\frac{x}{4}-\\frac{x^2}{32}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

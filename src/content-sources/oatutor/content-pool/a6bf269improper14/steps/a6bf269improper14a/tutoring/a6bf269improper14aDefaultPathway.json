@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "The integrand is undefined at $$x=1$$. An antiderivative is arcsin(x).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper14a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "Take the limit as $$t$$ approaches $$1$$ from the left: $$arcsin(1)-arcsin(0)=\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

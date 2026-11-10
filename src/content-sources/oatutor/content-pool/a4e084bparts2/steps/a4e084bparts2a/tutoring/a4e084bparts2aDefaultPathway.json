@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and dv",
+        "text": "Let $$u=arctan(x)$$ and $$dv=dx$$, so $$du=\\frac{1}{1+x^2} dx$$ and $$v=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts2a-h1"
+        ],
+        "title": "Apply integration by parts",
+        "text": "The integral equals $$x \\arctan\\left(x\\right)$$ minus the integral of $$\\frac{x}{1+x^2}$$. Use the substitution $$w=1+x^2$$ to get $$\\frac{1}{2} \\ln\\left(1+x^2\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

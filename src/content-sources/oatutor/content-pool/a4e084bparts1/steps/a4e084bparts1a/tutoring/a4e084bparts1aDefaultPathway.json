@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and dv",
+        "text": "Think of the integrand as $$1\\ln\\left(x\\right)$$. Let $$u=ln(x)$$ and $$dv=dx$$, so $$du=\\frac{1}{x} dx$$ and $$v=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts1a-h1"
+        ],
+        "title": "Apply integration by parts",
+        "text": "The integral equals $$x \\ln\\left(x\\right)$$ minus the integral of $$x \\frac{1}{x}=1$$. The integral of $$1$$ is $$x$$, so the answer is $$x \\ln\\left(x\\right)-x+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential solution",
+        "text": "The solution of $$\\frac{dy}{dt}=k y$$ is $$y=y0 e^{k t}$$. Here $$k=0.3$$ and $$y0=50$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth13a-h1"
+        ],
+        "title": "Exponent",
+        "text": "What is $$k t$$ at $$t=10$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$50e^3$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth13a-h2"
+        ],
+        "title": "Value",
+        "text": "What is y(10)?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

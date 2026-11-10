@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Theorem of Pappus",
+        "text": "The volume equals the area of the region times the distance traveled by its centroid.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\pi$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass15a-h1"
+        ],
+        "title": "Area",
+        "text": "What is the area of the disk?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6\\pi$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass15a-h2"
+        ],
+        "title": "Distance traveled",
+        "text": "The centroid $$(3,0)$$ circles the y-axis. How far does it travel?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass15a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6{\\pi}^2$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass15a-h3"
+        ],
+        "title": "Volume",
+        "text": "What is the volume?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "abae04apartial2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up",
+        "text": "Write it as $$\\frac{A}{x}+\\frac{B}{x+1}+\\frac{C}{x+2}$$, so $$x^2+1=A \\left(x+1\\right) \\left(x+2\\right)+B x \\left(x+2\\right)+C x \\left(x+1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abae04apartial2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abae04apartial2a-h1"
+        ],
+        "title": "Solve",
+        "text": "Plug in $$x=0$$, $$x=-1$$ and $$x=-2$$ to get $$A=\\frac{1}{2}$$, $$B=-2$$ and $$C=\\frac{5}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

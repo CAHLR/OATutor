@@ -1,0 +1,29 @@
+[
+    {
+        "id": "af10c3ahyperbolic10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Let $$u=x^2$$, so $$du=2x dx$$. The integral becomes $$(1/2)*\\int_{0}^{1} cosh(u) \\,du$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "af10c3ahyperbolic10a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{e-\\frac{1}{e}}{4}$$"
+        ],
+        "dependencies": [
+            "af10c3ahyperbolic10a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "What is $$\\frac{1}{2} sinh\\left(1\\right)$$, written with e?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=sin\\left(a x\\right)$$, so $$du=a cos\\left(a x\\right) dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint9a-h1"
+        ],
+        "title": "Integrate",
+        "text": "The integral becomes $$\\frac{1}{a}$$ times the integral of $$u^2$$, which is $$\\frac{u^3}{3a}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

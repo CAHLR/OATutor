@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ratio test",
+        "text": "Compute the limit of $$a_n+\\frac{1}{a_n}=\\frac{\\frac{n+1}{2^{n+1}}}{\\frac{n}{2^n}}=\\frac{n+1}{2n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot1a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{2}$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot1a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of the ratio?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot1a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The limit is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

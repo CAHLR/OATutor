@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integral test",
+        "text": "Use the integral of $$\\frac{\\ln\\left(x\\right)}{x}$$. Substitute $$u=ln(x)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest14a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{{\\ln\\left(x\\right)}^2}{2}$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest14a-h1"
+        ],
+        "title": "Antiderivative",
+        "text": "What is an antiderivative of $$\\frac{\\ln\\left(x\\right)}{x}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest14a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest14a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "$$\\frac{{\\ln\\left(x\\right)}^2}{2}$$ grows without bound, so the integral diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a6bf269improper11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find an antiderivative",
+        "text": "An antiderivative is $$-e^{\\left(-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a6bf269improper11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a6bf269improper11a-h1"
+        ],
+        "title": "Take the limit",
+        "text": "As $$x$$ goes to $$\\infty$$, $$-e^{\\left(-x\\right)}$$ goes to $$0$$. At $$x=0$$ it is $$-1$$, so the integral is $$0-(-1)=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

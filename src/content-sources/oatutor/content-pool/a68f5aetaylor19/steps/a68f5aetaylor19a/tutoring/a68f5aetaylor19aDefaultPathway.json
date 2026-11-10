@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Expand the numerator",
+        "text": "The Maclaurin series of cos(x) starts $$1-\\frac{x^2}{2}+\\frac{x^4}{24}$$, followed by higher powers of $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor19a-h1"
+        ],
+        "title": "Simplify and take the limit",
+        "text": "So dividing $$cos(x)-1$$ by $$x^2$$ gives $$\\frac{-1}{2}+\\frac{x^2}{24}$$ plus higher powers of $$x$$, which approaches $$\\frac{-1}{2}$$ as $$x$$ approaches $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

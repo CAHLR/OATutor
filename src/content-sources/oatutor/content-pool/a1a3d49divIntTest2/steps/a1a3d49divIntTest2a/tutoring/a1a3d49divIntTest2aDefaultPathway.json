@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Divergence test",
+        "text": "Check the limit of the terms first.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$2$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest2a-h1"
+        ],
+        "title": "Limit of the terms",
+        "text": "What is the limit of $$\\frac{2n^2}{n^2+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest2a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms do not approach $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

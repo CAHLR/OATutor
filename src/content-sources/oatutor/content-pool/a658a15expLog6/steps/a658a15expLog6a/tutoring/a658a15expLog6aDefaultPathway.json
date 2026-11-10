@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a658a15expLog6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitution",
+        "text": "Let $$u=2x+1$$, so $$du=2dx$$. The integral of $$\\frac{1}{u}$$ is ln(u).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog6a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a658a15expLog6a-h1"
+        ],
+        "title": "New limits",
+        "text": "When $$x=1$$, what is u?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a658a15expLog6a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{\\ln\\left(3\\right)}{2}$$"
+        ],
+        "dependencies": [
+            "a658a15expLog6a-h2"
+        ],
+        "title": "Evaluate",
+        "text": "What is the value of the integral?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

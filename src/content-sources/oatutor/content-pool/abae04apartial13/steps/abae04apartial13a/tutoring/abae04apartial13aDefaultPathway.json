@@ -1,0 +1,24 @@
+[
+    {
+        "id": "abae04apartial13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$x=2sin\\left(\\theta\\right)$$. Then the integral becomes $$\\frac{1}{4}$$ times the integral of $${\\operatorname{csc}\\left(\\theta\\right)}^2$$ with respect to \u03b8, which is $$-\\left(\\frac{1}{4}\\right) \\operatorname{cot}\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abae04apartial13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abae04apartial13a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "In terms of $$x$$, the antiderivative is $$\\frac{-\\sqrt{4-x^2}}{4x}$$. At $$x=2$$ it is $$0$$, and at $$x=1$$ it is $$\\frac{-\\sqrt{3}}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

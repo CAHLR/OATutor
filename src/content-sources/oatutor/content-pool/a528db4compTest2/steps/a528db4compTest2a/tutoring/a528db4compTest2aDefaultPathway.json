@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a528db4compTest2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose a comparison",
+        "text": "Since $$2^n+1>2^n$$, the terms are smaller than $$\\left(\\frac{1}{2}\\right)^n$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest2a-h1"
+        ],
+        "title": "Comparison sum",
+        "text": "What is the sum of $$\\left(\\frac{1}{2}\\right)^n$$ from $$n=1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest2a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The comparison series converges, and our series is smaller.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

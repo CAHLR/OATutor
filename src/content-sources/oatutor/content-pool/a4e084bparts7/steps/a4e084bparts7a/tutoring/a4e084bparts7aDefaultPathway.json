@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4e084bparts7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use substitution",
+        "text": "This one does not need integration by parts. Let $$w=-x^2$$, so $$dw=-2x dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4e084bparts7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4e084bparts7a-h1"
+        ],
+        "title": "Integrate",
+        "text": "The integral becomes $$-\\left(\\frac{1}{2}\\right)$$ times the integral of $$e^w$$, which is $$-\\left(\\frac{1}{2}\\right) e^w$$. Then substitute back $$w=-x^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a528db4compTest17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Bound the numerator",
+        "text": "Since $$sin^2\\left(n\\right) \\geq 0$$, the numerator is at least a constant.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest17a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a528db4compTest17a-h1"
+        ],
+        "title": "Smallest numerator",
+        "text": "What is the smallest possible value of $$1+sin^2\\left(n\\right)$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest17a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest17a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The terms are at least $$\\frac{1}{n}$$, and the harmonic series diverges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a31c3a1seq19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "L'Hopital's rule twice",
+        "text": "Treat $$n$$ as $$x$$. Differentiating the top and bottom twice turns $$\\frac{x^2}{e^x}$$ into $$\\frac{2}{e^x}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq19a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq19a-h1"
+        ],
+        "title": "After two derivatives",
+        "text": "What is the limit of $$\\frac{2}{e^x}$$ as $$x$$ goes to $$\\infty$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

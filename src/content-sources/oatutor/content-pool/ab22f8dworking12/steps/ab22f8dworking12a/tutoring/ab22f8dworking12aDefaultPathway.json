@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Start from a known series",
+        "text": "The Maclaurin series of sin(u) starts $$u-\\frac{u^3}{6}+\\frac{u^5}{120}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking12a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Replace u with $$x^2$$ to get $$x^2-\\frac{x^6}{6}+\\frac{x^{10}}{120}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

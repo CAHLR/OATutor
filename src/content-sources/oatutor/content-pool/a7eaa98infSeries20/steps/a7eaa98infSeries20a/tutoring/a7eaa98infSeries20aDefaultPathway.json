@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a7eaa98infSeries20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Partial sums",
+        "text": "Compute $$S_0=1$$, $$S_1=1-1$$, $$S_2=1-1+1$$, and so on.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries20a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries20a-h1"
+        ],
+        "title": "Second partial sum",
+        "text": "What is $$S_1$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries20a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a7eaa98infSeries20a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The partial sums alternate between $$1$$ and $$0$$, so they have no limit.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

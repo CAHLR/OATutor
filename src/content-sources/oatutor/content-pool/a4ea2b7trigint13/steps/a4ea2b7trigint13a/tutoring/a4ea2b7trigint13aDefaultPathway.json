@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a4ea2b7trigint13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use an identity",
+        "text": "Use $$sin\\left(2x\\right)=2sin\\left(x\\right) cos\\left(x\\right)$$, so the integrand is $$2sin\\left(x\\right) cos^2\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a4ea2b7trigint13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a4ea2b7trigint13a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "An antiderivative is $$-\\left(\\frac{2}{3}\\right) cos^3\\left(x\\right)$$. It has the same value at $$0$$ and at $$2\\pi$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

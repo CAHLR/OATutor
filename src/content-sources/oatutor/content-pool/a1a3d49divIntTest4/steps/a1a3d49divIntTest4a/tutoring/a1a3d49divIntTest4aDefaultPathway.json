@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a1a3d49divIntTest4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "What the test says",
+        "text": "The divergence test only gives a conclusion when the terms do NOT approach $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest4a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest4a-h1"
+        ],
+        "title": "Limit of the terms",
+        "text": "What is the limit of $$\\frac{1}{n}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest4a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a1a3d49divIntTest4a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "Terms approaching $$0$$ is not enough to guarantee convergence, so the test gives no conclusion here.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

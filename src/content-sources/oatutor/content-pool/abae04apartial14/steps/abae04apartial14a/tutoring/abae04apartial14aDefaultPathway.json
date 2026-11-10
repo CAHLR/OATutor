@@ -1,0 +1,24 @@
+[
+    {
+        "id": "abae04apartial14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Let $$u=e^x$$, so $$dx=\\frac{1}{u} du$$. The integral becomes the integral of $$\\frac{1}{u \\left(1+u\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abae04apartial14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abae04apartial14a-h1"
+        ],
+        "title": "Partial fractions",
+        "text": "Since $$\\frac{1}{u \\left(1+u\\right)}=\\frac{1}{u}-\\frac{1}{1+u}$$, the integral is $$\\ln\\left(u\\right)-\\ln\\left(1+u\\right)$$. Then substitute $$u=e^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

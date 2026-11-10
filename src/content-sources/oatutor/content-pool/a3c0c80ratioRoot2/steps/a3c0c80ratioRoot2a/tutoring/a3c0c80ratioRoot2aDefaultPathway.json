@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a3c0c80ratioRoot2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Ratio test",
+        "text": "a_n+1/a_n=3**(n+1)*n!/(3**n*(n+1)!)=3/(n+1).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot2a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0$$"
+        ],
+        "dependencies": [
+            "a3c0c80ratioRoot2a-h1"
+        ],
+        "title": "Limit",
+        "text": "What is the limit of $$\\frac{3}{n+1}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a3c0c80ratioRoot2a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a3c0c80ratioRoot2a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The limit is less than $$1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

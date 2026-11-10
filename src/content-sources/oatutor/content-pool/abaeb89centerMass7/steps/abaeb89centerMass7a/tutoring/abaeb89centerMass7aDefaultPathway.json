@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Formula",
+        "text": "Divide the moment $$\\int_{0}^{1} x e^x \\,dx$$ by the mass $$\\int_{0}^{1} e^x \\,dx$$. Use integration by parts for the moment.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "e-1"
+        ],
+        "dependencies": [
+            "abaeb89centerMass7a-h1"
+        ],
+        "title": "Mass",
+        "text": "What is the mass of the rod?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass7a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass7a-h2"
+        ],
+        "title": "Moment",
+        "text": "What is $$\\int_{0}^{1} x e^x \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass7a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{e-1}$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass7a-h3"
+        ],
+        "title": "Center of mass",
+        "text": "What is the center of mass?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

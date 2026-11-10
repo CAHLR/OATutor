@@ -1,0 +1,63 @@
+[
+    {
+        "id": "abaeb89centerMass12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Centroid formula",
+        "text": "The x-coordinate of the centroid is $$(1/A)*\\int_{a}^{b} x f{\\left(x\\right)} \\,dx$$, where A is the area of the region.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass12a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass12a-h1"
+        ],
+        "title": "Area",
+        "text": "What is the area $$A=\\int_{0}^{3} 6-2x \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass12a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$9$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass12a-h2"
+        ],
+        "title": "Moment",
+        "text": "What is $$\\int_{0}^{3} x \\left(6-2x\\right) \\,dx$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abaeb89centerMass12a-h4",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "abaeb89centerMass12a-h3"
+        ],
+        "title": "Centroid",
+        "text": "Divide the moment by the area. What is the x-coordinate of the centroid?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a7eaa98infSeries15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the sum formula",
+        "text": "The sum is $$\\frac{1}{1-r}$$, so set $$\\frac{1}{1-r}=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries15a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{4}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries15a-h1"
+        ],
+        "title": "Solve",
+        "text": "What is $$1-r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7eaa98infSeries15a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{3}{4}$$"
+        ],
+        "dependencies": [
+            "a7eaa98infSeries15a-h2"
+        ],
+        "title": "Ratio",
+        "text": "What is $$r$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

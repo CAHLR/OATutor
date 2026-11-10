@@ -1,0 +1,29 @@
+[
+    {
+        "id": "a27b7efexpGrowth7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Doubling time formula",
+        "text": "Doubling means $$e^{0.07t}=2$$, so the doubling time is $$\\frac{\\ln\\left(2\\right)}{k}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth7a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{100\\ln\\left(2\\right)}{7}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth7a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "What is the doubling time?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

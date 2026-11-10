@@ -1,0 +1,41 @@
+[
+    {
+        "id": "a377158altSeries22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Two checks",
+        "text": "$$b_n=\\frac{1}{n+\\sqrt{n}}$$ decreases to $$0$$. For absolute convergence, compare with $$\\frac{1}{n}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries22a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1$$"
+        ],
+        "dependencies": [
+            "a377158altSeries22a-h1"
+        ],
+        "title": "Limit comparison",
+        "text": "What is the limit of $$\\frac{n}{n+\\sqrt{n}}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries22a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a377158altSeries22a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "The absolute series diverges like the harmonic series.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

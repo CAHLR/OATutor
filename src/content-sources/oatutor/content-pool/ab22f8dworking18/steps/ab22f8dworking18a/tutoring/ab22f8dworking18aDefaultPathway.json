@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ab22f8dworking18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up a substitution",
+        "text": "Write $$cos(x)=1+u$$ with $$u=\\frac{-x^2}{2}+\\frac{x^4}{24}-\\frac{x^6}{720}$$, and use $$\\ln\\left(1+u\\right)=u-\\frac{u^2}{2}+\\frac{u^3}{3}$$ plus higher powers.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ab22f8dworking18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ab22f8dworking18a-h1"
+        ],
+        "title": "Collect terms",
+        "text": "Keeping powers of $$x$$ up to $$x^6$$ gives $$\\frac{-x^2}{2}-\\frac{x^4}{12}-\\frac{x^6}{45}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

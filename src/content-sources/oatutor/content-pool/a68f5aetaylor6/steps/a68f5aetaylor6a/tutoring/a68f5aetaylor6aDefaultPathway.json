@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "$$f(1)=1$$. $$f'(x)=\\frac{-1}{x^2}$$, so $$f'(1)=-1$$. $$f''(x)=\\frac{2}{x^3}$$, so $$f''(1)=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor6a-h1"
+        ],
+        "title": "Build the polynomial",
+        "text": "Put these values into the Taylor polynomial formula: $$1-(x-1)+\\frac{2}{2}(x-1)**2=1-(x-1)+(x-1)**2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

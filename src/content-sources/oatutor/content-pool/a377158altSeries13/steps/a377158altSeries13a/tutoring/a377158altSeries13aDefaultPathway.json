@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a377158altSeries13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Remainder estimate",
+        "text": "For an alternating series that passes the test, the error after N terms is at most the next term $$b_N+1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries13a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$5$$"
+        ],
+        "dependencies": [
+            "a377158altSeries13a-h1"
+        ],
+        "title": "Next index",
+        "text": "After using $$4$$ terms, which term index gives the bound?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a377158altSeries13a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$\\frac{1}{25}$$"
+        ],
+        "dependencies": [
+            "a377158altSeries13a-h2"
+        ],
+        "title": "Bound",
+        "text": "What is $$b_5=\\frac{1}{5^2}$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

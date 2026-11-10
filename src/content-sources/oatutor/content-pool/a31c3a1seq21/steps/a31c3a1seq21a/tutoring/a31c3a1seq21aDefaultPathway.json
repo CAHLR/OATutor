@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a31c3a1seq21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fixed point",
+        "text": "If the limit is L, then taking limits on both sides gives $$L=\\frac{L}{2}+3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq21a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$3$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq21a-h1"
+        ],
+        "title": "Solve",
+        "text": "What is $$\\frac{L}{2}$$ when $$L=\\frac{L}{2}+3$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a31c3a1seq21a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$6$$"
+        ],
+        "dependencies": [
+            "a31c3a1seq21a-h2"
+        ],
+        "title": "Limit",
+        "text": "What is L?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

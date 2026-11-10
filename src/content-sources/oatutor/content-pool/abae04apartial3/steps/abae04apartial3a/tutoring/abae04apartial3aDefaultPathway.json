@@ -1,0 +1,24 @@
+[
+    {
+        "id": "abae04apartial3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor and set up",
+        "text": "Factor $$x^3-x=x \\left(x-1\\right) \\left(x+1\\right)$$ and write it as $$\\frac{A}{x}+\\frac{B}{x-1}+\\frac{C}{x+1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "abae04apartial3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "abae04apartial3a-h1"
+        ],
+        "title": "Solve",
+        "text": "From $$1=A \\left(x-1\\right) \\left(x+1\\right)+B x \\left(x+1\\right)+C x \\left(x-1\\right)$$, plug in $$x=0$$, $$x=1$$ and $$x=-1$$ to get $$A=-1$$, $$B=\\frac{1}{2}$$ and $$C=\\frac{1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

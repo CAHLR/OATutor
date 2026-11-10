@@ -1,0 +1,33 @@
+[
+    {
+        "id": "a1a3d49divIntTest9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integral test",
+        "text": "Compare with $$\\int_{1}^{\\infty} \\frac{1}{x^p} \\,dx$$, which is finite exactly when the exponent makes the antiderivative go to $$0$$ at $$\\infty$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1a3d49divIntTest9a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "diverges"
+        ],
+        "dependencies": [
+            "a1a3d49divIntTest9a-h1"
+        ],
+        "title": "Boundary case",
+        "text": "When $$p=1$$, the series is the harmonic series. Does it converge or diverge?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "converges",
+            "diverges"
+        ]
+    }
+]

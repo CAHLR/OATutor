@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68f5aetaylor7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compute the derivatives",
+        "text": "Every derivative of $$e^x$$ is $$e^x$$, so f(1), the first derivative at $$1$$ and the second derivative at $$1$$ all equal e.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68f5aetaylor7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68f5aetaylor7a-h1"
+        ],
+        "title": "Build the polynomial",
+        "text": "The polynomial is $$e+e \\left(x-1\\right)+\\frac{e}{2} \\left(x-1\\right)^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

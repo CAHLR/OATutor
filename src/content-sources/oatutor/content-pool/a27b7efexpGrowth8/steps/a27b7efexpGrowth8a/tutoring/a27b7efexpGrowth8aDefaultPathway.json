@@ -1,0 +1,46 @@
+[
+    {
+        "id": "a27b7efexpGrowth8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug into the formula",
+        "text": "Use $$A=P e^{r t}$$ with $$P=1000$$, $$r=0.05$$, and $$t=10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth8a-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth8a-h1"
+        ],
+        "title": "Exponent",
+        "text": "What is $$r t$$?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a27b7efexpGrowth8a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$1000e^{0.5}$$"
+        ],
+        "dependencies": [
+            "a27b7efexpGrowth8a-h2"
+        ],
+        "title": "Value",
+        "text": "What is A?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

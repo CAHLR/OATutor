@@ -1,0 +1,45 @@
+[
+    {
+        "id": "a528db4compTest1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose a comparison",
+        "text": "For every $$n$$, $$\\frac{1}{n^2+3}<\\frac{1}{n^2}$$. Choose a series you know.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a528db4compTest1a-h2",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "$$\\frac{1}{n^2}$$"
+        ],
+        "dependencies": [
+            "a528db4compTest1a-h1"
+        ],
+        "title": "Comparison series",
+        "text": "Which series should you compare with?",
+        "variabilization": {},
+        "oer": "",
+        "license": "",
+        "choices": [
+            "$$\\frac{1}{n}$$",
+            "$$\\frac{1}{n^2}$$"
+        ]
+    },
+    {
+        "id": "a528db4compTest1a-h3",
+        "type": "hint",
+        "dependencies": [
+            "a528db4compTest1a-h2"
+        ],
+        "title": "Conclusion",
+        "text": "A smaller series than a convergent series also converges.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
