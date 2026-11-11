@@ -65,6 +65,7 @@ export class DebugPlatform extends React.Component {
 
     componentWillUnmount() {
         this.context.problemID = "n/a"
+        this.context.debug = false
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
