@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Compare the unit sizes",
-        "text": "$$1$$ $$lbf=4.45$$ N, meaning a newton is a smaller unit than a pound-force. If you output a number in lbf and someone reads it as newtons, is that number bigger or smaller than the true newton value?",
+        "text": "$$1\\, \\text{lbf}=4.45\\, \\text{N}, $$ meaning a newton is a smaller unit than a pound-force. If you output a number in lbf and someone reads it as newtons, is that number bigger or smaller than the true newton value?",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -16,7 +16,7 @@
             "acd9137measure26a-h1"
         ],
         "title": "Concrete example",
-        "text": "If $$SM_{FORCES}$$ outputs \"1\" (in lbf) but the reader thinks it's newtons, they believe the force is $$1$$ N - but the true value is $$4.45$$ N. So the output was too small by a factor of $$4.45$$.",
+        "text": "If SM_FORCES outputs \"1\" (in lbf) but the reader thinks it's newtons, they believe the force is $$1\\, \\text{N}$$ - but the true value is $$4.45\\, \\text{N}.$$ So the output was too small by a factor of $$4.45$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

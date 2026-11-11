@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aff979cpolarcoords10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Recall the symmetry tests",
+        "text": "Replace $$(r,\\theta)$$ in the equation. If $$(r,-\\theta)$$ or $$(-r,\\pi-\\theta)$$ gives the same equation, the graph is symmetric about the x-axis. If $$(-r,-\\theta)$$ or $$(r,\\pi-\\theta)$$ gives the same equation, it is symmetric about the y-axis. If $$(-r,\\theta)$$ or $$(r,\\theta+\\pi)$$ gives the same equation, it is symmetric about the origin.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aff979cpolarcoords10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff979cpolarcoords10a-h1"
+        ],
+        "title": "Apply the tests",
+        "text": "Replacing \u03b8 with $$\\theta+\\pi$$ gives $$3sin\\left(2\\theta+2\\pi\\right)=3sin\\left(2\\theta\\right)$$, so the graph is symmetric about the origin. Replacing $$(r,\\theta)$$ with $$(-r,-\\theta)$$ gives $$-r=3sin\\left(-2\\theta\\right)$$, which is $$r=3sin\\left(2\\theta\\right)$$ again, so it is symmetric about the y-axis. A graph symmetric about the origin and the y-axis is also symmetric about the x-axis.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -39,13 +39,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2.5*$$10**{3}$$*9.8"
+            "$$2.5\\times{10}^3\\times9.8$$"
         ],
         "dependencies": [
             "a56bd16newtonapps21a-h3"
         ],
         "title": "Calculate the Weight of the Airplane",
-        "text": "The weight of the airplane can be calculated using the formula: weight $$=$$ mass * gravity. Use gravity as $$9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}$$.",
+        "text": "The weight of the airplane can be calculated using the formula: weight $$=$$ mass \u00d7 gravity. Use gravity as $$9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -56,13 +56,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2.5*$$10**{3}$$*9.8/cos(30)"
+            "$$2.5\\times10**{3}\\cdot9.8/\\cos(30)$$"
         ],
         "dependencies": [
             "a56bd16newtonapps21a-h4"
         ],
         "title": "Find the Lift Force",
-        "text": "The vertical component of the lift force is equal to the weight of the airplane. Use the formula: lift_force*cos($$30**\\circ$$) $$=$$ weight.",
+        "text": "The vertical component of the lift force is equal to the weight of the airplane. Use the formula: lift force \u00d7 $$\\cos(30**\\circ)$$ $$=$$ weight.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

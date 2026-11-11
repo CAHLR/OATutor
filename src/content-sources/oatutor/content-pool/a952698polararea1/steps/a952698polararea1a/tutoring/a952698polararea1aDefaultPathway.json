@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "The circle is traced once as \u03b8 goes from $$0$$ to $$\\pi$$ so the area is $$A=\\frac{1}{2}\\int_{0}**{\\pi}36\\sin**2\\theta\\,d\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea1a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Use $$sin^2\\left(\\theta\\right)=\\frac{1-cos\\left(2\\theta\\right)}{2}$$. Then $$A=9\\int_{0}**{\\pi}(1-\\cos2\\theta)\\,d\\theta=9\\pi$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

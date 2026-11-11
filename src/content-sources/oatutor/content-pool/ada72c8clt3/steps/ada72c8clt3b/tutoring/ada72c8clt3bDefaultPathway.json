@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ada72c8clt3b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "We can replace the population SD with the largest SD possible for a population of 1s and 0s. This is our \"worst case\" SD (see Chapter $$14.6$$ of the textbook).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ada72c8clt3b-h2",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$0.5$$"
+        ],
+        "dependencies": [
+            "ada72c8clt3b-h1"
+        ],
+        "title": "Hint",
+        "text": "What is the maximum possible SD of a population of 1s and 0s?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ada72c8clt3b-h3",
+        "type": "hint",
+        "dependencies": [
+            "ada72c8clt3b-h2"
+        ],
+        "title": "Hint",
+        "text": "Set $$4$$ * $$0.5$$ / sqrt(sample size) $$ \\leq $$ $$0.1$$ and solve for the sample size.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -16,7 +16,7 @@
             "a88c93efixedaxis18a-h1"
         ],
         "title": "Convert Units",
-        "text": "First, convert the initial angular velocity from revolutions per minute to radians per second. Remember, $$1$$ revolution is $$2\\$\\$\\pi$$ radians.",
+        "text": "First, convert the initial angular velocity from revolutions per minute to radians per second. Remember, $$1$$ revolution is $$2\\pi$$ radians.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -62,7 +62,7 @@
             "a88c93efixedaxis18a-h4"
         ],
         "title": "Calculate Angular Deceleration",
-        "text": "Use the formula for angular deceleration: $$\\alpha$$ $$=$$ ($$\\omega_{\\text{final}}-\\omega_{\\text{initial}}$$) / time.",
+        "text": "Use the formula for angular deceleration: $$\\alpha$$ $$=$$ $$(\\omega_{\\text{final}}-\\omega_{\\text{initial}})$$ / time.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -74,7 +74,7 @@
             "a88c93efixedaxis18a-h5"
         ],
         "title": "Torque and Moment of Inertia",
-        "text": "The frictional torque can be found using the relationship between torque, moment of inertia, and angular acceleration: $$\\tau=I*\\alpha$$.",
+        "text": "The frictional torque can be found using the relationship between torque, moment of inertia, and angular acceleration: $$\\tau=I\\alpha$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -91,7 +91,7 @@
             "a88c93efixedaxis18a-h6"
         ],
         "title": "Calculate Frictional Torque",
-        "text": "Use the moment of inertia (I $$=$$ $$100$$ kg*m**2) and the angular deceleration to find the frictional torque.",
+        "text": "Use the moment of inertia $$(I=100\\,\\text{kg}\\cdot\\text{m}**{2})$$ and the angular deceleration to find the frictional torque.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

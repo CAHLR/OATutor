@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Compare the curves",
+        "text": "Since $$1+cos\\left(\\theta\\right) \\geq cos(\\theta)$$ for every \u03b8, the circle $$r=cos(\\theta)$$ lies completely inside the cardioid. So the area is the area of the cardioid minus the area of the circle.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea9a-h1"
+        ],
+        "title": "Compute each area",
+        "text": "The cardioid has area $$\\frac{1}{2}\\int_{0}**{2\\pi}(1+\\cos\\theta)**2\\,d\\theta=\\frac{3\\pi}{2}$$ and the circle $$r=cos(\\theta)$$ has radius $$\\frac{1}{2}$$, so its area is $$\\frac{\\pi}{4}$$. The answer is $$\\frac{3\\pi}{2}-\\frac{\\pi}{4}=\\frac{5\\pi}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

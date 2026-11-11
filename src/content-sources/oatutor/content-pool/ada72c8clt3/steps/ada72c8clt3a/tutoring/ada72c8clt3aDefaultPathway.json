@@ -1,0 +1,41 @@
+[
+    {
+        "id": "ada72c8clt3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Hint",
+        "text": "A 95% confidence interval extends about $$2$$ SDs of the sample mean on each side of its center, so width of 95% CI $$=$$ $$4$$ * (population SD / sqrt(sample size)).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ada72c8clt3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ada72c8clt3a-h1"
+        ],
+        "title": "Hint",
+        "text": "Set $$4$$ * $$0.2$$ / sqrt(sample size) $$ \\leq $$ $$0.1$$ and solve for sqrt(sample size).",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ada72c8clt3a-h3",
+        "type": "scaffold",
+        "problemType": "TextBox",
+        "answerType": "arithmetic",
+        "hintAnswer": [
+            "$$8$$"
+        ],
+        "dependencies": [
+            "ada72c8clt3a-h2"
+        ],
+        "title": "Hint",
+        "text": "What is the smallest value sqrt(sample size) can be?",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -33,7 +33,7 @@
             "a949afaangmom19a-h2"
         ],
         "title": "Convert RPM to Radians per Second",
-        "text": "Convert the initial angular velocity from rpm to radians per second. Use the conversion factor: $$1\\,\\text{rpm}=2$$*pi/$$60\\,\\tfrac{\\text{rad}}{\\text{s}}$$.",
+        "text": "Convert the initial angular velocity from rpm to radians per second. Use the conversion factor: $$1\\,\\text{rpm}=2\\pi/60\\,\\tfrac{\\text{rad}}{\\text{s}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -44,7 +44,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "(1/2)*100*$$1.6**{2}$$+(22+28+33)*$$1.6**{2}$$"
+            "$$100\\frac{1}{2}\\times{1.6}^2+{1.6}^2\\left(22+28+33\\right)$$"
         ],
         "dependencies": [
             "a949afaangmom19a-h3"
@@ -73,7 +73,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "(1/2)*100*$$1.6**{2}$$+(22+33)*$$1.6**{2}$$"
+            "$$100\\frac{1}{2}\\times{1.6}^2+{1.6}^2\\left(22+33\\right)$$"
         ],
         "dependencies": [
             "a949afaangmom19a-h5"
@@ -103,7 +103,7 @@
             "a949afaangmom19a-h7"
         ],
         "title": "Calculate Final Angular Velocity",
-        "text": "Use the formula $$L_{\\text{initial}}=L_{\\text{final}}$$, $$where$$ $$L=I\\omega$$. $$Solve$$ $$for$$ $$the$$ $$final$$ $$angular$$ $$velocity$$.",
+        "text": "Use the formula $$L_{\\text{initial}}=L_{\\text{final}},$$ where $$L=I\\omega.$$ Solve for the final angular velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

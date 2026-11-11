@@ -33,7 +33,7 @@
             "a16844emotion2d22a-h2"
         ],
         "title": "Calculate Tangential Acceleration",
-        "text": "Convert $$9.0$$ km/h\u00b2 to m/s\u00b2.",
+        "text": "Convert $$9.0\\,\\tfrac{\\text{km}}{\\text{h}**{2}}$$ to m/s\u00b2.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -62,7 +62,7 @@
             "a16844emotion2d22a-h4"
         ],
         "title": "Calculate Centripetal Acceleration",
-        "text": "Use the formula $$a_{c}=v$$\u00b2/r, $$where$$ $$v$$ $$is$$ $$the$$ $$speed$$ $$in$$ $$\\frac{m}{s}$$ $$and$$ $$r$$ $$is$$ $$the$$ $$radius$$ $$in$$ $$meters$$. $$Convert$$ $$60.0\\, \\tfrac{\\text{km}}{\\text{hr}}$$ to $$\\frac{m}{s}$$ first.",
+        "text": "Use the formula $$a_{c}=v**{2}/r,$$ where $$v$$ is the speed in $$\\tfrac{\\text{m}}{\\text{s}}$$ and $$r$$ is the radius in meters. Convert $$60.0\\, \\tfrac{\\text{km}}{\\text{hr}}$$ to $$\\tfrac{\\text{m}}{\\text{s}}$$ first.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -92,7 +92,7 @@
             "a16844emotion2d22a-h6"
         ],
         "title": "Calculate Total Acceleration",
-        "text": "Use the formula a=sqrt(a_t\u00b2+a_c\u00b2), where $$a_t$$ is the tangential acceleration and $$a_c$$ is the centripetal acceleration.",
+        "text": "Use the formula $$a=\\sqrt{a_{t}**{2}+a_{c}**{2}},$$ where $$a_{t}$$ is the tangential acceleration and $$a_{c}$$ is the centripetal acceleration.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

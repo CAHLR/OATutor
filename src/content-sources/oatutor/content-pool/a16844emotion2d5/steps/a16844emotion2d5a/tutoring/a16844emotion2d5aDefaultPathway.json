@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Problem",
-        "text": "The F-35B Lightning II takes off vertically to a height of $$20.00\\, \\text{m}$$ and then follows a path angled at $$30**\\circ$$ for $$20.00\\, \\text{km}$$. $$We$$ $$need$$ $$to$$ $$find$$ $$the$$ $$final$$ $$displacement$$ $$in$$ $$terms$$ $$of$$ $$horizontal$$ $$and$$ $$vertical$$ $$components$$.",
+        "text": "The F-35B Lightning II takes off vertically to a height of $$20.00\\, \\text{m}$$ and then follows a path angled at $$30**\\circ$$ for $$20.00\\, \\text{km}.$$ We need to find the final displacement in terms of horizontal and vertical components.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,7 +33,7 @@
             "a16844emotion2d5a-h2"
         ],
         "title": "Calculating Horizontal Component",
-        "text": "Use the cosine function to find the horizontal component of the $$20.00\\, \\text{km}$$ path. The formula is: horizontal component $$=$$ 20.00*cos($$30**\\circ$$).",
+        "text": "Use the cosine function to find the horizontal component of the $$20.00\\, \\text{km}$$ path. The formula is: horizontal component $$=$$ $$20.00\\cos(30**\\circ)$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -50,7 +50,7 @@
             "a16844emotion2d5a-h2"
         ],
         "title": "Calculating Vertical Component",
-        "text": "Use the sine function to find the vertical component of the $$20.00\\, \\text{km}$$ path. The formula is: vertical component $$=$$ 20.00*sin($$30**\\circ$$).",
+        "text": "Use the sine function to find the vertical component of the $$20.00\\, \\text{km}$$ path. The formula is: vertical component $$=$$ $$20.00\\sin(30**\\circ)$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -67,7 +67,7 @@
             "a16844emotion2d5a-h4"
         ],
         "title": "Adding the Initial Vertical Displacement",
-        "text": "Don't forget to add the initial vertical displacement of $$20.00\\, \\text{m}$$ (or $$0.02\\, \\text{km}\\$\\$)$$ $$to$$ $$the$$ $$vertical$$ $$component$$ $$calculated$$ $$from$$ $$the$$ $$angled$$ $$path$$.",
+        "text": "Don't forget to add the initial vertical displacement of $$20.00\\, \\text{m}$$ (or $$0.02\\, \\text{km})$$ to the vertical component calculated from the angled path.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -96,7 +96,7 @@
             "a16844emotion2d5a-h6"
         ],
         "title": "Final Displacement Calculation",
-        "text": "The final displacement vector is given by combining the horizontal and vertical components: $$17.32i+10.02j$$ km.",
+        "text": "The final displacement vector is given by combining the horizontal and vertical components: $$(17.32\\,\\text{km})\\hat{i}+(10.02\\,\\text{km})\\hat{j}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

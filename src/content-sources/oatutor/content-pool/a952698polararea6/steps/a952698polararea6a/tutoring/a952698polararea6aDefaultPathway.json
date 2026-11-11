@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find where the inner loop starts and ends",
+        "text": "$$r=0$$ when $$cos(\\theta)=\\frac{-1}{2}$$, which happens at $$\\theta=\\frac{2\\pi}{3}$$ and $$\\theta=\\frac{4\\pi}{3}$$. Between these angles $$r$$ is negative, and that part of the curve is the inner loop.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea6a-h1"
+        ],
+        "title": "Set up and evaluate",
+        "text": "Expand $$\\left(3+6cos\\left(\\theta\\right)\\right)^2$$ and use $$cos^2\\left(\\theta\\right)=\\frac{1+cos\\left(2\\theta\\right)}{2}$$. Then $$A=\\frac{1}{2}\\int_{2\\pi/3}**{4\\pi/3}(3+6\\cos\\theta)**2\\,d\\theta=\\frac{18\\pi-27\\sqrt{3}}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

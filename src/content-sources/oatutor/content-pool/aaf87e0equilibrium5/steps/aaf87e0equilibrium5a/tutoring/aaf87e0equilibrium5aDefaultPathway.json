@@ -28,7 +28,7 @@
             "aaf87e0equilibrium5a-h2"
         ],
         "title": "Calculating Shear Stress",
-        "text": "Shear stress $$\\tau$$ is calculated using the formula $$\\tau=\\frac{F}{A}$$ where $$F$$ is the force applied and A is the cross-sectional area. For a cylinder, $$A=\\pi{}(d/2)**{2},$$ where $$d$$ is the diameter.",
+        "text": "Shear stress $$\\tau$$ is calculated using the formula $$\\tau=F/A{,}$$ where $$F$$ is the force applied and $$A$$ is the cross-sectional area. For a cylinder, $$A=\\pi{}(d/2)**{2},$$ where $$d$$ is the diameter.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -39,7 +39,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$A=\\pi \\left(\\frac{0.04}{2}\\right)^2$$"
+            "$$\\pi \\left(\\frac{0.04}{2}\\right)^2$$"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h3"
@@ -56,7 +56,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\u03c4=\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}$$"
+            "$$\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}$$"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h4"
@@ -73,13 +73,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "\u03b3=(900/((pi*(0.04/2)**2)))/(2.5*$$10**{10}$$"
+            "$$\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h5"
         ],
         "title": "Calculate Shear Strain",
-        "text": "Shear strain $$\\gamma$$ is calculated using the formula $$\\gamma=\\tau/G,$$ where $$\\tau$$ is the shear stress and G is the shear modulus.",
+        "text": "Shear strain $$\\gamma$$ is calculated using the formula $$\\gamma=\\tau/G,$$ where $$\\tau$$ is the shear stress and $$G$$ is the shear modulus.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -90,7 +90,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "\u0394x=((900/((pi*(0.04/2)**2)))/(2.5*$$10**{10}$$)*20"
+            "$$20\\frac{\\frac{900}{\\pi \\left(\\frac{0.04}{2}\\right)^2}}{2.5\\times{10}^{10}}$$"
         ],
         "dependencies": [
             "aaf87e0equilibrium5a-h6"

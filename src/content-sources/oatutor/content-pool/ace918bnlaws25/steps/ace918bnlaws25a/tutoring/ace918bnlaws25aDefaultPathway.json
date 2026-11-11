@@ -39,13 +39,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0.5*$$v_{0}$$*t"
+            "$$0.5v_0 t$$"
         ],
         "dependencies": [
             "ace918bnlaws25a-h3"
         ],
         "title": "Calculating Distance for One Part",
-        "text": "Use the formula for distance traveled under constant acceleration: distance $$=$$ initial velocity * time + $$0.5$$ * acceleration * $${time}^2$$. Since the velocity changes from $$v_{0}$$ to $$0$$ in time $$t$$, the acceleration is -$$v_{0}$$/t.",
+        "text": "Use the formula for distance traveled under constant acceleration: distance $$=$$ initial velocity \u00d7 time + $$0.5$$ \u00d7 acceleration \u00d7 time\u00b2. Since the velocity changes from $$v_{0}$$ to $$0$$ in time $$t$$, the acceleration is $$-v_{0}/t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -56,7 +56,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$v_{0}$$*t"
+            "$$v_0 t$$"
         ],
         "dependencies": [
             "ace918bnlaws25a-h4"

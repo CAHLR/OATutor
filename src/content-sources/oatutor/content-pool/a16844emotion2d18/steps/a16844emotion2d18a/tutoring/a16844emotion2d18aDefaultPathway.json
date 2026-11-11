@@ -16,7 +16,7 @@
             "a16844emotion2d18a-h1"
         ],
         "title": "Formula for Centripetal Acceleration",
-        "text": "The formula for centripetal acceleration $$a_c$$ is given by $$a_c=v**{2}/r$$, $$where$$ $$v$$ is the linear velocity and $$r$$ is the radius of the circular path.",
+        "text": "The formula for centripetal acceleration $$a_c$$ is given by $$a_c=v**{2}/r,$$ where $$v$$ is the linear velocity and $$r$$ is the radius of the circular path.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "a16844emotion2d18a-h2"
         ],
         "title": "Relating Centripetal Acceleration to Gravity",
-        "text": "We need the centripetal acceleration to be equal to the acceleration due to gravity $$g$$, $$which$$ $$is$$ $$approximately$$ $$9.8\\,m/s**{2}$$.",
+        "text": "We need the centripetal acceleration to be equal to the acceleration due to gravity $$g, $$ which is approximately $$9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -57,7 +57,7 @@
             "a16844emotion2d18a-h4"
         ],
         "title": "Calculate the Linear Velocity",
-        "text": "Using the equation $$v**{2}/r=g$$, $$solve$$ $$for$$ $$v$$.",
+        "text": "Using the equation $$v**{2}/r=g,$$ solve for $$v$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -69,7 +69,7 @@
             "a16844emotion2d18a-h5"
         ],
         "title": "Convert Linear Velocity to Angular Velocity",
-        "text": "The angular velocity $$\\omega$$ is related to the linear velocity $$v$$ by the equation $$v=\\omega*r$$.",
+        "text": "The angular velocity $$\\omega$$ is related to the linear velocity $$v$$ by the equation $$v=\\omega{r}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -80,13 +80,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$\\omega=\\frac{v}{r}$$"
+            "$$\\frac{v}{r}$$"
         ],
         "dependencies": [
             "a16844emotion2d18a-h6"
         ],
         "title": "Calculate Angular Velocity",
-        "text": "Using $$v=\\omega*r$$, $$solve$$ $$for$$ $$\\omega$$.",
+        "text": "Using $$v=\\omega{r}, $$ solve for $$\\omega$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -98,7 +98,7 @@
             "a16844emotion2d18a-h7"
         ],
         "title": "Convert Angular Velocity to Revolutions per Minute",
-        "text": "To convert $$\\omega$$ from $$\\frac{rad}{s}$$ to $$\\frac{rev}{min}$$, $$use$$ $$the$$ $$conversion$$ $$factor$$ $$1\\, rev=2\\pi\\, rad$$ and $$1\\, min=60\\, s$$.",
+        "text": "To convert $$\\omega$$ from $$\\tfrac{\\text{rad}}{\\text{s}}$$ to $$\\tfrac{\\text{rev}}{\\text{min}}, $$ use the conversion factor $$1\\, \\text{rev}=2\\pi\\, \\text{rad}$$ and $$1\\, \\text{min}=60\\, \\text{s}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -115,7 +115,7 @@
             "a16844emotion2d18a-h8"
         ],
         "title": "Calculate Revolutions per Minute",
-        "text": "Convert $$\\omega$$ from $$\\frac{rad}{s}$$ to $$\\frac{rev}{min}$$.",
+        "text": "Convert $$\\omega$$ from $$\\tfrac{\\text{rad}}{\\text{s}}$$ to $$\\tfrac{\\text{rev}}{\\text{min}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

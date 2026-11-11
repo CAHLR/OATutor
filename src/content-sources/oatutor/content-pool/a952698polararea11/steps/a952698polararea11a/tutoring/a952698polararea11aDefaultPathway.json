@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the arc length formula",
+        "text": "The arc length is $$L=\\int_{\\alpha}**{\\beta}\\sqrt{r**2+(r')**2}\\,d\\theta$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea11a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Here $$r'=3e^{3\\theta}$$, so the integrand is $$\\sqrt{e^{6\\theta}+9e^{6\\theta}}=\\sqrt{10} e^{3\\theta}$$. Integrating from $$0$$ to $$2$$ gives $$\\frac{\\sqrt{10}}{3} \\left(e^6-1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

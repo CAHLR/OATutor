@@ -16,7 +16,7 @@
             "a88c93efixedaxis20a-h1"
         ],
         "title": "Formula for Power",
-        "text": "The power output of a rotating object is given by the formula: Power $$=$$ Torque * Angular Velocity.",
+        "text": "The power output of a rotating object is given by the formula: Power $$=$$ Torque \u00d7 Angular Velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "a88c93efixedaxis20a-h2"
         ],
         "title": "Converting Units",
-        "text": "The angular velocity is given in revolutions per minute $$\\frac{rev}{min}$$. Convert this to radians per second $$\\frac{rad}{s}$$ for use in the formula.",
+        "text": "The angular velocity is given in revolutions per minute $$(\\tfrac{\\text{rev}}{\\text{min}}).$$ Convert this to radians per second $$(\\tfrac{\\text{rad}}{\\text{s}})$$ for use in the formula.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -45,7 +45,7 @@
             "a88c93efixedaxis20a-h3"
         ],
         "title": "Calculate Angular Velocity",
-        "text": "Convert $$20\\, \\tfrac{\\text{rev}}{\\text{min}}$$ to $$\\frac{rad}{s}$$. Use the conversion: $$1\\,\\text{rev}=2$$*pi $$rad$$ $$and$$ $$1\\, \\text{min}=60\\, \\text{s}$$.",
+        "text": "Convert $$20\\, \\tfrac{\\text{rev}}{\\text{min}}$$ to $$\\tfrac{\\text{rad}}{\\text{s}}.$$ Use the conversion: $$1\\, \\text{rev}=2\\pi\\, \\text{rad}$$ and $$1\\, \\text{min}=60\\, \\text{s}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -73,13 +73,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2.0*$$10**{6}$$/(2*pi*20/60)"
+            "$$\\frac{2\\times{10}^6}{\\frac{2\\pi\\times20}{60}}$$"
         ],
         "dependencies": [
             "a88c93efixedaxis20a-h5"
         ],
         "title": "Calculate Torque",
-        "text": "Substitute the values into the formula: Power $$=$$ $$2.0$$ MW $$=$$ $$2.0\\times10**{6}\\,\\text{W}$$, $$Angular$$ $$Velocity$$ $$=$$ 2*pi*20/$$60\\,\\tfrac{\\text{rad}}{\\text{s}}$$.",
+        "text": "Substitute the values into the formula: Power $$=$$ $$2.0\\, \\text{MW}$$ $$=$$ $$2.0\\times10**{6}\\,\\text{W},$$ Angular Velocity $$=$$ $$2\\pi\\times20/60\\,\\tfrac{\\text{rad}}{\\text{s}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

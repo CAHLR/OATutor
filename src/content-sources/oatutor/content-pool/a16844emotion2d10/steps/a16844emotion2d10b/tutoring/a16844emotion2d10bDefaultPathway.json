@@ -16,7 +16,7 @@
             "a16844emotion2d10b-h1"
         ],
         "title": "Vertical Motion Equation",
-        "text": "The vertical motion of the projectile can be described by the equation: $$v_{y}=v_{0y}-gt$$, $$where$$ $$v_{y}$$ is the vertical velocity, $$v_{0y}$$ is the initial vertical velocity, g is the acceleration due to gravity ($$9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}$$), and $$t$$ is the time.",
+        "text": "The vertical motion of the projectile can be described by the equation: $$v_{y}=v_{0y}-gt,$$ where $$v_{y}$$ is the vertical velocity, $$v_{0y}$$ is the initial vertical velocity, $$g$$ is the acceleration due to gravity $$(9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}),$$ and $$t$$ is the time.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "a16844emotion2d10b-h2"
         ],
         "title": "Initial Vertical Velocity",
-        "text": "The initial vertical velocity can be found using the equation: $$v_{0y}=v_{0}\\sin(\\theta)$$, $$where$$ $$v_{0}$$ is the initial speed and $$\\theta$$ is the launch angle.",
+        "text": "The initial vertical velocity can be found using the equation: $$v_{0y}=v_{0}\\sin(\\theta),$$ where $$v_{0}$$ is the initial speed and $$\\theta$$ is the launch angle.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -40,7 +40,7 @@
             "a16844emotion2d10b-h3"
         ],
         "title": "Time to Reach Maximum Height",
-        "text": "The time to reach maximum height is when the vertical velocity is zero. Use the equation: $$0$$ $$=$$ $$v_{0y}$$ - g*$$t_{\\text{max}}$$, solve for $$t_{\\text{max}}$$.",
+        "text": "The time to reach maximum height is when the vertical velocity is zero. Use the equation: $$0=v_{0y}-gt_{\\text{max}},$$ solve for $$t_{\\text{max}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -57,7 +57,7 @@
             "a16844emotion2d10b-h3"
         ],
         "title": "Calculate Initial Vertical Velocity",
-        "text": "Given the launch angle is $$30**\\circ$$, $$calculate$$ $$the$$ $$initial$$ $$vertical$$ $$velocity$$ $$using$$ $$v_{0y}=v_{0}\\sin(30)$$.",
+        "text": "Given the launch angle is $$30**\\circ,$$ calculate the initial vertical velocity using $$v_{0y}=v_{0}\\sin(30)$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -68,13 +68,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$t_{\\text{max}}$$=$$v_{0y}$$/9.8"
+            "$$t_{max}=v_{0y}/9.8$$"
         ],
         "dependencies": [
             "a16844emotion2d10b-h5"
         ],
         "title": "Calculate Time to Maximum Height",
-        "text": "Using the equation $$0$$ $$=$$ $$v_{0y}$$ - g*$$t_{\\text{max}}$$, solve for $$t_{\\text{max}}$$.",
+        "text": "Using the equation $$0=v_{0y}-gt_{\\text{max}},$$ solve for $$t_{\\text{max}}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -85,13 +85,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$h_{\\text{max}}$$=$$v_{0y}$$*($$v_{0y}$$/9.8)-0.5*9.8*($$v_{0y}$$/9.8)**2"
+            "$$h_{max}=v_{0y}*(v_{0y}/9.8)-0.5*9.8*(v_{0y}/9.8)**2$$"
         ],
         "dependencies": [
             "a16844emotion2d10b-h6"
         ],
         "title": "Calculate Maximum Altitude",
-        "text": "Use the equation for vertical displacement: $$h_{\\text{max}}$$ $$=$$ $$v_{0y}$$*$$t_{\\text{max}}$$ - 0.5*g*$$t_{\\text{max}}$$**2.",
+        "text": "Use the equation for vertical displacement: $$h_{\\text{max}}=v_{0y}t_{\\text{max}}-0.5gt_{\\text{max}}**{2}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

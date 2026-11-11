@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the slope formula",
+        "text": "Since $$x=r cos\\left(\\theta\\right)$$ and $$y=r sin\\left(\\theta\\right)$$, the slope is $$\\frac{dy}{dx}=\\frac{r'\\sin\\theta+r\\cos\\theta}{r'\\cos\\theta-r\\sin\\theta}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea17a-h1"
+        ],
+        "title": "Plug in",
+        "text": "At $$\\theta=\\frac{\\pi}{3}$$, $$r=2$$ and $$r'=-4sin\\left(\\frac{\\pi}{3}\\right)=-2\\sqrt{3}$$. Then $$r' sin\\left(\\theta\\right)+r cos\\left(\\theta\\right)=-3+1=-2$$ and $$r' cos\\left(\\theta\\right)-r sin\\left(\\theta\\right)=-\\sqrt{3}-\\sqrt{3}=-2\\sqrt{3}$$, so the slope is $$\\frac{1}{\\sqrt{3}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

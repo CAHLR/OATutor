@@ -16,7 +16,7 @@
             "a16844emotion2d7c-h1"
         ],
         "title": "Differentiate the Position Function",
-        "text": "The position function is given as $$r(t)=3.0t**{2}i-7.0t**{3}j-5.0t**{-2}k$$. $$Differentiate$$ $$each$$ $$component$$ $$separately$$ $$with$$ $$respect$$ $$to$$ $$t$$.",
+        "text": "The position function is given as $$\\vec{r}(t)=3.0t**{2}\\hat{i}-7.0t**{3}\\hat{j}-5.0t**{-2}\\hat{k}.$$ Differentiate each component separately with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,7 +33,7 @@
             "a16844emotion2d7c-h2"
         ],
         "title": "Differentiate the i Component",
-        "text": "Differentiate 3.0*$$t**{2}$$ with respect to $$t$$.",
+        "text": "Differentiate $$3.0t**{2}$$ with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -44,13 +44,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "-21.0*$$t**{2}$$"
+            "$$-21t^2$$"
         ],
         "dependencies": [
             "a16844emotion2d7c-h2"
         ],
         "title": "Differentiate the j Component",
-        "text": "Differentiate -7.0*$$t**{3}$$ with respect to $$t$$.",
+        "text": "Differentiate $$-7.0t**{3}$$ with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -61,13 +61,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "10.0*$$t**{-3}$$"
+            "$$10t^{\\left(-3\\right)}$$"
         ],
         "dependencies": [
             "a16844emotion2d7c-h2"
         ],
         "title": "Differentiate the k Component",
-        "text": "Differentiate -5.0*$$t**{-2}$$ with respect to $$t$$.",
+        "text": "Differentiate $$-5.0t**{-2}$$ with respect to $$t$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -81,7 +81,7 @@
             "a16844emotion2d7c-h5"
         ],
         "title": "Combine the Components",
-        "text": "Combine the differentiated components to form the velocity vector: $$v(t)=6.0ti-21.0t**{2}j+10.0t**{-3}k$$.",
+        "text": "Combine the differentiated components to form the velocity vector: $$\\vec{v}(t)=6.0t\\hat{i}-21.0t**{2}\\hat{j}+10.0t**{-3}\\hat{k}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -98,7 +98,7 @@
             "a16844emotion2d7c-h6"
         ],
         "title": "Evaluate at $$t=2.0\\, \\text{s}$$",
-        "text": "Substitute $$t=2.0$$ into the velocity function $$v(t)=6.0ti-21.0t**{2}j+10.0t**{-3}k$$ to find the velocity at $$t=2.0\\, \\text{s}$$.",
+        "text": "Substitute $$t=2.0$$ into the velocity function $$\\vec{v}(t)=6.0t\\hat{i}-21.0t**{2}\\hat{j}+10.0t**{-3}\\hat{k}$$ to find the velocity at $$t=2.0\\, \\text{s}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

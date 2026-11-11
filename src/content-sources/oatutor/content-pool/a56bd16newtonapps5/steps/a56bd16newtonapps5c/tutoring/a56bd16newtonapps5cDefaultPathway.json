@@ -28,7 +28,7 @@
             "a56bd16newtonapps5c-h2"
         ],
         "title": "Calculating Work Done",
-        "text": "The work done by the force can be calculated using the formula: $$Work=Force Distance$$. Here, the distance is the height the shell reaches, which is $$110.0\\, \\text{m}$$.",
+        "text": "The work done by the force can be calculated using the formula: Work $$=$$ Force \u00d7 Distance. Here, the distance is the height the shell reaches, which is $$110.0\\, \\text{m}$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -52,7 +52,7 @@
             "a56bd16newtonapps5c-h4"
         ],
         "title": "Final Kinetic Energy",
-        "text": "The final kinetic energy can be calculated using the formula: KE=0.5*m*$$v**{2}$$, where $$m$$ is the mass of the shell and v is its final velocity.",
+        "text": "The final kinetic energy can be calculated using the formula: $$KE=0.5mv**{2},$$ where $$m$$ is the mass of the shell and $$v$$ is its final velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -63,13 +63,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$v=\\sqrt{2\\times9.8\\times110}$$"
+            "$$\\sqrt{2\\times9.8\\times110}$$"
         ],
         "dependencies": [
             "a56bd16newtonapps5c-h5"
         ],
         "title": "Finding Final Velocity",
-        "text": "Use the formula $$v**{2}=u**{2}+2as$$ to find the final velocity, where u is the initial velocity $$(0\\, \\tfrac{\\text{m}}{\\text{s}}), $$ $$a$$ is the acceleration due to gravity $$(-9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}),$$ and $$s$$ is the height $$(110.0\\, \\text{m})$$.",
+        "text": "Use the formula $$v**{2}=u**{2}+2as$$ to find the final velocity, where $$u$$ is the initial velocity $$(0\\, \\tfrac{\\text{m}}{\\text{s}}), $$ $$a$$ is the acceleration due to gravity $$(-9.8\\,\\tfrac{\\text{m}}{\\text{s}**{2}}),$$ and $$s$$ is the height $$(110.0\\, \\text{m})$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -80,7 +80,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$KE=0.5\\times2.5 {\\sqrt{2\\times9.8\\times110}}^2$$"
+            "$$0.5\\times2.5 {\\sqrt{2\\times9.8\\times110}}^2$$"
         ],
         "dependencies": [
             "a56bd16newtonapps5c-h6"
@@ -103,7 +103,7 @@
             "a56bd16newtonapps5c-h7"
         ],
         "title": "Calculate Average Force",
-        "text": "Use the work-energy principle: $$Work=Force Distance=Change$$ in Kinetic Energy. Solve for Force.",
+        "text": "Use the work-energy principle: Work $$=$$ Force \u00d7 Distance $$=$$ Change in Kinetic Energy. Solve for Force.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

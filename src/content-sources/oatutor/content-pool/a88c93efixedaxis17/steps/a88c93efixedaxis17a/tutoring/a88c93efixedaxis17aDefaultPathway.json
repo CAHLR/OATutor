@@ -16,7 +16,7 @@
             "a88c93efixedaxis17a-h1"
         ],
         "title": "Formula for Torque",
-        "text": "The formula for torque $$\\tau$$ is given by $$\\tau=I*\\alpha$$, $$where$$ $$I$$ $$is$$ $$the$$ $$moment$$ $$of$$ $$inertia$$ $$and$$ $$\\alpha$$ is the angular acceleration.",
+        "text": "The formula for torque $$\\tau$$ is given by $$\\tau=I\\alpha, $$ where $$I$$ is the moment of inertia and $$\\alpha$$ is the angular acceleration.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "a88c93efixedaxis17a-h2"
         ],
         "title": "Finding Angular Acceleration",
-        "text": "Angular acceleration $$\\alpha$$ can be calculated using the formula $$\\alpha$$=($$\\omega_{f}-\\omega_{i}$$)/t, $$where$$ $$\\omega_{f}$$ is the final angular velocity, $$\\omega_{i}$$ is the initial angular velocity, and $$t$$ is the time taken.",
+        "text": "Angular acceleration $$\\alpha$$ can be calculated using the formula $$\\alpha=(\\omega_{f}-\\omega_{i})/t,$$ where $$\\omega_{f}$$ is the final angular velocity, $$\\omega_{i}$$ is the initial angular velocity, and $$t$$ is the time taken.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -45,7 +45,7 @@
             "a88c93efixedaxis17a-h3"
         ],
         "title": "Calculate Angular Acceleration",
-        "text": "Given that the initial angular velocity ($$\\omega_{i}$$) is $$0\\, \\tfrac{\\text{rad}}{\\text{s}}$$, $$the$$ $$final$$ $$angular$$ $$velocity$$ ($$\\omega_{f}$$) $$is$$ $$20\\, \\tfrac{\\text{rad}}{\\text{s}}$$, $$and$$ $$the$$ $$time$$ $$t$$ is $$10\\, \\text{s}$$, $$calculate$$ $$the$$ $$angular$$ $$acceleration$$ $$\\alpha$$.",
+        "text": "Given that the initial angular velocity $$(\\omega_{i})$$ is $$0\\, \\tfrac{\\text{rad}}{\\text{s}}, $$ the final angular velocity $$(\\omega_{f})$$ is $$20\\, \\tfrac{\\text{rad}}{\\text{s}}, $$ and the time $$t$$ is $$10\\, \\text{s}, $$ calculate the angular acceleration $$\\alpha$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -62,7 +62,7 @@
             "a88c93efixedaxis17a-h4"
         ],
         "title": "Calculate Torque",
-        "text": "Now that you have the angular acceleration $$\\alpha$$ and the moment of inertia $$I$$ is $$4$$ $$kg m^2$$, use the formula $$\\tau=I*\\alpha$$ to find the torque.",
+        "text": "Now that you have the angular acceleration $$\\alpha$$ and the moment of inertia $$I$$ is $$4\\,\\text{kg}\\cdot\\text{m}**{2},$$ use the formula $$\\tau=I\\alpha$$ to find the torque.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

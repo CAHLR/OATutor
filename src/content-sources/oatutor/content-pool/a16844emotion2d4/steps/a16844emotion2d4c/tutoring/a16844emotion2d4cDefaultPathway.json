@@ -15,7 +15,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "0\\hat{i}-3.0\\hat{j}+0\\hat{k}"
+            "$$0i-3j+0k$$"
         ],
         "dependencies": [
             "a16844emotion2d4c-h1"
@@ -32,7 +32,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}"
+            "$$4i-3j+2k$$"
         ],
         "dependencies": [
             "a16844emotion2d4c-h2"
@@ -62,7 +62,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4.0\\hat{i}+2.0\\hat{k}"
+            "$$4i+2k$$"
         ],
         "dependencies": [
             "a16844emotion2d4c-h4"
@@ -91,7 +91,7 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "4.0\\hat{i}+2.0\\hat{k}"
+            "$$4i+2k$$"
         ],
         "dependencies": [
             "a16844emotion2d4c-h6"
@@ -102,10 +102,11 @@
         "oer": "openai",
         "license": "",
         "choices": [
-            "4.0\\hat{i}+2.0\\hat{k}",
-            "8.0\\hat{i}+6.0\\hat{k}",
-            "4.0\\hat{i}-3.0\\hat{j}+2.0\\hat{k}",
-            "2.0\\hat{i}+4.0\\hat{k}"
+            "$$4i+2k$$",
+            "$$2i+4k$$",
+            "$$4i+2k$$",
+            "$$4i-3j+2k$$",
+            "$$8i+6k$$"
         ]
     }
 ]

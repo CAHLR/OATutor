@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a952698polararea8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the intersections",
+        "text": "$$6sin\\left(\\theta\\right)=3$$ when $$sin(\\theta)=\\frac{1}{2}$$, at $$\\theta=\\frac{\\pi}{6}$$ and $$\\theta=\\frac{5\\pi}{6}$$. From $$0$$ to $$\\frac{\\pi}{6}$$ the curve $$r=6sin\\left(\\theta\\right)$$ is the inner boundary, and from $$\\frac{\\pi}{6}$$ to $$\\frac{\\pi}{2}$$ the circle $$r=3$$ is.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a952698polararea8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a952698polararea8a-h1"
+        ],
+        "title": "Use symmetry",
+        "text": "The region is symmetric about the y-axis, so double the right half: $$A=2\\left(\\frac{1}{2}\\int_{0}**{\\pi/6}36\\sin**2\\theta\\,d\\theta+\\frac{1}{2}\\int_{\\pi/6}**{\\pi/2}9\\,d\\theta\\right)=6\\pi-\\frac{9\\sqrt{3}}{2}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

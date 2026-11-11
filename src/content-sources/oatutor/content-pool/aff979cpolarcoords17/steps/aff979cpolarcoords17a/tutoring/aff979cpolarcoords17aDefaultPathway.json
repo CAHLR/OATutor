@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aff979cpolarcoords17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "Replace $$x$$ with $$r cos\\left(\\theta\\right)$$ and $$y$$ with $$r sin\\left(\\theta\\right)$$: $$r^2 cos^2\\left(\\theta\\right)-r^2 sin^2\\left(\\theta\\right)=16$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "aff979cpolarcoords17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "aff979cpolarcoords17a-h1"
+        ],
+        "title": "Use a double-angle identity",
+        "text": "$$cos^2\\left(\\theta\\right)-sin^2\\left(\\theta\\right)=cos\\left(2\\theta\\right)$$, so $$r^2 cos\\left(2\\theta\\right)=16$$. Divide both sides by $$\\cos(2\\theta)$$ to get $$r**2=\\frac{16}{\\cos(2\\theta)}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
