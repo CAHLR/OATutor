@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding the Density Function",
-        "text": "The density function is given by $$rho(x,y)=\\rho_0 x y$$. This means that the density varies with both $$x$$ and $$y$$ coordinates. How does this affect the calculation of the center of mass?",
+        "text": "The density function is given by $$\\rho(x,y)=\\rho_0xy.$$ This means that the density varies with both $$x$$ and $$y$$ coordinates. How does this affect the calculation of the center of mass?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -16,7 +16,7 @@
             "abaea60linmom17b-h1"
         ],
         "title": "Formula for Center of Mass",
-        "text": "The y-coordinate of the center of mass is given by the formula: $$y_{\\text{cm}}$$ $$=$$ $$\\frac{1}{M}$$ * $$\\int_{0}^{b} y*rho(x,y) \\,dy$$ * $$\\int_{0}^{a} dx \\,dx$$. What does each part of this formula represent?",
+        "text": "The y-coordinate of the center of mass is given by the formula: $$y_{\\text{cm}}=\\frac{1}{M}\\int_{0}**{a}\\int_{0}**{b}y\\rho(x,y)\\,dy\\,dx.$$ What does each part of this formula represent?",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -28,7 +28,7 @@
             "abaea60linmom17b-h2"
         ],
         "title": "Calculate the Total Mass",
-        "text": "To find the total mass M, integrate the density function over the entire area of the rectangle: M $$=$$ $$\\int_{0}^{a} rho(x,y) \\,dx$$ * $$\\int_{0}^{b} dy \\,dy$$.",
+        "text": "To find the total mass $$M, $$ integrate the density function over the entire area of the rectangle: $$M=\\int_{0}**{b}\\int_{0}**{a}\\rho(x,y)\\,dx\\,dy$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -45,7 +45,7 @@
             "abaea60linmom17b-h3"
         ],
         "title": "Integrate the Density Function",
-        "text": "Calculate the integral of the density function over the $$y\\text{-axis}:$$ $$\\int_{0}^{b} y*rho(x,y) \\,dy$$.",
+        "text": "Calculate the integral of the density function over the $$y\\text{-axis}:$$ $$\\int_{0}**{b}y\\rho(x,y)\\,dy$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -79,7 +79,7 @@
             "abaea60linmom17b-h5"
         ],
         "title": "Calculate the Total Mass",
-        "text": "Integrate the density function over the entire area to find the total mass M: $$\\int_{0}^{a} \\rho_0 x y \\,dx$$ * $$\\int_{0}^{b} dy \\,dy$$.",
+        "text": "Integrate the density function over the entire area to find the total mass $$M:$$ $$\\int_{0}**{b}\\int_{0}**{a}\\rho_0xy\\,dx\\,dy$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""

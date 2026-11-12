@@ -21,7 +21,7 @@
             "abaea60linmom5a-h1"
         ],
         "title": "Calculate the Momentum",
-        "text": "Given the velocity function $$v(t)=2i+4tj$$ and the mass $$m=5.0$$ kg, calculate the momentum $$p(t)$$.",
+        "text": "Given the velocity function $$\\vec{v}(t)=2.0\\hat{i}+4.0t\\hat{j}$$ and the mass $$m=5.0\\, \\text{kg}, $$ calculate the momentum $$p(t)$$.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -33,7 +33,7 @@
             "abaea60linmom5a-h2"
         ],
         "title": "Check Units",
-        "text": "Ensure that the units of your answer are in $$\\frac{kg m}{s}$$, which is the standard unit for momentum.",
+        "text": "Ensure that the units of your answer are in $$\\tfrac{\\text{kg}\\cdot\\text{m}}{\\text{s}}, $$ which is the standard unit for momentum.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -44,7 +44,7 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$10i+20t j$$"
+            "$$10\\hat{i}+20t\\hat{j}$$"
         ],
         "dependencies": [
             "abaea60linmom5a-h2"
@@ -55,10 +55,10 @@
         "oer": "openai",
         "license": "",
         "choices": [
-            "$$10i+20t j$$",
-            "$$2i+4t j$$",
-            "$$10i+4t j$$",
-            "$$10t i+20t j$$"
+            "$$10\\hat{i}+20t\\hat{j}$$",
+            "$$2.0\\hat{i}+4.0t\\hat{j}$$",
+            "$$10\\hat{i}+4.0t\\hat{j}$$",
+            "$$10t\\hat{i}+20t\\hat{j}$$"
         ]
     }
 ]

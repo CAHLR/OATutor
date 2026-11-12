@@ -4,7 +4,7 @@
         "type": "hint",
         "dependencies": [],
         "title": "Understanding Linear Momentum",
-        "text": "Linear momentum is calculated using the formula: momentum $$=$$ mass * velocity. To find Earth's linear momentum, we need to know its mass and velocity.",
+        "text": "Linear momentum is calculated using the formula: momentum $$=$$ mass \u00d7 velocity. To find Earth's linear momentum, we need to know its mass and velocity.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -16,7 +16,7 @@
             "abaea60linmom2a-h1"
         ],
         "title": "Finding Earth's Velocity",
-        "text": "Earth's velocity in its orbit can be calculated using the formula: velocity $$=$$ $$\\frac{2\\pi radius}{time}$$ period. The time period for Earth's orbit is approximately $$365.25$$ days.",
+        "text": "Earth's velocity in its orbit can be calculated using the formula: velocity $$=$$ $$2\\pi$$ \u00d7 radius / time period. The time period for Earth's orbit is approximately $$365.25$$ days.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -39,13 +39,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "2.98E+04"
+            "$$29800$$"
         ],
         "dependencies": [
             "abaea60linmom2a-h3"
         ],
         "title": "Calculate Earth's Velocity",
-        "text": "Using the formula velocity $$=$$ $$\\frac{2\\pi radius}{time}$$ period, calculate Earth's velocity. Use radius $$=$$ $$1.50\\times10**{11}\\,\\text{m}$$ and time period in seconds.",
+        "text": "Using the formula velocity $$=$$ $$2\\pi$$ \u00d7 radius / time period, calculate Earth's velocity. Use radius $$=$$ $$1.50\\times10**{11}\\,\\text{m}$$ and time period in seconds.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
@@ -56,13 +56,13 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$1.78E+29$$"
+            "$$1.78\\times{10}^{29}$$"
         ],
         "dependencies": [
             "abaea60linmom2a-h4"
         ],
         "title": "Calculate Earth's Linear Momentum",
-        "text": "Now that you have Earth's velocity, use the formula momentum $$=$$ mass * velocity to find Earth's linear momentum. Use mass $$=$$ $$5.97\\times10**{24}\\,\\text{kg}$$ and velocity from the previous step.",
+        "text": "Now that you have Earth's velocity, use the formula momentum $$=$$ mass \u00d7 velocity to find Earth's linear momentum. Use mass $$=$$ $$5.97\\times10**{24}\\,\\text{kg}$$ and velocity from the previous step.",
         "variabilization": {},
         "oer": "openai",
         "license": ""
