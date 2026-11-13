@@ -14,6 +14,7 @@ import { Typography } from "@material-ui/core";
 import { IS_STAGING_OR_DEVELOPMENT } from "../../util/getBuildType";
 import BuildTimeIndicator from "@components/BuildTimeIndicator";
 import withTranslation from "../../util/withTranslation.js";
+import BookIcon from '../../assets/book-open-course.svg';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import { LocalizationConsumer } from '../../util/LocalizationContext';
 import { withResponsive } from '../../util/ResponsiveContext';
@@ -121,10 +122,10 @@ class LessonSelection extends React.Component {
                                                                 this.props.history.push(`/courses/${i}`)
                                                             }}>
                                                             <img
-                                                                src={`${process.env.PUBLIC_URL}/static/images/icons/folder_outline_2.svg`}
+                                                                src={BookIcon}
                                                                 // width="56px"
-                                                                alt="folderIcon"
-                                                                style= {{ width: "2.6em" }}
+                                                                alt="bookIcon"
+                                                                style= {{ width: "3.2em" }}
                                                             />
                                                         </IconButton>
                                                     </Paper>
