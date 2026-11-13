@@ -214,6 +214,30 @@ async function invoke(body) {
     assert.equal(stream.ended, true);
     return stream;
 }
+// Quiz evidence uses the same durable transaction and survives a fresh store instance.
+const quizDb = fakeDynamo();
+const quizStore = createConversationStore({ client: quizDb.client, tableName: 'quiz', summarize: async () => emptySummary() });
+const quizState = { lessonId: 'reading', question: 'What does Proudhon call the third form?', chunkIds: ['book::conclusion'] };
+const quizHandle = await quizStore.begin('session_quiz', 'quiz_1');
+await quizStore.prepare(quizHandle);
+await quizStore.commit(quizHandle, 'Quiz me', quizState.question, { lessonId: 'reading', readingQuiz: quizState });
+await quizStore.release(quizHandle);
+const restartedStore = createConversationStore({ client: quizDb.client, tableName: 'quiz', summarize: async () => emptySummary() });
+const answerHandle = await restartedStore.begin('session_quiz', 'answer_1');
+assert.deepEqual((await restartedStore.prepare(answerHandle)).readingQuiz, quizState);
+quizDb.setFailCommit(true);
+await assert.rejects(restartedStore.commit(answerHandle, 'Wrong answer', 'Incorrect. Try again?', { readingQuiz: { ...quizState, question: 'Try again?' } }));
+assert.deepEqual(quizDb.items.get('session_quiz').recentTurns.at(-1).context.readingQuiz, quizState);
+quizDb.setFailCommit(false);
+await restartedStore.release(answerHandle);
+const switchHandle = await restartedStore.begin('session_quiz', 'switch_1');
+await restartedStore.prepare(switchHandle);
+await restartedStore.commit(switchHandle, 'A different topic?', 'A direct explanation.', { lessonId: 'other' });
+await restartedStore.release(switchHandle);
+const afterSwitch = await restartedStore.begin('session_quiz', 'switch_2');
+assert.equal((await restartedStore.prepare(afterSwitch)).readingQuiz, undefined);
+await restartedStore.release(afterSwitch);
+
 const request = { sessionId: 'session_lambda', requestId: 'request_1', userMessage: 'Help?', problemContext: {}, studentState: {} };
 const result = await invoke(request);
 assert.deepEqual(result.records.map(({ type }) => type), ['content', 'complete']);

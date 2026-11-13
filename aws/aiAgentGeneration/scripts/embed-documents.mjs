@@ -10,6 +10,7 @@
  *   npm run embed-docs -- --from math1b-01
  */
 import dotenv from 'dotenv';
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -140,12 +141,14 @@ async function embedOne(documentId, entry, openai, config) {
     };
     const units = flattenLearningObjects(documentId, compiled, material);
     const unitMap = {};
+    const unitTextHashes = {};
     const pending = [];
 
     for (const u of units) {
         const text = (u.embed_text || buildEmbedText(u)).trim();
         if (!text) continue;
         pending.push({ unit_id: u.unit_id, text: text.slice(0, 8000) });
+        unitTextHashes[u.unit_id] = createHash('sha256').update(text).digest('hex');
     }
 
     for (let i = 0; i < pending.length; i += BATCH_SIZE) {
@@ -167,6 +170,7 @@ async function embedOne(documentId, entry, openai, config) {
         dimensions: config.dimensions,
         document_id: documentId,
         unit_count: Object.keys(unitMap).length,
+        unit_text_hashes: unitTextHashes,
         units: unitMap,
     };
 

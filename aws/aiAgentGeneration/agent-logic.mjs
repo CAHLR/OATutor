@@ -1,4 +1,6 @@
 import { readFileSync, existsSync } from 'fs';
+import { generateGroundedReading } from './reading-generation.mjs';
+import { generateReadingAssessment } from './reading-assessment.mjs';
 import { fileURLToPath } from 'url';
 import { basename, dirname, extname, join } from 'path';
 import { createChatCompletion, defaultChatMaxTokens } from './openaiChatParams.mjs';
@@ -170,6 +172,7 @@ export function buildAgentPrompt({
     extracted = {},
     chatPrompt,
     documentContextSection = null,
+    readingTaskInstruction = null,
     chatDisplayMode = 'Off',
     customFullChatPrompt = false,
     conversationMemory = null,
@@ -206,6 +209,7 @@ export function buildAgentPrompt({
         if (trimmedHistory.length > 0) {
             messages.push(...trimmedHistory);
         }
+        if (readingTaskInstruction) messages.push({ role: 'system', content: readingTaskInstruction });
         // Static text, placed late for recency (not stored in UI history).
         // Homework-specific; a course-specific Office Hours prompt defines its own rules.
         if (!customFullChatPrompt) {
@@ -552,6 +556,20 @@ export async function judgeAnswerReveal(openai, prompt, config = {}) {
 
 export async function generateAgentResponse(openai, prompt, responseStream = null, config = {}) {
     const model = config.model || "gpt-4o";
+    if (config.readingGeneration) {
+        const result = await generateGroundedReading(openai, prompt.at(-1)?.content || '', config.readingGeneration, model);
+        config.onReadingGeneration?.(result);
+        if (responseStream) responseStream.write(JSON.stringify({ type: 'content', content: result.response, timestamp: Date.now() }) + '\n');
+        if (responseStream && config.emitComplete !== false) responseStream.write(JSON.stringify({ type: 'complete', fullResponse: result.response, timestamp: Date.now() }) + '\n');
+        return result.response;
+    }
+    if (config.readingFeedback) {
+        const assessment = await generateReadingAssessment(openai, prompt, config.readingFeedback.source, model, config.readingFeedback.question);
+        config.onReadingAssessment?.(assessment);
+        if (responseStream) responseStream.write(JSON.stringify({ type: 'content', content: assessment.response, timestamp: Date.now() }) + '\n');
+        if (responseStream && config.emitComplete !== false) responseStream.write(JSON.stringify({ type: 'complete', fullResponse: assessment.response, timestamp: Date.now() }) + '\n');
+        return assessment.response;
+    }
     // 0.5: tighter rule adherence for a hard-guardrailed tutor, still warm.
     const temperature = config.temperature ?? 0.5;
     const max_tokens = config.max_tokens ?? defaultChatMaxTokens(model);

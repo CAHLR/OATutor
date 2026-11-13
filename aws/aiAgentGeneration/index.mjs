@@ -22,6 +22,8 @@ import {
 import crypto from "crypto";
 import { createConversationStore, summarizeConversation, validateUserMessage } from './conversation-memory.mjs';
 
+import { classifyReadingTurn, makeReadingQuizEvidence, readingTaskInstruction, readingResponseMetrics } from './reading-feedback.mjs';
+
 dotenv.config();
 
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
@@ -320,12 +322,17 @@ export const handler = awslambda.streamifyResponse(
             const customFullChatPrompt =
                 chatDisplayMode === "Full" && resolvedChatPrompt !== OFFICE_HOURS_CHAT_PROMPT;
 
+            const readingTurn = chatDisplayMode === "Full" && resolvedChatPrompt === 'PROMPT-anthro-reading-review.txt'
+                ? classifyReadingTurn(safeUserMessage, lessonId, memory.readingQuiz) : null;
             const docCtxStarted = nowMs();
             const docCtx = await buildDocumentContext({
                 lessonId,
                 userMessage: safeUserMessage,
                 // Short follow-ups ("why?") rank against the thread, not just this line.
                 recentHistory: fullConversationHistory.slice(-2),
+                retainedChunkIds: readingTurn?.quiz?.chunkIds || [],
+                pendingQuestion: readingTurn?.quiz?.question,
+                readingOverview: readingTurn?.wholeReading === true,
                 officeHours: chatDisplayMode === "Full",
                 customFullChatPrompt,
                 problemContext: chatDisplayMode === "Full" ? { courseName: problemContext?.courseName } : problemContext,
@@ -338,7 +345,7 @@ export const handler = awslambda.streamifyResponse(
             });
             if (docCtx?.meta || docCtx?.error) {
                 logEvent({
-                    eventType: docCtx?.error
+                    eventType: (docCtx?.error || docCtx?.meta?.errorCode)
                         ? "document_context_failed"
                         : "document_context_loaded",
                     sessionId,
@@ -355,6 +362,13 @@ export const handler = awslambda.streamifyResponse(
                         docCtx?.selectedContexts ||
                         docCtx?.meta?.selectedContexts ||
                         [],
+                    includedChunkIds: docCtx?.meta?.includedChunkIds || [],
+                    retainedChunkIds: docCtx?.meta?.retainedChunkIds || [],
+                    missingRetainedChunkIds: docCtx?.meta?.missingRetainedChunkIds || [],
+                    omittedChunkIds: docCtx?.meta?.omittedChunkIds || [],
+                    truncatedChunkIds: docCtx?.meta?.truncatedChunkIds || [],
+                    referenceChars: docCtx?.meta?.referenceChars || 0,
+                    staleEmbeddingDocumentIds: docCtx?.meta?.staleEmbeddingDocumentIds || [],
                     cacheHits: docCtx?.meta?.cacheHits || null,
                     durationMs:
                         docCtx?.meta?.durationMs ?? nowMs() - docCtxStarted,
@@ -421,6 +435,7 @@ export const handler = awslambda.streamifyResponse(
                 chatDisplayMode,
                 customFullChatPrompt,
                 documentContextSection: docCtx?.privatePromptSection || null,
+                readingTaskInstruction: readingTurn ? readingTaskInstruction(readingTurn) : null,
                 conversationMemory: memory.summary,
             });
 
@@ -514,9 +529,19 @@ export const handler = awslambda.streamifyResponse(
             });
 
             let response;
+            let generatedReadingEvidence = null;
+            const readingGeneration = readingTurn?.type === 'quiz' || readingTurn?.wholeReading
+                ? { kind: readingTurn.type === 'quiz' ? 'quiz' : 'overview', source: docCtx?.privatePromptSection } : null;
+            const onReadingGeneration = result => {
+                generatedReadingEvidence = result;
+                logEvent({ eventType: 'reading_generation_verified', sessionId, lessonId, turnId, ...result, response: undefined });
+            };
             try {
                 response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
                     model: chatModel,
+                    readingGeneration, onReadingGeneration,
+                    readingFeedback: readingTurn?.type === 'feedback' ? { source: docCtx?.privatePromptSection, question: readingTurn?.quiz?.question } : null,
+                    onReadingAssessment: assessment => logEvent({ eventType: 'reading_feedback_assessed', sessionId, lessonId, turnId, ...assessment, response: undefined }),
                     emitComplete: false,
                 });
             } catch (err) {
@@ -531,6 +556,9 @@ export const handler = awslambda.streamifyResponse(
                     });
                     response = await generateAgentResponse(openai, agentPrompt, httpResponseStream, {
                         model: defaultModel,
+                        readingGeneration, onReadingGeneration,
+                        readingFeedback: readingTurn?.type === 'feedback' ? { source: docCtx?.privatePromptSection, question: readingTurn?.quiz?.question } : null,
+                        onReadingAssessment: assessment => logEvent({ eventType: 'reading_feedback_assessed', sessionId, lessonId, turnId, ...assessment, response: undefined }),
                         emitComplete: false,
                     });
                 } else {
@@ -539,12 +567,15 @@ export const handler = awslambda.streamifyResponse(
             }
 
             if (!response) throw new Error('The tutor returned an empty reply. Please try again.');
+            if (readingTurn) logEvent({ eventType: 'reading_turn_quality', sessionId, lessonId, turnId,
+                ...readingResponseMetrics(readingTurn, response) });
             const sequence = await conversationStore.commit(memoryHandle, safeUserMessage, response, {
                 lessonId: lessonId || null,
                 problemId: problemContext?.problemID || null,
                 stepId: problemContext?.currentStep?.id || null,
                 problemTitle: problemContext?.problemTitle || null,
                 stepTitle: problemContext?.currentStep?.title || null,
+                readingQuiz: readingTurn ? makeReadingQuizEvidence(readingTurn, lessonId, response, generatedReadingEvidence ? generatedReadingEvidence.chunkIds : docCtx?.meta?.includedChunkIds || []) : null,
             });
             httpResponseStream.write(JSON.stringify({ type: 'complete', sequence, requestId, memoryVersion: 1 }) + '\n');
 

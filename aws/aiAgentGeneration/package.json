@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "test": "node scripts/test-data100-disc02-regression.mjs && node scripts/test-physics7a-textbook.mjs && node scripts/test-document-context.mjs && node scripts/test-conversation-memory.mjs",
+    "test": "node scripts/test-data100-disc02-regression.mjs && node scripts/test-physics7a-textbook.mjs && node scripts/test-document-context.mjs && node scripts/test-conversation-memory.mjs && npm run test:reading && npm run test:feedback",
     "test:memory": "node scripts/test-conversation-memory.mjs",
     "test:disc02": "node scripts/test-data100-disc02-regression.mjs",
     "test:physics7a": "node scripts/test-physics7a-textbook.mjs",
@@ -15,7 +15,9 @@
     "compile-docs": "node scripts/compile-documents.mjs",
     "embed-docs": "node scripts/embed-documents.mjs",
     "validate-docs": "node scripts/validate-compiled.mjs",
-    "publish-docs": "node scripts/publish-docs.mjs"
+    "publish-docs": "node scripts/publish-docs.mjs",
+    "test:reading": "node --test scripts/test-reading-context.mjs",
+    "test:feedback": "node --test scripts/test-reading-feedback.mjs scripts/test-reading-generation.mjs"
   },
   "keywords": [
     "oatutor",
