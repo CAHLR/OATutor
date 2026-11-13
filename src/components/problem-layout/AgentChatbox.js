@@ -71,6 +71,9 @@ const LAUNCHER_TAIL_CENTER_PERCENT = (382 / 520) * 100;
 // Shown when the stream completes with no text. Never sent back as history.
 const EMPTY_RESPONSE_FALLBACK = "Sorry, I didn't get a response. Please try again.";
 
+// Two badges sit side by side on the combined button, so say which one each is about.
+const labelBadge = (label, text) => (text.startsWith('Using') ? text : `${label}: ${text}`);
+
 const FALLBACK_SUGGESTED_QUESTIONS = [
     'What should I try first?',
     'Can you explain this step in simpler words?',
@@ -966,6 +969,7 @@ class AgentChatbox extends React.Component {
         const mode = this.props.mode || 'floating';
         const launcherPlacement = this.props.closedLauncherPlacement || mode;
         const hintsOpen = this.props.hintsOpen;
+        const combinedHelp = Boolean(this.props.combinedHelp);
         const hidePromoDueToOverlap = Boolean(this.props.hidePromoDueToOverlap);
         const promoEligible = this._getPromoEligible();
         const promoVisible = promoEligible && !hidePromoDueToOverlap;
@@ -1003,7 +1007,7 @@ class AgentChatbox extends React.Component {
                 onMouseLeave={this.handleLauncherPointerOut}
                 onFocus={this.handleLauncherPointerIn}
                 onBlur={this.handleLauncherPointerOut}
-                aria-label="Open AI Tutor"
+                aria-label={combinedHelp ? 'Open hints and AI Tutor' : 'Open AI Tutor'}
             >
                 <div className={classes.launcherStack}>
                     <div
@@ -1016,12 +1020,21 @@ class AgentChatbox extends React.Component {
                             aria-hidden="true"
                         />
                         <div className={classes.launcherBubbleContent}>
-                            <p className={classes.launcherTitle}>AI Tutor</p>
+                            <p className={classes.launcherTitle}>{combinedHelp ? 'Need help?' : 'AI Tutor'}</p>
                             <p className={classes.launcherDescription}>
-                                Ask me any question about this problem or topic.
+                                {combinedHelp
+                                    ? 'Hints and an AI tutor for this problem.'
+                                    : 'Ask me any question about this problem or topic.'}
                             </p>
+                            {combinedHelp && (
+                                <span className={classes.launcherPill}>
+                                    {labelBadge('Hints', getHelpPenaltyBadgeText(this.props.hintPenaltyMode, 'hint'))}
+                                </span>
+                            )}
             <span className={classes.launcherPill}>
-                                {getHelpPenaltyBadgeText(this._getChatPenaltyMode(), 'agent')}
+                                {combinedHelp
+                                    ? labelBadge('AI Tutor', getHelpPenaltyBadgeText(this._getChatPenaltyMode(), 'agent'))
+                                    : getHelpPenaltyBadgeText(this._getChatPenaltyMode(), 'agent')}
                             </span>
                         </div>
                     </div>
@@ -1898,7 +1911,10 @@ class AgentChatbox extends React.Component {
         const mode = this.props.mode || 'floating';
         const allowEmbeddedClose = this.props.allowEmbeddedClose === true;
         const isChatVisible = (mode === 'embedded' && !allowEmbeddedClose) || isVisible;
-        const isResizablePanel = !isMobile && (mode === 'floating' || allowEmbeddedClose);
+        // Combined help: the chat fills the space under the docked hints panel.
+        const hintDockBottom = isChatVisible && !isMobile && mode === 'floating' ? this.props.hintDockBottom : null;
+        const belowHintDock = hintDockBottom != null;
+        const isResizablePanel = !isMobile && (mode === 'floating' || allowEmbeddedClose) && !belowHintDock;
         const useMobileSheet = isMobile && (mode === 'floating' || (mode === 'embedded' && allowEmbeddedClose));
         const isOfficeHours = this._isOfficeHours();
         const questions = this.props.suggestedQuestions || suggestedQuestions;
@@ -1987,7 +2003,9 @@ class AgentChatbox extends React.Component {
                         : mode === 'embedded'
                         ? (allowEmbeddedClose ? chatWidth : '100%')
                         : chatWidth,
-                    height: useMobileSheet
+                    height: belowHintDock
+                        ? `calc(100vh - ${hintDockBottom + 32}px)`
+                        : useMobileSheet
                         ? '100%'
                         : mode === 'embedded'
                         ? (allowEmbeddedClose ? chatHeight : embeddedHeight)
@@ -2017,7 +2035,7 @@ class AgentChatbox extends React.Component {
                         ? '0 -10px 40px rgba(16, 24, 40, 0.16)'
                         : (mode === 'embedded' ? '0 8px 32px rgba(0, 0, 0, 0.12)' : undefined),
                     minWidth: useMobileSheet || mode === 'embedded' ? 0 : undefined,
-                    minHeight: useMobileSheet || mode === 'embedded' ? 0 : undefined,
+                    minHeight: belowHintDock ? 240 : useMobileSheet || mode === 'embedded' ? 0 : undefined,
                     maxWidth: useMobileSheet
                         ? '100vw'
                         : mode === 'embedded'

@@ -40,6 +40,7 @@ import {Accordion, AccordionSummary, Typography} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AgentIntegration from './AgentIntegration';
 import AvatarHelpPanel from './AvatarHelpPanel';
+import HintDock from './HintDock';
 import { withResponsive } from '../../util/ResponsiveContext';
 import MobileBottomSheet from './MobileBottomSheet';
 import {
@@ -130,6 +131,7 @@ class Problem extends React.Component {
             firstHelpAction: null, // "chat" | "hint" — set once, used to write firstActionType
             agentCloseRequest: 0,
             isAgentChatVisible: false,
+            hintDockBottom: null,
             isMathKeyboardVisible: false,
             // Desktop Hint + AI Tutor promo bubbles: per-side hide when they would overlap.
             hideHintPromoDueToOverlap: false,
@@ -205,6 +207,18 @@ class Problem extends React.Component {
         if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
             this._loadTTSAudio(this.props.problem);
         }
+        // Combined help: while the chat is open, hints follow the step and problem the student is on.
+        if (this._usesCombinedHelp() && this.state.isAgentChatVisible && this.state.expandedAccordion !== null) {
+            if (prevProps.problem?.id !== this.props.problem?.id) {
+                // Next tick: the new problem's step cards have to be mounted to pick up the toggle.
+                setTimeout(() => this.state.isAgentChatVisible && this.handleHintAvatarClick());
+            } else if (
+                !this.state.isHintPortalOpen &&
+                prevState.expandedAccordion !== this.state.expandedAccordion
+            ) {
+                this.handleHintAvatarClick();
+            }
+        }
         if (
             prevState.isHintPortalOpen !== this.state.isHintPortalOpen ||
             prevState.hasHintBeenOpened !== this.state.hasHintBeenOpened ||
@@ -248,8 +262,23 @@ class Problem extends React.Component {
         return hintPromoBottom + clearPad > agentPromoTop;
     };
 
+    /**
+     * Desktop lessons with both hints and the AI Tutor share one button that opens both.
+     * Lessons that unlock or generate a hint as soon as hints open keep separate buttons,
+     * so a student who only wants the chat doesn't lose credit or trigger a hint.
+     */
+    _usesCombinedHelp = () =>
+        this.props.lesson?.chat_display_mode === 'Window' &&
+        !(this.props.responsive?.isMobile ?? false) &&
+        !this.props.hideHintPanel &&
+        this.giveStuHints &&
+        !this.unlockFirstHint &&
+        !this.giveHintOnIncorrect &&
+        !this.giveDynamicHint;
+
     /** @returns {'none'|'default'|'hover'} */
     _hintPromoMode = () => {
+        if (this._usesCombinedHelp()) return "none";
         if (this.state.isHintPortalOpen) return "none";
         if (!this.state.hasHintBeenOpened) return "default";
         if (this.state.isHintHovering) return "hover";
@@ -1175,9 +1204,22 @@ class Problem extends React.Component {
     handleChatVisibilityChange = (visible) => {
         this.setState({ isAgentChatVisible: visible });
 
+        if (this._usesCombinedHelp()) {
+            if (visible && !this.state.isHintPortalOpen) {
+                this.handleHintAvatarClick();
+            } else if (!visible) {
+                this.handleMobileHintClose();
+            }
+            return;
+        }
+
         if (visible && this.state.isHintPortalOpen) {
             this.handleMobileHintClose();
         }
+    };
+
+    handleHintDockBottomChange = (hintDockBottom) => {
+        this.setState({ hintDockBottom });
     };
 
     handleHintHoverStart = () => {
@@ -1841,6 +1883,12 @@ class Problem extends React.Component {
                                 hintPenaltyMode={this.hintPenaltyMode}
                                 chatPenaltyMode={this.chatPenaltyMode}
                             />
+                        ) : this._usesCombinedHelp() ? (
+                            <HintDock
+                                open={this.state.isHintPortalOpen}
+                                portalRef={this.hintPortalRef}
+                                onDockedBottomChange={this.handleHintDockBottomChange}
+                            />
                         ) : (
                         this.renderStandardHintPanel()
                         )}
@@ -2024,6 +2072,9 @@ class Problem extends React.Component {
                         onPromoEligibilityChange={this.handleAgentPromoEligibilityChange}
                         applyHelpPenalty={this.applyHelpPenalty}
                         chatPenaltyMode={this.chatPenaltyMode}
+                        combinedHelp={this._usesCombinedHelp()}
+                        hintPenaltyMode={this.hintPenaltyMode}
+                        hintDockBottom={this.state.hintDockBottom}
                         condition="window"
                     />
                 )}

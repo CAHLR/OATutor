@@ -39,7 +39,6 @@ import { LocalizationConsumer } from "../util/LocalizationContext.js";
 
 import confetti from "canvas-confetti";
 
-import userIcon from "../assets/UserThumb.svg";
 import IconButton from "@material-ui/core/IconButton";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@material-ui/icons/FeedbackOutlined";
@@ -1187,6 +1186,103 @@ class Platform extends React.Component {
     const MIN_PROGRESS_BAR_WIDTH = isMobile ? 0 : 200;
     const progressStickyTop = isMobile ? 56 : 64;
 
+    // Learning-objective breakdown shown when hovering the mastery bar (header on desktop, row on phones).
+    const masteryTooltip = (
+      <div style={{ width: "100%", boxSizing: "border-box" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginBottom: 8,
+            lineHeight: "28px",
+          }}
+        >
+          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>
+            {isCompletionMode ? "Progress" : "Learning Objectives:"}
+          </div>
+          {isCompletionMode ? (
+            <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+              <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
+              <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                {progressData.completed}/{progressData.total}
+              </div>
+            </div>
+          ) : (
+            (() => {
+              const keys = Object.keys(this.lesson?.learningObjectives || {});
+              const mastered = keys.filter(
+                (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+              ).length;
+              return (
+                <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
+                  <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
+                  <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
+                    {mastered}/{keys.length}
+                  </div>
+                </div>
+              );
+            })()
+          )}
+        </div>
+
+        {!isCompletionMode && Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
+          const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
+          const pct = Math.round(mastery * 100);
+          const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+          return (
+            <div key={kc} style={{ marginBottom: 12 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: 4,
+                }}
+              >
+                <div
+                  title={label}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    fontSize: 12,
+                    fontWeight: 500,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    marginRight: 8,
+                  }}
+                >
+                  {label}
+                </div>
+                <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 500, whiteSpace: "nowrap" }}>
+                  {pct}%
+                </div>
+              </div>
+
+              <div
+                style={{
+                  width: "100%",
+                  height: 8,
+                  backgroundColor: "#E8EDEC",
+                  borderRadius: 4,
+                  overflow: "hidden",
+                }}
+              >
+                <div
+                  style={{
+                    width: `${pct}%`,
+                    height: "100%",
+                    backgroundColor: "#83CDC1",
+                    transition: "width 0.3s ease-in-out",
+                  }}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+
     return (
       <>
         {showToc && (
@@ -1302,7 +1398,6 @@ class Platform extends React.Component {
                         <FeedbackOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 26 }} />
                       </IconButton>
                     )}
-                    <img src={userIcon} alt="User Icon" style={{ width: 28, height: 28, marginLeft: 4 }} />
                   </div>
                   <Popup isOpen={showPopup} onClose={this.togglePopup}>
                     <About />
@@ -1310,6 +1405,11 @@ class Platform extends React.Component {
                 </div>
               ) : (
                 <div role={"navigation"} style={{ display: "flex", alignItems: "center", width: "100%", gap: 16, minWidth: 0 }}>
+                  {showToc && !this.state.drawerOpen && (
+                    <IconButton aria-label="Table of Contents Toggle" onClick={() => this.toggleDrawer(true)} size="small">
+                      <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
+                    </IconButton>
+                  )}
                   <BrandLogoNav isPrivileged={this.isPrivileged} />
                   {!isOfficeHours && tocCourseName && (
                     <div style={{ display: "flex", alignItems: "center", gap: 2, minWidth: 0, color: "#344054" }}>
@@ -1336,6 +1436,40 @@ class Platform extends React.Component {
                       color: "#344054",
                     }}
                   >
+                    {/* Mastery lives in the fixed header on desktop so it stays visible while scrolling,
+                        boxed like and kept right next to "Report a problem" */}
+                    {this.state.status === "learning" && !isOfficeHours && (
+                      <ProgressTooltip arrow placement="bottom" interactive title={masteryTooltip}>
+                        <div
+                          role="progressbar"
+                          aria-label={isCompletionMode ? "Lesson completion" : "Lesson mastery"}
+                          aria-valuenow={barPercent}
+                          aria-valuemin={0}
+                          aria-valuemax={100}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 8,
+                            height: 42,
+                            padding: "0 12px",
+                            boxSizing: "border-box",
+                            backgroundColor: "#FFFFFF",
+                            border: "1px solid #DFE8EE",
+                            borderRadius: 12,
+                            boxShadow: "0 1px 3px rgba(15, 46, 95, 0.06)",
+                            cursor: "pointer",
+                          }}
+                        >
+                          <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={18} height={18} />
+                          <span style={{ fontWeight: 600, fontSize: 14, whiteSpace: "nowrap" }}>
+                            {isCompletionMode ? "Completion" : "Mastery"} {barPercent}%
+                          </span>
+                          <div style={{ width: 96, height: 8, borderRadius: 4, backgroundColor: "#C9D3D8", overflow: "hidden" }}>
+                            <div style={{ width: `${barPercent}%`, height: "100%", backgroundColor: "#4C7D9F", transition: "width 0.4s ease" }} />
+                          </div>
+                        </div>
+                      </ProgressTooltip>
+                    )}
                     {/* "Report a problem" and "?" grouped in one small box */}
                     {!isOfficeHours && (
                       <div
@@ -1380,8 +1514,12 @@ class Platform extends React.Component {
                         </IconButton>
                       </div>
                     )}
-                    <img src={userIcon} alt="User Icon" />
-                    <div style={{ fontWeight: 600 }}>{this.studentNameDisplay}</div>
+                    <div
+                      title={this.studentNameDisplay}
+                      style={{ fontWeight: 600, maxWidth: 180, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}
+                    >
+                      {this.studentNameDisplay}
+                    </div>
                   </div>
                   <Popup isOpen={showPopup} onClose={this.togglePopup}>
                     <About />
@@ -1411,21 +1549,11 @@ class Platform extends React.Component {
                 : {}),
             }}
           >
-            {this.state.status === "learning" && !isOfficeHours ? (
+            {this.state.status === "learning" && !isOfficeHours && isMobile ? (
               <AppBar position="sticky"
                       style={{ top: progressStickyTop, backgroundColor: "#F6F6F6", boxShadow: "none", zIndex: 3 }}>
                 <Toolbar disableGutters style={{ minHeight: isMobile ? 64 : 80, paddingLeft: isMobile ? 8 : 16, paddingRight: isMobile ? 8 : 32 }}>
                   <Grid container spacing={0} role="progress-bar" alignItems="center" style={{ width: "100%" }}>
-                    {showToc && !this.state.drawerOpen && !isMobile && (
-                      <IconButton
-                        aria-label="Table of Contents Toggle"
-                        onClick={() => this.toggleDrawer(true)}
-                        disabled={this.state.drawerOpen}
-                        style={{ position: "absolute", top: "50%", transform: "translateY(-50%)" }}
-                      >
-                        <img src={ToCButton} alt="Table of Contents" style={{ width: 24, height: 24 }} />
-                      </IconButton>
-                    )}
                     
                     <Grid item xs={12}>
                       <div style={CONTAINER_STYLE}>
@@ -1464,101 +1592,7 @@ class Platform extends React.Component {
                               arrow
                               placement="bottom"
                               interactive
-                              title={
-                                <div style={{ width: "100%", boxSizing: "border-box" }}>
-                                  <div
-                                    style={{
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "space-between",
-                                      marginBottom: 8,
-                                      lineHeight: "28px",
-                                    }}
-                                  >
-                                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 600 }}>
-                                      {isCompletionMode ? "Progress" : "Learning Objectives:"}
-                                    </div>
-                                    {isCompletionMode ? (
-                                      <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
-                                        <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
-                                        <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
-                                          {progressData.completed}/{progressData.total}
-                                        </div>
-                                      </div>
-                                    ) : (
-                                      (() => {
-                                        const keys = Object.keys(this.lesson?.learningObjectives || {});
-                                        const mastered = keys.filter(
-                                          (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
-                                        ).length;
-                                        return (
-                                          <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
-                                            <img src={`${process.env.PUBLIC_URL}/static/images/icons/mastery-bolt.png`} alt="" width={20} height={20} />
-                                            <div style={{ fontFamily: "Inter, sans-serif", fontSize: 14, fontWeight: 500 }}>
-                                              {mastered}/{keys.length}
-                                            </div>
-                                          </div>
-                                        );
-                                      })()
-                                    )}
-                                  </div>
-
-                                  {!isCompletionMode && Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
-                                    const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
-                                    const pct = Math.round(mastery * 100);
-                                    const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-                                    return (
-                                      <div key={kc} style={{ marginBottom: 12 }}>
-                                        <div
-                                          style={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "space-between",
-                                            marginBottom: 4,
-                                          }}
-                                        >
-                                          <div
-                                            title={label}
-                                            style={{
-                                              fontFamily: "Inter, sans-serif",
-                                              fontSize: 12,
-                                              fontWeight: 500,
-                                              overflow: "hidden",
-                                              textOverflow: "ellipsis",
-                                              whiteSpace: "nowrap",
-                                              marginRight: 8,
-                                            }}
-                                          >
-                                            {label}
-                                          </div>
-                                          <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 500, whiteSpace: "nowrap" }}>
-                                            {pct}%
-                                          </div>
-                                        </div>
-
-                                        <div
-                                          style={{
-                                            width: "100%",
-                                            height: 8,
-                                            backgroundColor: "#E8EDEC",
-                                            borderRadius: 4,
-                                            overflow: "hidden",
-                                          }}
-                                        >
-                                          <div
-                                            style={{
-                                              width: `${pct}%`,
-                                              height: "100%",
-                                              backgroundColor: "#83CDC1",
-                                              transition: "width 0.3s ease-in-out",
-                                            }}
-                                          />
-                                        </div>
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                              }
+                              title={masteryTooltip}
                             >
                               {/* Track fills the minmax column width (never 0, never > MAX) */}
                               <div
@@ -1606,33 +1640,6 @@ class Platform extends React.Component {
                             </ProgressTooltip>
                           </div>
 
-                          {/* Right: info icon (desktop grid column) */}
-                          {!isMobile && (
-                          <InfoTooltip
-                            arrow
-                            placement="bottom"
-                            enterTouchDelay={0}
-                            leaveTouchDelay={3000}
-                            title={
-                              <div style={{ width: "100%", boxSizing: "border-box" }}>
-                                <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 600, marginBottom: 4 }}>
-                                  What is Mastery?
-                                </div>
-                                <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: "16px" }}>
-                                  Mastery estimates your understanding based on lesson objectives completed.
-                                </div>
-                              </div>
-                            }
-                          >
-                            <img
-                              src={`${process.env.PUBLIC_URL}/static/images/icons/information-icon.png`}
-                              alt="Info"
-                              width={20}
-                              height={20}
-                              style={{ display: "block", cursor: "pointer" }}
-                            />
-                          </InfoTooltip>
-                          )}
                           {isMobile && (
                             <div style={{ display: "flex", justifyContent: "center" }}>
                               <InfoTooltip
