@@ -66,6 +66,7 @@ import withWidth from "@material-ui/core/withWidth";
 import { ProgressTooltip, InfoTooltip } from "@components/Tooltip";
 import { isMobileWidth } from "../util/responsive";
 import { isFullChatLesson } from "../util/officeHours.js";
+import { courseNameForMetaLesson, recordLastVisited } from "../util/lastVisited.js";
 
 let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.json`);
 
@@ -383,6 +384,10 @@ class Platform extends React.Component {
     this.lesson = lesson;
     const resolvedLessonLanguage = this._resolveLessonLanguage(lesson);
     this.props.enterCourse?.(lesson?.courseName, resolvedLessonLanguage || null);
+    // For "Pick up where you left off". Meta-lesson parts are covered by their meta-lesson.
+    if (!lesson?.isPartOfMetaLesson) {
+      recordLastVisited(this.context.browserStorage, { lessonId: lesson?.id, courseName: lesson?.courseName });
+    }
 
     const loadLessonProgress = async () => {
       const { getByKey } = this.context.browserStorage;
@@ -431,6 +436,10 @@ class Platform extends React.Component {
 
     this.metaLesson = metaLesson;
     this.completedMetaLessonLessons = new Set();
+    recordLastVisited(this.context.browserStorage, {
+      lessonId: metaLesson.id,
+      courseName: courseNameForMetaLesson(coursePlans, metaLesson.id),
+    });
 
     const META_LESSON_PATH_KEY = `meta_lesson_path_${metaLesson.id}`;
     const { getByKey, setByKey } = this.context.browserStorage;
@@ -1683,6 +1692,7 @@ class Platform extends React.Component {
                 selectCourse={this.selectCourse}
                 history={this.props.history}
                 removeProgress={this.props.removeProgress}
+                loadBktProgress={this.props.loadBktProgress}
               />
             ) : (
               ""
