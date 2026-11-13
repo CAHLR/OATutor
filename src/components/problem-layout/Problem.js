@@ -153,6 +153,7 @@ class Problem extends React.Component {
         const h = this.bannerRef.current?.offsetHeight || 0;
         this.setState({ bannerHeight: h });
         const { lesson } = this.props;
+        this._publishActivePart();
         document["oats-meta-courseName"] = lesson?.courseName || "";
         document["oats-meta-textbookName"] =
             lesson?.courseName
@@ -201,7 +202,22 @@ class Problem extends React.Component {
         this._scheduleDesktopFabPromoOverlapCheck();
     }
 
+    // Which part is open, for "Report a problem" (read by Platform when a report is sent).
+    _publishActivePart = () => {
+        const steps = this.props.problem?.steps || [];
+        const index = this.state.expandedAccordion;
+        document["oats-meta-activePart"] = Number.isInteger(index) && steps[index]
+            ? { number: index + 1, total: steps.length, stepId: steps[index].id }
+            : null;
+    };
+
     componentDidUpdate(prevProps, prevState) {
+        if (
+            prevState.expandedAccordion !== this.state.expandedAccordion ||
+            prevProps.problem?.id !== this.props.problem?.id
+        ) {
+            this._publishActivePart();
+        }
         if (this.enableTTS && prevProps.problem?.id !== this.props.problem?.id) {
             this._loadTTSAudio(this.props.problem);
         }
@@ -522,6 +538,7 @@ class Problem extends React.Component {
     componentWillUnmount() {
         document["oats-meta-courseName"] = "";
         document["oats-meta-textbookName"] = "";
+        document["oats-meta-activePart"] = null;
         this._unbindMathKeyboardVisibility();
         this._unbindDesktopFabPromoOverlapWatch();
         if (this.ttsPlayer) this.ttsPlayer.destroy();

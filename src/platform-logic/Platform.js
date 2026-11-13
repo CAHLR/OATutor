@@ -3,6 +3,7 @@ import { AppBar, Toolbar } from "@material-ui/core";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Grid from "@material-ui/core/Grid";
 import ProblemWrapper from "@components/problem-layout/ProblemWrapper.js";
+import ReportProblemBox from "@components/problem-layout/ReportProblemBox.js";
 import StandaloneChatView from "@components/problem-layout/StandaloneChatView.js";
 import LessonSelectionWrapper from "@components/problem-layout/LessonSelectionWrapper.js";
 import { withRouter } from "react-router-dom";
@@ -50,6 +51,7 @@ import About from "../pages/Posts/About.js";
 
 import { animateScroll as scroll } from "react-scroll";
 import { chooseVariables } from "../platform-logic/renderText.js";
+import { buildReportDetails } from "../util/reportDetails";
 import Button from "@material-ui/core/Button";
 
 import ToCButton from "../assets/layoutLeft.svg";
@@ -149,6 +151,7 @@ class Platform extends React.Component {
       feedback: "",
       feedbackSubmitted: false,
       drawerOpen: initialDrawerOpen,
+      reportAnchor: null, // "Report a problem" button whose one-line box is open
       metaCollapsed: false,
       currProblem: null,
       status: this.props.lessonID ? "loading" : "courseSelection",
@@ -879,18 +882,56 @@ class Platform extends React.Component {
     }));
   }
 
-  submitFeedback = () => {
+  sendProblemReport = (text) => {
     const problem = this.state.currProblem;
+    if (!problem || !text) return null;
     this.context.firebase.submitFeedback(
       problem.id,
-      this.state.feedback,
+      text,
       this.state.problemFinished,
       chooseVariables(problem.variabilization, this.props.seed),
       problem.courseName,
       problem.steps,
       problem.lesson
     );
+    return problem;
+  };
+
+  submitFeedback = () => {
+    this.sendProblemReport(this.state.feedback);
     this.setState({ feedback: "", feedbackSubmitted: true });
+  };
+
+  /**
+   * The one-line report box: text + the student's screenshot (optional) + page details.
+   * Only the text is stored today (same feedback record as before); the screenshot and
+   * details are ready for the bug-report endpoint once it's connected here.
+   */
+  submitQuickReport = (text, screenshot) => {
+    const problem = this.sendProblemReport(text);
+    if (!problem) return null;
+    return {
+      text,
+      screenshot: screenshot || null,
+      details: buildReportDetails({
+        problem,
+        lesson: this.lesson,
+        activePart: document["oats-meta-activePart"],
+        pageUrl: window.location.href,
+        userAgent: navigator.userAgent,
+        viewport: { width: window.innerWidth, height: window.innerHeight },
+        time: new Date(),
+        appVersion: process.env.REACT_APP_COMMIT_HASH,
+      }),
+    };
+  };
+
+  openReportBox = (event) => {
+    this.setState({ reportAnchor: event.currentTarget });
+  };
+
+  closeReportBox = () => {
+    this.setState({ reportAnchor: null });
   };
 
   toggleFeedback = () => {
@@ -1298,7 +1339,7 @@ class Platform extends React.Component {
                       <HelpOutlineOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 28 }} />
                     </IconButton>
                     {this.state.status === "learning" && !isOfficeHours && (
-                      <IconButton aria-label="report problem" onClick={this.toggleFeedback} title={"Report Problem"} size="small">
+                      <IconButton aria-label="report problem" onClick={this.openReportBox} title={"Report Problem"} size="small">
                         <FeedbackOutlinedIcon htmlColor={"#344054"} style={{ fontSize: 26 }} />
                       </IconButton>
                     )}
@@ -1353,7 +1394,7 @@ class Platform extends React.Component {
                         {this.state.status === "learning" && (
                           <Button
                             variant="text"
-                            onClick={this.toggleFeedback}
+                            onClick={this.openReportBox}
                             aria-label="report problem"
                             style={{
                               height: 32,
@@ -1363,7 +1404,7 @@ class Platform extends React.Component {
                               fontSize: 13,
                               fontWeight: 600,
                               textTransform: "none",
-                              backgroundColor: this.state.showFeedback ? "#E9F4FB" : "transparent",
+                              backgroundColor: this.state.reportAnchor ? "#E9F4FB" : "transparent",
                             }}
                           >
                             Report a problem
@@ -1806,6 +1847,14 @@ class Platform extends React.Component {
             )}
           </div>
         </div>
+        {this.state.reportAnchor && (
+          <ReportProblemBox
+            anchorEl={this.state.reportAnchor}
+            onClose={this.closeReportBox}
+            onSubmit={this.submitQuickReport}
+            saved={Boolean(this.context.firebase?.configured)}
+          />
+        )}
       </>
     );
   }
