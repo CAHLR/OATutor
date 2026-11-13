@@ -111,12 +111,15 @@ const DYNAMIC_HINT_TEMPLATE =
 
 const TTS_API_URL = process.env.REACT_APP_TTS_AWS_ENDPOINT;
 
-const MASTERY_THRESHOLD = 0.85;
+const MASTERY_THRESHOLD = 0.95;
 
-const getNormalizedMastery = (mastery, lesson) => {
-    const threshold = Object.values(lesson?.learningObjectives || {}).find(
+const getLessonThreshold = (lesson) =>
+    Object.values(lesson?.learningObjectives || {}).find(
         (value) => typeof value === "number" && value > 0
     ) || MASTERY_THRESHOLD;
+
+const getNormalizedMastery = (mastery, lesson) => {
+    const threshold = getLessonThreshold(lesson);
     return Math.min(Math.max(mastery / threshold, 0), 1);
 };
 // Synthetic Office Hours lesson: per-course via coursePlans `office_hours: true`.
@@ -186,6 +189,7 @@ export {
     DYNAMIC_HINT_TEMPLATE,
     MASTERY_THRESHOLD,
     getNormalizedMastery,
+    getLessonThreshold,
     USER_ID_STORAGE_KEY,
     PROGRESS_STORAGE_KEY,
     SITE_NAME,

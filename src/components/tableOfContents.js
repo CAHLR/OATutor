@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { _coursePlansNoEditor, MASTERY_THRESHOLD } from "../config/config.js";
+import { _coursePlansNoEditor } from "../config/config.js";
 import { isOfficeHoursLesson } from "../util/officeHours.js";
 import Grid from "@material-ui/core/Grid";
 
@@ -13,6 +13,9 @@ import {ReactComponent as BookIcon} from "../assets/book-open.svg";
 import LightningBoltIcon from "../assets/zap-blue.svg";
 import GreyLightningBoltIcon from "../assets/zap.svg";
 import CheckMark from "../assets/Circle.svg";
+
+// The mastery map from Platform is already normalized per lesson (1 = lesson threshold reached)
+const MASTERY_THRESHOLD = 1;
 
 
 const useStyles = makeStyles(() => ({

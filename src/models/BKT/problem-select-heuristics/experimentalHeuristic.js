@@ -1,11 +1,11 @@
 import {MASTERY_THRESHOLD} from "../../../config/config.js"
 
-function heuristic(problems, completedProbs) {
+function heuristic(problems, completedProbs, threshold = MASTERY_THRESHOLD) {
 
   var chosenProblem = [];
   for (var problem of problems) {
     // Already completed this problem or irrelevant (null if not in learning goals)
-    if (completedProbs.has(problem.id) || problem.probMastery == null || problem.probMastery >= MASTERY_THRESHOLD) {
+    if (completedProbs.has(problem.id) || problem.probMastery == null || problem.probMastery >= threshold) {
       continue;
     } else if (chosenProblem.length === 0 || chosenProblem[0].probMastery < problem.probMastery) {
       chosenProblem = [problem];

@@ -15,9 +15,9 @@ import {
     MIDDLEWARE_URL,
     SITE_NAME,
     ThemeContext,
-    MASTERY_THRESHOLD,
     DEFAULT_LANGUAGE,
     getNormalizedMastery,
+    getLessonThreshold,
 } from "../config/config.js";
 import {
     resolveMetaLesson,
@@ -685,7 +685,7 @@ class Platform extends React.Component {
       }
     }
 
-    chosenProblem = context.heuristic(problems, this.completedProbs);
+    chosenProblem = context.heuristic(problems, this.completedProbs, getLessonThreshold(this.lesson));
 
     const objectives = Object.keys(this.lesson.learningObjectives);
     let score = objectives.reduce((x, y) => {
@@ -712,7 +712,7 @@ class Platform extends React.Component {
         return null;
       } else {
         this.completedProbs = new Set();
-        chosenProblem = context.heuristic(problems, this.completedProbs);
+        chosenProblem = context.heuristic(problems, this.completedProbs, getLessonThreshold(this.lesson));
       }
     }
 
@@ -934,7 +934,7 @@ class Platform extends React.Component {
           count += 1;
         }
       }
-      map[lesson.id] = count ? sum / count : 0;
+      map[lesson.id] = count ? getNormalizedMastery(sum / count, lesson) : 0;
     }
     return map;
   };
@@ -1489,7 +1489,7 @@ class Platform extends React.Component {
                                       (() => {
                                         const keys = Object.keys(this.lesson?.learningObjectives || {});
                                         const mastered = keys.filter(
-                                          (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= MASTERY_THRESHOLD
+                                          (k) => (this.context.bktParams[k]?.probMastery ?? 0) >= getLessonThreshold(this.lesson)
                                         ).length;
                                         return (
                                           <div style={{ display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}>
@@ -1505,7 +1505,7 @@ class Platform extends React.Component {
 
                                   {!isCompletionMode && Object.entries(this.lesson?.learningObjectives || {}).map(([kc]) => {
                                     const mastery = this.context.bktParams[kc]?.probMastery ?? 0;
-                                    const pct = Math.round(mastery * 100);
+                                    const pct = Math.round(getNormalizedMastery(mastery, this.lesson) * 100);
                                     const label = kc.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
                                     return (
                                       <div key={kc} style={{ marginBottom: 12 }}>
