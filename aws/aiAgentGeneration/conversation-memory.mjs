@@ -1,4 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
+import { sanitizeReadingQuiz } from './reading-feedback.mjs';
 import { buildChatCompletionParams } from './openaiChatParams.mjs';
 
 export const MEMORY_LIMITS = Object.freeze({
@@ -198,7 +199,9 @@ export function createConversationStore({ client, tableName, summarize, log = ()
             }
         }
         state.recentTurns = boundRecentTurns(recent.filter((turn) => turn.sequence > (state.summarizedThrough || 0)));
-        return { history: state.recentTurns.flatMap((turn) => turn.messages), summary: formatConversationMemory(state.summary) };
+        const readingQuiz = sanitizeReadingQuiz(state.recentTurns.at(-1)?.context?.readingQuiz);
+        return { history: state.recentTurns.flatMap((turn) => turn.messages), summary: formatConversationMemory(state.summary),
+            ...(readingQuiz ? { readingQuiz } : {}) };
     }
 
     async function commit(handle, userMessage, assistantMessage, context = {}) {
@@ -207,6 +210,8 @@ export function createConversationStore({ client, tableName, summarize, log = ()
         validateUserMessage(userMessage);
         const safeContext = Object.fromEntries(['lessonId', 'problemId', 'stepId', 'problemTitle', 'stepTitle'].map((key) =>
             [key, typeof context[key] === 'string' ? context[key].slice(0, 300) : null]));
+        const readingQuiz = sanitizeReadingQuiz(context.readingQuiz);
+        if (readingQuiz) safeContext.readingQuiz = readingQuiz;
         const turn = { sequence, timestamp: Date.now(), messages: [{ role: 'user', content: userMessage }, { role: 'assistant', content: assistantMessage }], context: safeContext };
         const state = {
             sessionId: handle.sessionId,

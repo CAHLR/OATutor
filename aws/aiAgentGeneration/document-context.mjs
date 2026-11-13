@@ -7,6 +7,7 @@
  * Not an LLM tool. Not a vector DB. Client cannot choose document IDs.
  */
 import { existsSync, readFileSync } from 'fs';
+import { createHash } from 'node:crypto';
 import { join } from 'path';
 import {
     GetObjectCommand,
@@ -161,7 +162,7 @@ export function buildEmbedText(unit) {
             unit?.content ||
             unit?.solution_guidance ||
             ''
-    ).slice(0, EMBED_BODY_CHARS);
+    ).slice(0, unit?.parent_unit_id ? READING_CHUNK_CHARS : EMBED_BODY_CHARS);
     return [
         unit?.section_title,
         concepts,
@@ -344,15 +345,21 @@ export function deriveUnitConcepts(problem = {}) {
  * from the last assistant turn's math content — not tutoring meta or the
  * on-screen problem (token stopwords alone would leave "why" empty).
  */
-export function buildQueryText({ userMessage, problemContext, recentHistory }) {
+export function buildQueryText({ userMessage, problemContext, recentHistory, pendingQuestion }) {
     const message = String(userMessage || '').trim();
+    // Grade against the server-owned quiz topic, not just the student's possibly false claim.
+    if (typeof pendingQuestion === 'string' && pendingQuestion.trim()) {
+        return [pendingQuestion.slice(0, 2000), message].filter(Boolean).join(' ');
+    }
     const conceptual = GENERAL_RULE_RE.test(message);
     const rawWords = message
         .toLowerCase()
         .replace(/[^a-z0-9+\s_-]/g, ' ')
         .split(/\s+/)
         .filter(Boolean);
-    const shortFollowUp = rawWords.length > 0 && rawWords.length <= 3;
+    const refersToPrevious = /^(?:why (?:is|was|would|does|did) (?:that|it|this)\b|how so\b|what about (?:that|it)\b|(?:can you )?explain (?:that|it|this)\b|say that\b|go on\b|continue\b|(?:give|show) (?:me )?(?:an?|another) example\b)/i.test(message);
+    const shortFollowUp = rawWords.length > 0 &&
+        (tokenize(message).length === 0 || refersToPrevious);
 
     if (conceptual) {
         return message;
@@ -368,25 +375,65 @@ export function buildQueryText({ userMessage, problemContext, recentHistory }) {
                     typeof m?.content === 'string' &&
                     m.content.trim()
             );
-        const priorMath = lastAssistant
+        const priorTopic = lastAssistant
             ? String(lastAssistant.content).slice(0, 500)
             : '';
-        // Prefer last math claim; keep the short cue only as a weak tag.
-        return [priorMath, message].filter(Boolean).join(' ').trim();
+        // Keep the previous explanation available for a referential follow-up.
+        return [priorTopic, message].filter(Boolean).join(' ').trim();
     }
 
-    const parts = [message];
-    const recent = history
-        .slice(-2)
-        .map((m) =>
-            String(typeof m?.content === 'string' ? m.content : '').slice(0, 240)
-        )
-        .filter(Boolean);
-    if (recent.length) {
-        parts.push(recent[recent.length - 1]);
+    // A fully stated question starts a new retrieval query. Appending the previous
+    // answer can overwhelm a specific new section request with the old topic.
+    void problemContext;
+    return message;
+}
+
+// Character bounds are deterministic and also handle OCR text without punctuation.
+// At normal English density, 2,800 characters is roughly 500–800 tokens.
+export const READING_CHUNK_CHARS = 2800;
+const READING_OVERLAP_CHARS = 240;
+
+export function splitReadingUnit(unit) {
+    const field = unit.prompt ? 'prompt' : 'content';
+    const text = unit[field] || '';
+    if (unit.material_type !== 'textbook' || text.length <= READING_CHUNK_CHARS) {
+        return [unit];
     }
-    void problemContext; // sticky ITS text must not dominate ranking for normal asks
-    return parts.filter(Boolean).join(' ');
+    const chunks = [];
+    let start = 0;
+    while (start < text.length) {
+        let end = Math.min(start + READING_CHUNK_CHARS, text.length);
+        if (end < text.length) {
+            const window = text.slice(start, end);
+            const boundaries = [...window.matchAll(/\n\s*\n|[.!?][”"']?\s+/g)];
+            const boundary = boundaries.at(-1);
+            if (boundary && boundary.index > READING_CHUNK_CHARS / 2) {
+                end = start + boundary.index + boundary[0].length;
+            } else {
+                const space = window.lastIndexOf(' ');
+                if (space > READING_CHUNK_CHARS / 2) end = start + space + 1;
+            }
+        }
+        const excerpt = text.slice(start, end);
+        const digest = createHash('sha256').update(excerpt).digest('hex').slice(0, 16);
+        const chunk = {
+            ...unit,
+            unit_id: `${unit.unit_id}::chunk-${start}-${digest}`,
+            parent_unit_id: unit.unit_id,
+            source_char_start: start,
+            source_char_end: end,
+            [field]: excerpt,
+            // Child chunks must rank and embed their own text, not the whole section.
+            corpus: [unit.section_title, unit.material_title, excerpt].join('\n'),
+        };
+        chunk.embed_text = buildEmbedText(chunk);
+        chunks.push(chunk);
+        if (end === text.length) break;
+        const overlapStart = Math.max(start + 1, end - READING_OVERLAP_CHARS);
+        const space = text.indexOf(' ', overlapStart);
+        start = space >= overlapStart && space < end ? space + 1 : overlapStart;
+    }
+    return chunks;
 }
 
 /**
@@ -515,7 +562,20 @@ export function flattenLearningObjects(documentId, compiled, materialMeta = {}) 
             units.push(unit);
         }
     }
-    return units;
+    return units.flatMap(splitReadingUnit);
+}
+
+function sectionHeadingMatch(unit, queryTokens) {
+    if (unit.material_type !== 'textbook') return 0;
+    const heading = [...new Set(tokenize(unit.section_title))];
+    const query = queryTokens.join(' ');
+    for (let width = Math.min(4, heading.length); width >= 2; width--) {
+        for (let start = 0; start + width <= heading.length; start++) {
+            const phrase = heading.slice(start, start + width).join(' ');
+            if ((` ${query} `).includes(` ${phrase} `)) return width;
+        }
+    }
+    return 0;
 }
 
 /**
@@ -549,7 +609,7 @@ export function selectRelevantUnits(units, queryText, options = {}) {
         ) {
             embedScore = cosineSimilarity(queryEmbedding, u.embedding);
         }
-        return { unit: u, lexicalScore, embedScore, score: lexicalScore };
+        return { unit: u, lexicalScore, embedScore, sectionMatch: sectionHeadingMatch(u, queryTokens), score: lexicalScore };
     });
 
     const useHybrid =
@@ -568,6 +628,13 @@ export function selectRelevantUnits(units, queryText, options = {}) {
                     : 0;
             s.score = lexWeight * lexN + embedWeight * embN;
         }
+    }
+
+    // An explicitly named source section takes precedence over broad semantic
+    // similarity. Body relevance still ranks passages within the section.
+    for (const result of scored) {
+        result.sectionOpening = result.sectionMatch > 0 && result.unit.source_char_start === 0;
+        result.score += result.sectionMatch + (result.sectionOpening ? 1 : 0);
     }
 
     const sorted = scored
@@ -669,6 +736,17 @@ export function buildMaterialDescriptor(documentId, manifestEntry = {}, compiled
     return {
         document_id: documentId,
         material_type: resolveMaterialType(manifestEntry, compiled),
+        source_outline: resolveMaterialType(manifestEntry, compiled) === 'textbook'
+            ? (compiled.sections || []).flatMap(section =>
+                section.problems?.length
+                    ? section.problems.map(problem => ({
+                        id: problem.problem_id,
+                        title: problem.title || section.title || '',
+                    }))
+                    : [{ id: section.section_id, title: section.title || '' }]
+            ).filter(item => item.title)
+            : [],
+
         material_title: toStudentFacingMaterialTitle(documentId, {
             ...manifestEntry,
             course:
@@ -687,6 +765,10 @@ function formatCourseContextBlock(u) {
     const block = [];
     block.push('<course_context>');
     block.push(`document_id: ${u.document_id}`);
+    block.push(`chunk_id: ${u.unit_id}`);
+    if (u.parent_unit_id) block.push(`parent_unit_id: ${u.parent_unit_id}`);
+    if (u.source_char_start != null) block.push(`source_char_range: ${u.source_char_start}-${u.source_char_end}`);
+    if (u.pages?.length) block.push(`source_pages: ${u.pages.join(', ')}`);
     block.push(`material_type: ${u.material_type || 'worksheet'}`);
     block.push(
         `material_title: ${u.material_title || u.document_id || 'course materials'}`
@@ -749,12 +831,14 @@ function formatCourseContextBlock(u) {
  * 1) full ACCESSIBLE COURSE MATERIALS inventory (all lesson-allowed docs)
  * 2) selected <course_context> blocks (0–5; each with source identity)
  */
-export function formatPrivateCourseReference(units, options = {}) {
+export function assemblePrivateCourseReference(units, options = {}) {
     const materials = Array.isArray(options.materials) ? options.materials : [];
     const selected = Array.isArray(units) ? units : [];
     const officeHours = options.officeHours === true;
     const customFullChatPrompt = options.customFullChatPrompt === true;
-    if (!materials.length && !selected.length) return null;
+    const report = { text: null, includedChunkIds: [], omittedChunkIds: [],
+        truncatedChunkIds: [], referenceChars: 0 };
+    if (!materials.length && !selected.length) return report;
 
     const inventoryLines = ['ACCESSIBLE COURSE MATERIALS'];
     for (const m of materials) {
@@ -768,6 +852,23 @@ export function formatPrivateCourseReference(units, options = {}) {
         inventoryLines.push('');
     }
 
+    const outlineLines = [];
+    let outlineChars = 0;
+    for (const material of materials) {
+        if (!material.source_outline?.length) continue;
+        const heading = `SOURCE OUTLINE — ${material.material_title} (extracted headings in source order; not an instructor-reviewed study guide)`;
+        outlineLines.push(heading);
+        for (const [index, item] of material.source_outline.entries()) {
+            const line = `${index + 1}. ${String(item.title).slice(0, 100)}`;
+            if (outlineChars + line.length > 2200) {
+                outlineLines.push('[Additional source headings omitted for space.]');
+                break;
+            }
+            outlineLines.push(line);
+            outlineChars += line.length;
+        }
+    }
+
     const lines = [
         'PRIVATE COURSE REFERENCE',
         '',
@@ -777,6 +878,7 @@ export function formatPrivateCourseReference(units, options = {}) {
         'Materials may include discussion worksheets, a syllabus, or other lesson documents.',
         '',
         ...inventoryLines,
+        ...outlineLines,
         'Use it to guide the student, but:',
         '',
         '- Do not mention an answer key, solution document, compiled JSON, S3, retrieval, embeddings, or internal scoring.',
@@ -836,15 +938,38 @@ export function formatPrivateCourseReference(units, options = {}) {
             ''
         );
         let used = lines.join('\n').length;
-        for (const u of selected) {
-            const chunk = formatCourseContextBlock(u);
-            if (used + chunk.length > CHAR_BUDGET && used > 500) break;
+        for (const [index, unit] of selected.entries()) {
+            let chunk = formatCourseContextBlock(unit);
+            const remaining = CHAR_BUDGET - used - 2;
+            // Reserve room for later matches instead of letting the first one crowd them out.
+            const allowance = Math.min(remaining, index === 0
+                ? Math.max(1200, remaining - 800 * (selected.length - 1))
+                : Math.max(1200, Math.floor(remaining / (selected.length - index))));
+            if (allowance < 400) {
+                report.omittedChunkIds.push(unit.unit_id);
+                continue;
+            }
+            if (chunk.length > allowance) {
+                const suffix = '\n[Excerpt truncated to fit context budget.]\n</course_context>\n';
+                const prefix = chunk.slice(0, allowance - suffix.length);
+                const boundary = prefix.lastIndexOf(' ');
+                chunk = prefix.slice(0, boundary > prefix.length - 120 ? boundary : prefix.length) + suffix;
+                report.truncatedChunkIds.push(unit.unit_id);
+            }
             lines.push(chunk);
-            used += chunk.length;
+            report.includedChunkIds.push(unit.unit_id);
+            used += chunk.length + 1;
         }
     }
 
-    return lines.join('\n').trim();
+    report.text = lines.join('\n').trim();
+    report.referenceChars = report.text.length;
+    return report;
+}
+
+// Preserve callers that expect just the prompt string.
+export function formatPrivateCourseReference(units, options = {}) {
+    return assemblePrivateCourseReference(units, options).text;
 }
 
 /**
@@ -1057,7 +1182,18 @@ export function createDocumentContextRuntime(options = {}) {
                     loaded.value,
                     material
                 );
-                const unitVecs = embLoaded.value?.units || null;
+                const storedVectors = embLoaded.value?.units || null;
+                const vectorsMatch = storedVectors && units.every(unit =>
+                    Array.isArray(storedVectors[unit.unit_id]) &&
+                    (!embLoaded.value.unit_text_hashes ||
+                        embLoaded.value.unit_text_hashes[unit.unit_id] ===
+                            createHash('sha256').update(unit.embed_text).digest('hex'))
+                );
+                const unitVecs = vectorsMatch ? storedVectors : null;
+                if (storedVectors && !vectorsMatch) {
+                    meta.staleEmbeddingDocumentIds ||= [];
+                    meta.staleEmbeddingDocumentIds.push(documentId);
+                }
                 if (unitVecs && typeof unitVecs === 'object') {
                     for (const u of units) {
                         const vec = unitVecs[u.unit_id];
@@ -1094,13 +1230,39 @@ export function createDocumentContextRuntime(options = {}) {
             }
 
             // Global rank across all allowed documents; keep 0–5 score>0 matches.
-            const ranked = selectRelevantUnits(allUnits, queryText, {
+            let ranked = selectRelevantUnits(allUnits, queryText, {
                 queryEmbedding,
             });
+            // This flag is server-owned and only used for the Anthropology overview.
+            // Select from the current allowlist; never fetch an extra document.
+            if (args.readingOverview === true) {
+                const conclusion = selectRelevantUnits(allUnits, 'Third Form of Society Conclusion liberty', { maxObjects: 2 });
+                const labor = selectRelevantUnits(allUnits, 'Labor Destroys Property', { maxObjects: 1 });
+                const consent = selectRelevantUnits(allUnits, 'Universal Consent No Justification of Property', { maxObjects: 1 });
+                const anchors = [conclusion[0], ranked[0], labor[0], consent[0], conclusion[1]].filter(Boolean);
+                ranked = [...new Map([...anchors, ...ranked].map(row => [row.unit.unit_id, row])).values()].slice(0, 7);
+            }
+            const requestedRetained = [...new Set(Array.isArray(args.retainedChunkIds) ? args.retainedChunkIds : [])].slice(0, 7);
+            const allowedUnits = new Map(allUnits.map(unit => [unit.unit_id, unit]));
+            const retained = requestedRetained.filter(id => allowedUnits.has(id));
+            meta.retainedChunkIds = retained;
+            meta.missingRetainedChunkIds = requestedRetained.filter(id => !allowedUnits.has(id));
+            if (retained.length) {
+                const scores = new Map(ranked.map(row => [row.unit.unit_id, row]));
+                const pinned = retained.map(id => scores.get(id) || { unit: allowedUnits.get(id),
+                    score: null, lexicalScore: null, embedScore: null });
+                // Fresh topic matches must reach the budget before stale retained passages.
+                const fresh = ranked.slice(0, 2);
+                const merged = [...fresh, ...pinned, ...ranked];
+                ranked = [...new Map(merged.map(row => [row.unit.unit_id, row])).values()].slice(0, 7);
+            }
             const selected = ranked.map((r) => r.unit);
             meta.selectedObjectIds = selected.map((u) => u.unit_id);
             meta.selectedContexts = ranked.map((r) => ({
                 documentId: r.unit.document_id,
+                chunkId: r.unit.unit_id,
+                sectionMatch: r.sectionMatch,
+                sectionOpening: r.sectionOpening,
                 problemId: r.unit.problem_id || r.unit.unit_id,
                 score: r.score,
                 lexicalScore: r.lexicalScore,
@@ -1108,11 +1270,19 @@ export function createDocumentContextRuntime(options = {}) {
                 finalScore: r.score,
             }));
 
-            const privatePromptSection = formatPrivateCourseReference(
+            const formattedReference = assemblePrivateCourseReference(
                 selected,
                 { materials, officeHours, customFullChatPrompt }
             );
 
+            const privatePromptSection = formattedReference.text;
+            meta.includedChunkIds = formattedReference.includedChunkIds;
+            meta.omittedChunkIds = formattedReference.omittedChunkIds;
+            meta.truncatedChunkIds = formattedReference.truncatedChunkIds;
+            meta.referenceChars = formattedReference.referenceChars;
+            if (selected.length && !meta.includedChunkIds.length) {
+                meta.errorCode = 'NoExcerptsIncluded';
+            }
             const assetHints = [];
             if (FIGURE_QUERY_RE.test(queryText)) {
                 for (const u of selected) {
