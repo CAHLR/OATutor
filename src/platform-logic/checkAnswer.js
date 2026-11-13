@@ -43,6 +43,16 @@ function round(num, precision) {
     }
 }
 
+// Round to n significant figures
+function roundSig(num, n) {
+    return Number(num.toPrecision(n));
+}
+
+// true when two numbers differ only by floating-point noise
+function nearlyEqual(a, b) {
+    return Math.abs(a - b) <= 1e-9 * Math.max(Math.abs(a), Math.abs(b));
+}
+
 /**
  * Uses parse
  * @param _string the expression string
@@ -82,6 +92,16 @@ function validateAndCorrectFormat(input) {
     });
 
     return correctedInput;
+}
+
+// evaluates an answer string (plain or LaTeX) to a number, NaN if it is not one
+function toNumber(string) {
+    try {
+        const value = parse(validateAndCorrectFormat(string)).expr.eval();
+        return typeof value === "number" ? value : NaN;
+    } catch (_) {
+        return NaN;
+    }
 }
 
 function convertSwedishToUS(numberString) {
@@ -183,6 +203,30 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
             }
 
             return [parsed, false, WrongAnswerReasons.wrong];
+        } else if (answerType === "rounded") {
+            const attemptValue = toNumber(attempt);
+            if (!Number.isFinite(attemptValue)) {
+                return [attempt, false, WrongAnswerReasons.errored];
+            }
+
+            const correctAnswers = actual.filter(stepAns =>
+                roundSig(attemptValue, precision) === roundSig(toNumber(stepAns), precision));
+
+            if (correctAnswers.length > 0) {
+                return [attempt, correctAnswers[0], null]
+            }
+
+            // right value, but given to fewer significant figures than required
+            const notPreciseEnough = actual.some(stepAns => {
+                for (let figs = 1; figs < precision; figs++) {
+                    if (nearlyEqual(attemptValue, roundSig(toNumber(stepAns), figs))) {
+                        return true;
+                    }
+                }
+                return false;
+            });
+
+            return [attempt, false, notPreciseEnough ? WrongAnswerReasons.notPreciseEnough : WrongAnswerReasons.wrong];
         } else {
             // guess it is a number problem
             parsed = +attempt;

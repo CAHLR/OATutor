@@ -345,6 +345,11 @@ DO_FOCUS_TRACKING = false;
 * `TextBox` : Box for student to enter answer. 3 different types of answers are supported: Algebraic, String, Numeric.
   Algebraic will simplify numeric expressions, numeric checks numeric equivalence, string requires answers to exactly
   match.
+    * Rounded: set `answerType: "rounded"` and `precision: N` to grade a numeric answer to `N` significant figures
+      (defaults to 5 if `precision` is omitted). An answer is correct when it matches the step answer after both are
+      rounded to `N` significant figures, so more precise answers are also accepted. Ex. with `stepAnswer: ["9.81"]`
+      and `precision: 2`, the answers `9.8`, `9.81` and `9.807` are correct, `9.7` is incorrect, and `10` is incorrect
+      with a message asking for more significant figures. Scientific notation is accepted (Ex. `7.8\cdot10^{-4}`).
 * `MultipleChoice`: List choices as `choices: ["Choice A", "Choice B"]`, must have `answerType: "string"`
 
 ### Example Directory Structure
