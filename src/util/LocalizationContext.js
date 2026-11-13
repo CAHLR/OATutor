@@ -59,6 +59,11 @@ export const LocalizationProvider = ({ children }) => {
     }
   }, [platformLanguage, currentCourseName, currentCourseLanguage]);
 
+  // Lets screen readers know the page's language (WCAG 3.1.1). The app calls Swedish "se", but HTML uses "sv".
+  useEffect(() => {
+    document.documentElement.lang = activeLanguage === 'se' ? 'sv' : activeLanguage;
+  }, [activeLanguage]);
+
 
   // /**
   //  * Called when entering a course
