@@ -1,0 +1,69 @@
+[
+    {
+        "id": "a38da08geo2b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Transformation",
+        "text": "We can express $$x-2y=3$$ as $$x=3+2y$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo2b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo2b-h1"
+        ],
+        "title": "Substitution",
+        "text": "Substitude $$x=3+2y$$ into $$2x-4y=1$$. Simplify $$2\\left(3+2y\\right)-4y=1$$.",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo2b-h3",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo2b-h2"
+        ],
+        "title": "LHS",
+        "text": "$$2\\left(3+2y\\right)-4y=6$$",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    },
+    {
+        "id": "a38da08geo2b-h4",
+        "type": "scaffold",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
+        "hintAnswer": [
+            "No"
+        ],
+        "dependencies": [
+            "a38da08geo2b-h3"
+        ],
+        "title": "$$LHS=RHS$$",
+        "text": "Does $$6=1$$?",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": "",
+        "choices": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "a38da08geo2b-h5",
+        "type": "hint",
+        "dependencies": [
+            "a38da08geo2b-h4"
+        ],
+        "title": "Conclusion",
+        "text": "Since there is no solution to the equation, there is no intersection. Also, from the plot, we can see two lines are parallel",
+        "variabilization": {},
+        "oer": "https://OATutor.io",
+        "license": ""
+    }
+]
