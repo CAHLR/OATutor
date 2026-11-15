@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "Newton's second law gives $$m v'=m g-k v$$, or $$v'+\\frac{k}{m} v=g$$, with $$v(0)=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde18a-h1"
+        ],
+        "title": "Solve",
+        "text": "The integrating factor is $$e^{\\frac{k t}{m}}$$. This gives $$v=\\frac{g m}{k}+C e^{\\left(-\\frac{k t}{m}\\right)}$$, and $$v(0)=0$$ gives $$C=\\frac{-g m}{k}$$. So $$v=\\frac{g m}{k} \\left(1-e^{\\left(-\\frac{k t}{m}\\right)}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

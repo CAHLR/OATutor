@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write Newton's law",
+        "text": "$$T'=-0.125\\left(T-20\\right)$$, now with $$T(0)=58.5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable19b-h1"
+        ],
+        "title": "Solve",
+        "text": "$$T-20=A e^{-0.125 t}$$ with $$A=58.5-20=38.5$$, so $$T=20+38.5e^{-0.125 t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

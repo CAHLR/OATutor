@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write Newton's law",
+        "text": "The equation is $$T'=-0.125\\left(T-20\\right)$$ with $$T(0)=70$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable17a-h1"
+        ],
+        "title": "Separate and solve",
+        "text": "Separating gives $$T-20=A e^{-0.125 t}$$. At $$t=0$$, $$A=70-20=50$$, so $$T=20+50e^{-0.125 t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

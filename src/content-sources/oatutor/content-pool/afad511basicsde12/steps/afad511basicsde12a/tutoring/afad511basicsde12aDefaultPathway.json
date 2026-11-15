@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use substitution",
+        "text": "Let $$u=t^2+16$$, so $$du=2t$$ dt and the integral becomes the integral of $$\\sqrt{u}$$ du.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde12a-h1"
+        ],
+        "title": "Integrate and substitute back",
+        "text": "The integral of $$\\sqrt{u}$$ is $$\\frac{2}{3} u^{\\frac{3}{2}}$$, so $$y=\\frac{2}{3} \\left(t^2+16\\right)^{\\frac{3}{2}}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

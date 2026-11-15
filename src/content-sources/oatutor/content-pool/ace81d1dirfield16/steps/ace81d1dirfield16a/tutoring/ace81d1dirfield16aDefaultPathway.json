@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Euler's formula",
+        "text": "Each step uses $$y_{n+1}=y_n+hf(t_n,y_n)$$ where $$f(t,y)$$ is the right side of the differential equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield16a-h1"
+        ],
+        "title": "Add up the steps",
+        "text": "The slopes are $$2^0$$, $$2^{0.2}$$, $$2^{0.4}$$, $$2^{0.6}$$, $$2^{0.8}$$. Their sum is about $$6.7250$$, so $$y(1)$$ is about $$0.2\\times6.725=1.345$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

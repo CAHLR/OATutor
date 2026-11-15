@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the solution",
+        "text": "With $$r=0.04$$, $$K=500$$, and $$P_0=10$$, the solution can be written as $$P=\\frac{500}{1+49e^{-0.04 t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic9a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Set $$P=100$$: $$1+49e^{-0.04 t}=5$$, so $$e^{-0.04 t}=\\frac{4}{49}$$ and $$t=\\frac{\\ln\\left(\\frac{49}{4}\\right)}{0.04}$$, which is about $$62.64$$ years.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

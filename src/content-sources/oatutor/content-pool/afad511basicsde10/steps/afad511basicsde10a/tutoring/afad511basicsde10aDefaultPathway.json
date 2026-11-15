@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integrate both sides",
+        "text": "Since $$y'$$ is given as a function of $$x$$ only, integrate the right side with respect to $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde10a-h1"
+        ],
+        "title": "Integrate each term",
+        "text": "The integral of $$3x$$ is $$\\frac{3x^2}{2}$$ and the integral of $$e^x$$ is $$e^x$$, so $$y=\\frac{3x^2}{2}+e^x+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

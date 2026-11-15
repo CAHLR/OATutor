@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde14a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Dividing by $$x$$ gives $$y'-\\frac{y}{x}=2\\ln\\left(x\\right)$$, and the integrating factor is $$\\frac{1}{x}$$. Then the derivative of $$\\frac{y}{x}$$ is $$\\frac{2\\ln\\left(x\\right)}{x}$$, so $$\\frac{y}{x}={\\ln\\left(x\\right)}^2+C$$. $$y(1)=5$$ gives $$C=5$$, so $$y=x {\\ln\\left(x\\right)}^2+5x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

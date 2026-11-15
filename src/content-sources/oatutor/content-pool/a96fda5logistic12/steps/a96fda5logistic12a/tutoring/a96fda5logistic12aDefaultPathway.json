@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set the derivative to zero",
+        "text": "$$0.4P-\\frac{P^2}{25000}-400=0$$. Multiply by $$-25000$$ to get $$P^2-10000P+10000000=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic12a-h1"
+        ],
+        "title": "Use the quadratic formula",
+        "text": "$$P=5000$$ plus or minus $$\\sqrt{25000000-10000000}=5000$$ plus or minus $$1000\\sqrt{15}$$. The smaller one is $$5000-1000\\sqrt{15}$$, which is about $$1127$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

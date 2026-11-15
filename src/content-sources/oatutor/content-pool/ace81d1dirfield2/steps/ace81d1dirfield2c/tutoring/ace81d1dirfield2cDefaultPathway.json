@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield2c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield2c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield2c-h1"
+        ],
+        "title": "Test values near $$0$$",
+        "text": "At $$y=1$$, $$y'=-1<0$$, so $$y$$ moves down toward $$0$$. At $$y=-1$$, $$y'=3>0$$, so $$y$$ moves up toward $$0$$. That makes $$y=0$$ stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

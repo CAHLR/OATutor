@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Move everything with $$y$$ to one side with dy, and everything with the other variable to the other side, then integrate both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable6a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integrating $$\\frac{dy}{y^3}=x e^{x^2} dx$$ gives $$\\frac{-1}{2y^2}=\\frac{e^{x^2}}{2}+C$$. At $$x=0$$, $$y=1$$ this gives $$C=-1$$. So $$\\frac{1}{y^2}=2-e^{x^2}$$ and, since $$y(0)=1$$ is positive, $$y=\\frac{1}{\\sqrt{2-e^{x^2}}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

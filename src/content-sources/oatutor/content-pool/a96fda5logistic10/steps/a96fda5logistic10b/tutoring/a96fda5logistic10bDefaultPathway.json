@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "Set $$\\frac{25}{1+11.5e^{\\left(-r t\\right)}}=16$$, so $$e^{\\left(-r t\\right)}=\\frac{\\frac{9}{16}}{11.5}=\\frac{9}{184}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic10b-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$t=\\frac{\\ln\\left(\\frac{184}{9}\\right)}{r}$$, which is about $$8.94$$ years (about $$8$$ years and $$11$$ months). Use the unrounded value of $$r$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

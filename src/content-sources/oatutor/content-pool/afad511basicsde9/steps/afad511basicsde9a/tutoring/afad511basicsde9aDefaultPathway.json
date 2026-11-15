@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the point",
+        "text": "Plug $$t=1$$ and $$u=\\frac{\\pi}{2}$$ into $$u=\\arcsin\\left(e^{C+t}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde9a-h1"
+        ],
+        "title": "Solve for $$C$$",
+        "text": "$$\\frac{\\pi}{2}=\\arcsin\\left(e^{C+1}\\right)$$ means $$e^{C+1}=sin\\left(\\frac{\\pi}{2}\\right)=1$$. So $$C+1=0$$ and $$C=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

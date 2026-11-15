@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde12a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Dividing by $$x^2$$ gives $$y'-\\frac{y}{x}=\\frac{-\\ln\\left(x\\right)}{x^2}$$. With integrating factor $$\\frac{1}{x}$$, the derivative of $$\\frac{y}{x}$$ is $$\\frac{-\\ln\\left(x\\right)}{x^3}$$. Integrating by parts gives $$\\frac{y}{x}=\\frac{\\ln\\left(x\\right)}{2x^2}+\\frac{1}{4x^2}+C$$. $$y(1)=1$$ gives $$C=\\frac{3}{4}$$, so $$y=\\frac{\\ln\\left(x\\right)}{2x}+\\frac{1}{4x}+\\frac{3x}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

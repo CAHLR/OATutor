@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Maximize $$P'$$",
+        "text": "Write $$P'=a P \\left(\\ln\\left(K\\right)-\\ln\\left(P\\right)\\right)$$. Its derivative with respect to $$P$$ is $$a \\left(\\ln\\left(K\\right)-\\ln\\left(P\\right)-1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic20a-h1"
+        ],
+        "title": "Set it to zero",
+        "text": "$$\\ln(K)-\\ln(P)=1$$ means $$\\ln\\left(\\frac{K}{P}\\right)=1$$, so $$P=\\frac{K}{e}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

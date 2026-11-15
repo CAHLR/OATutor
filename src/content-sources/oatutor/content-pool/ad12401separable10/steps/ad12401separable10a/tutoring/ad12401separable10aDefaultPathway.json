@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Move everything with $$y$$ to one side with dy, and everything with the other variable to the other side, then integrate both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable10a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integrating $$e^{\\left(-y\\right)} dy=5^x$$ dx gives $$-e^{\\left(-y\\right)}=\\frac{5^x}{\\ln\\left(5\\right)}+C$$. At $$x=0$$, $$e^{\\left(-y\\right)}=\\frac{1}{\\ln\\left(5\\right)}$$, so $$C=\\frac{-2}{\\ln\\left(5\\right)}$$. Then $$e^{\\left(-y\\right)}=\\frac{2-5^x}{\\ln\\left(5\\right)}$$, so $$y=\\ln\\left(\\ln\\left(5\\right)\\right)-\\ln\\left(2-5^x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

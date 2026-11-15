@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde9a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "The integrating factor is $$e^x$$, and the derivative of $$e^x y$$ is $$x e^x$$. Integrating by parts, $$e^x y=x e^x-e^x+C$$, so $$y=x-1+C e^{\\left(-x\\right)}$$. $$y(0)=3$$ gives $$C=4$$, so $$y=x-1+4e^{\\left(-x\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

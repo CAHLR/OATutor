@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the temperature",
+        "text": "The ambient temperature is $$0$$, so $$T=70e^{-0.125 t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable18a-h1"
+        ],
+        "title": "Find the change",
+        "text": "$$T(5)=70e^{-0.625}$$, which is about $$37.47$$ degrees. So the coffee is $$70-37.47=32.53$$ degrees colder.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

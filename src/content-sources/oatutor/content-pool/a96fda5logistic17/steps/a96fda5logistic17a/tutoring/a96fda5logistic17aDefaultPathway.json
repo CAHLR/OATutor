@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Take logs",
+        "text": "Taking the natural log of both sides gives $$\\ln\\left(\\frac{P}{K}\\right)=\\ln\\left(\\frac{P_0}{K}\\right) e^{-0.1 t}$$. Here $$\\frac{P}{K}=\\frac{1}{2}$$ and $$\\frac{P_0}{K}=\\frac{1}{10000000}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic17a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$e^{-0.1 t}=\\frac{\\ln\\left(2\\right)}{\\ln\\left(10000000\\right)}$$, so $$t=10\\ln\\left(\\frac{\\ln\\left(10000000\\right)}{\\ln\\left(2\\right)}\\right)$$, which is about $$31.465$$ days.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

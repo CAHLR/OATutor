@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the velocity function",
+        "text": "Integrate the acceleration: $$v(t)=\\frac{15}{\\pi} sin\\left(\\pi t\\right)+C$$. Since $$v(0)=50$$, $$C=50$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde17a-h1"
+        ],
+        "title": "Plug in the time",
+        "text": "$$40$$ minutes is $$\\frac{2}{3}$$ of an hour. $$v\\left(\\frac{2}{3}\\right)=50+\\frac{15}{\\pi} sin\\left(\\frac{2\\pi}{3}\\right)=50+\\frac{15\\sqrt{3}}{2\\pi}$$, which rounds to $$54.13$$ mph.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

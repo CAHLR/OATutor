@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use L'Hopital's rule",
+        "text": "As $$k$$ approaches $$1$$ the fraction has the form $$\\frac{0}{0}$$, so take the derivative of the top and bottom with respect to $$k$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde20b-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The derivative of the top is $$t e^{k t}$$ and the derivative of the bottom is $$1$$. At $$k=1$$ this gives $$t e^t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

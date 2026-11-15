@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Move everything with $$y$$ to one side with dy, and everything with the other variable to the other side, then integrate both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable1a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integrating gives $$\\ln|y+1|=t+C$$ so $$y+1=A e^t$$ where $$A$$ is a constant. With $$y(0)=0$$, $$A=1$$, so $$y=e^t-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

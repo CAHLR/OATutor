@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find where the derivative is zero",
+        "text": "An equilibrium solution is a constant solution, so its derivative is $$0$$. Set the right side of the equation equal to $$0$$ and solve.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic15a-h1"
+        ],
+        "title": "Factor out $$P$$",
+        "text": "$$P'=P \\left(0.4-\\frac{P}{25000}-0.6\\right)=P \\left(-0.2-\\frac{P}{25000}\\right)$$. This is $$0$$ when $$P=0$$ or when $$\\frac{P}{25000}=-0.2$$, which is $$P=-5000$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

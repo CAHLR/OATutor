@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Maximize $$P'$$",
+        "text": "$$P'=r P-\\frac{r P^2}{K}$$ is a quadratic in $$P$$ and its derivative with respect to $$P$$ is $$r-\\frac{2r P}{K}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic18a-h1"
+        ],
+        "title": "Set it to zero",
+        "text": "$$r-\\frac{2r P}{K}=0$$ when $$P=\\frac{K}{2}$$, so the population grows fastest at half the carrying capacity.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Euler's formula",
+        "text": "Each step uses $$y_{n+1}=y_n+hf(t_n,y_n)$$ where $$f(t,y)$$ is the right side of the differential equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield19a-h1"
+        ],
+        "title": "One step",
+        "text": "With $$h=1$$ there is only one step: $$y_1=2+1\\times0\\times2=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

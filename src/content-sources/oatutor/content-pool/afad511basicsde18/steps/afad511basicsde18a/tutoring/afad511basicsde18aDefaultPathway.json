@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$y'$$",
+        "text": "If $$y=B e^{3t}$$, then $$y'=3B e^{3t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde18a-h1"
+        ],
+        "title": "Substitute and match",
+        "text": "$$y'-y=3B e^{3t}-B e^{3t}=2B e^{3t}$$. Setting this equal to $$8e^{3t}$$ gives $$2B=8$$, so $$B=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

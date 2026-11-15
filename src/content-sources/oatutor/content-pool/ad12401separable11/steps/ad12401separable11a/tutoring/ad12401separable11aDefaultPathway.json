@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Dividing both sides by $$\\tan{y}$$ gives $$\\cot{y}\\, dy=-2x\\, dx$$ and the left side integrates to $$\\ln|\\sin{y}|$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable11a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "This gives $$\\ln|\\sin{y}|=-x^2+C$$ and at $$x=0$$, $$sin\\left(\\frac{\\pi}{2}\\right)=1$$, so $$C=0$$. Then $$sin(y)=e^{\\left(-x^2\\right)}$$, so $$y=\\arcsin\\left(e^{\\left(-x^2\\right)}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

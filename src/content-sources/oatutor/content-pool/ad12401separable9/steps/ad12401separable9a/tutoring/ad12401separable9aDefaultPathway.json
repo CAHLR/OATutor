@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Move everything with $$y$$ to one side with dy, and everything with the other variable to the other side, then integrate both sides.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable9a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "The integral of $$\\frac{1}{y^2+4}$$ is $$\\frac{1}{2} \\arctan\\left(\\frac{y}{2}\\right)$$, so $$\\frac{1}{2} \\arctan\\left(\\frac{y}{2}\\right)=x^3+C$$. At $$x=0$$, $$y=0$$ this gives $$C=0$$. So $$\\arctan\\left(\\frac{y}{2}\\right)=2x^3$$ and $$y=2tan\\left(2x^3\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

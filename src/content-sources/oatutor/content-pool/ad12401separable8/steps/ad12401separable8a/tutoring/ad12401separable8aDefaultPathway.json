@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Separate to get $$\\frac{dx}{\\sqrt{1-x^2}}=\\ln\\left(t\\right) dt$$ and notice that the left side integrates to $$\\arcsin{x}$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable8a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integration by parts gives $$t \\ln\\left(t\\right)-t$$ for the right side, so $$\\arcsin{x}=t\\ln(t)-t+C$$ and at $$t=1$$, $$x=0$$ this gives $$C=1$$. So $$x=sin\\left(t \\ln\\left(t\\right)-t+1\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

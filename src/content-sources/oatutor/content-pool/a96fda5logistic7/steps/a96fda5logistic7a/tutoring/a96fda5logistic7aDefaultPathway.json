@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the logistic solution",
+        "text": "The solution of $$P'=r P \\left(1-\\frac{P}{K}\\right)$$ with $$P(0)=P_0$$ is $$P(t)=\\frac{P_0 K e^{r t}}{K-P_0+P_0 e^{r t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic7a-h1"
+        ],
+        "title": "Plug in the values",
+        "text": "Here $$r=0.05$$, $$K=6000$$, and $$P_0=1000$$, so $$P=\\frac{1000\\times6000 e^{0.05t}}{5000+1000e^{0.05t}}$$. Dividing the top and bottom by $$1000$$ gives $$P=\\frac{6000e^{0.05t}}{5+e^{0.05t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

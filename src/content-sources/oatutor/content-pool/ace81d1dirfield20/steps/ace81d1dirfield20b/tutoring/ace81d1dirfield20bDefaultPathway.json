@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield20b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Second step",
+        "text": "$$y_2=-18+5\\left(-2\\left(-18\\right)\\right)=-18+180$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield20b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield20b-h1"
+        ],
+        "title": "Compare with the real solution",
+        "text": "That gives $$162$$. The exact solution $$2e^{\\left(-2t\\right)}$$ is almost $$0$$ at $$t=10$$, so a step size this large makes the estimate blow up.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

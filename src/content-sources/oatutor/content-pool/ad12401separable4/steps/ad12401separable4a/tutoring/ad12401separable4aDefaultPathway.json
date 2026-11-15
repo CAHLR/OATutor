@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split the exponential",
+        "text": "$$e^{y-x}=e^y e^{\\left(-x\\right)}$$, so the equation is $$\\frac{dy}{dx}=e^y e^{\\left(-x\\right)}$$. Separate to get $$e^{\\left(-y\\right)} dy=e^{\\left(-x\\right)} dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable4a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integrating gives $$-e^{\\left(-y\\right)}=-e^{\\left(-x\\right)}+C$$. At $$x=0$$, $$y=0$$ this is $$-1=-1+C$$, so $$C=0$$. Then $$e^{\\left(-y\\right)}=e^{\\left(-x\\right)}$$, so $$y=x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

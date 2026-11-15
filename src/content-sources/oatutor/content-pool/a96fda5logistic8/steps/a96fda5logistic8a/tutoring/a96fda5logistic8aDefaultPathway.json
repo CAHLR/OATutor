@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the solution",
+        "text": "With $$r=0.2$$, $$K=1000000$$, and $$P_0=1$$, the logistic solution can be written as $$P=\\frac{K}{1+\\left(K-1\\right) e^{-0.2 t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic8a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "$$500000$$ is $$\\frac{K}{2}$$, so we need $$\\left(K-1\\right) e^{-0.2 t}=1$$. That gives $$t=\\frac{\\ln\\left(999999\\right)}{0.2}$$, which is about $$69.08$$ hours.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

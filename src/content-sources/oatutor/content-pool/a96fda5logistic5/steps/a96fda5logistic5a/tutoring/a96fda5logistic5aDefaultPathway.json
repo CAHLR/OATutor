@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Write the equation as $$\\frac{dP}{P \\left(10+P\\right)}=-dt$$ and use partial fractions: $$\\frac{1}{P \\left(10+P\\right)}=\\frac{1}{10} \\left(\\frac{1}{P}-\\frac{1}{10+P}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic5a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "This gives $$\\frac{1}{10}\\ln\\left|\\frac{P}{10+P}\\right|=-t+C$$ so $$\\frac{P}{10+P}=A e^{\\left(-10t\\right)}$$. At $$t=0$$, $$A=\\frac{2}{12}=\\frac{1}{6}$$. Solving for $$P$$ gives $$P=\\frac{10}{6e^{10t}-1}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

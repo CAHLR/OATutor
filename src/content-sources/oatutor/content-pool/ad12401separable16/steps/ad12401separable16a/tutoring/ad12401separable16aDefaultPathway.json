@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the solution",
+        "text": "The solution of $$T'=k T$$ with $$T(0)=200$$ is $$T=200e^{k t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable16a-h1"
+        ],
+        "title": "Use the second temperature",
+        "text": "$$T(1)=200e^k=140$$, so $$e^k=\\frac{7}{10}$$ and $$k=\\ln\\left(\\frac{7}{10}\\right)$$, which is about $$-0.357$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify the equation",
+        "text": "With $$k=0.4$$, $$P'=0.4P-\\frac{P^2}{25000}-0.4P=\\frac{-P^2}{25000}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic14a-h1"
+        ],
+        "title": "Test values near $$0$$",
+        "text": "$$\\frac{-P^2}{25000}$$ is negative whenever $$P$$ is not $$0$$. Positive populations fall toward $$0$$, but negative values move away from it. So $$P=0$$ is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

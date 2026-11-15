@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the distance",
+        "text": "Integrate $$v(t)$$ with distance $$0$$ at $$t=0$$. With $$\\frac{g m}{k}=245$$ and $$\\frac{k}{m}=0.04$$, the distance is $$s(t)=245t-6125\\left(1-e^{-0.04 t}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde19a-h1"
+        ],
+        "title": "Solve numerically",
+        "text": "Use a calculator to solve $$245t-6125\\left(1-e^{-0.04 t}\\right)=5000$$. The solution is about $$t=40.451$$ seconds.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

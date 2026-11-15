@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Notice the pattern",
+        "text": "Each step multiplies $$y$$ by $$1+0.2\\left(-3\\right)=0.4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield10b-h1"
+        ],
+        "title": "Repeat $$5$$ times",
+        "text": "After $$5$$ steps the estimate is $${0.4}^5=0.01024$$. For comparison, the exact value is $$e^{\\left(-3\\right)}$$, about $$0.0498$$, so Euler's method is pretty far off here.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

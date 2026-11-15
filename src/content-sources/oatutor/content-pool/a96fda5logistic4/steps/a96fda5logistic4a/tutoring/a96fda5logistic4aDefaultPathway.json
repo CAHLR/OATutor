@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write it in logistic form",
+        "text": "$$P'=10P-P^2=10P \\left(1-\\frac{P}{10}\\right)$$, so $$r=10$$ and $$K=10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic4a-h1"
+        ],
+        "title": "Use the logistic solution",
+        "text": "With $$P_0=2$$, $$P=\\frac{2\\times10 e^{10t}}{10-2+2e^{10t}}$$. Dividing the top and bottom by $$2$$ gives $$P=\\frac{10e^{10t}}{e^{10t}+4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

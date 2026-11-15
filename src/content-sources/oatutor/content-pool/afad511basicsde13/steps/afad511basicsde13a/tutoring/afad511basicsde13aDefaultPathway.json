@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Guess the form",
+        "text": "The derivative of $$y$$ is $$2$$ times $$y$$ itself. Functions of the form $$y=C e^{2t}$$ do this, since the derivative of $$e^{2t}$$ is $$2e^{2t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde13a-h1"
+        ],
+        "title": "Use the initial condition",
+        "text": "$$y(0)=C e^0=C$$, so $$C=1$$ and $$y=e^{2t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

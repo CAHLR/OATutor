@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde16a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Dividing by $$\\sqrt{x}$$ gives $$y'-\\frac{y}{\\sqrt{x}}=2\\sqrt{x}$$, and the integrating factor is $$e^{\\left(-2\\sqrt{x}\\right)}$$. Substituting $$u=\\sqrt{x}$$ in the integral gives $$e^{\\left(-2\\sqrt{x}\\right)} y=-e^{\\left(-2\\sqrt{x}\\right)} \\left(2x+2\\sqrt{x}+1\\right)+C$$. $$y(0)=1$$ gives $$C=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde13a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "In standard form $$y'-\\frac{y}{1+x^2}=\\frac{-1}{1+x^2}$$, and the integrating factor is $$e^{\\left(-\\arctan\\left(x\\right)\\right)}$$. This gives $$e^{\\left(-\\arctan\\left(x\\right)\\right)} y=e^{\\left(-\\arctan\\left(x\\right)\\right)}+C$$, so $$y=1+C e^{\\arctan\\left(x\\right)}$$. $$y(0)=0$$ gives $$C=-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

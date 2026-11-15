@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic1b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic1b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic1b-h1"
+        ],
+        "title": "Test values near $$3$$",
+        "text": "At $$P=4$$, $$P'=-4<0$$, so $$P$$ moves down toward $$3$$. At $$P=2$$, $$P'=2>0$$, so $$P$$ moves up toward $$3$$. So $$P=3$$ is stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

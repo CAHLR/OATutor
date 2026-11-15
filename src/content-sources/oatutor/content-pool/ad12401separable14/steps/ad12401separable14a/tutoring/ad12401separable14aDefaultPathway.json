@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "Salt comes in at $$0.1\\times2=0.2$$ kg per minute and leaves at $$\\frac{2y}{100}=\\frac{y}{50}$$ kg per minute. So $$y'=0.2-\\frac{y}{50}$$, with $$y(0)=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable14a-h1"
+        ],
+        "title": "Separate and solve",
+        "text": "Rewrite as $$y'=\\frac{10-y}{50}$$ and separate: $$\\frac{dy}{10-y}=\\frac{dt}{50}$$. Integrating gives $$10-y=A e^{\\left(-\\frac{t}{50}\\right)}$$, and $$y(0)=1$$ gives $$A=9$$. So $$y=10-9e^{\\left(-\\frac{t}{50}\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

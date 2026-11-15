@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$y'$$",
+        "text": "Using the product rule, $$y'=e^t \\left(\\left(a+b\\right) cos\\left(t\\right)+\\left(b-a\\right) sin\\left(t\\right)\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde20a-h1"
+        ],
+        "title": "Match coefficients",
+        "text": "Matching with $$2e^t cos\\left(t\\right)$$ gives $$a+b=2$$ and $$b-a=0$$. Adding these, $$2b=2$$, so $$b=1$$ and $$a=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

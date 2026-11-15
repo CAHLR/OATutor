@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "The velocity satisfies $$v'(t)=-32$$ with $$v(0)=a$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde16a-h1"
+        ],
+        "title": "Integrate",
+        "text": "Integrating gives $$v(t)=-32t+C$$, and $$v(0)=a$$ means $$C=a$$. So $$v(t)=a-32t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

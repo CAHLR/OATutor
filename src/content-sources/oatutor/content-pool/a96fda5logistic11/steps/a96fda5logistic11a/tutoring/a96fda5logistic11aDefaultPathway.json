@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$r$$",
+        "text": "With $$K=2000$$ and $$P_0=400$$, $$P=\\frac{2000}{1+4e^{\\left(-r t\\right)}}$$. $$P(2)=800$$ gives $$e^{\\left(-2r\\right)}=\\frac{3}{8}$$, so $$r=\\frac{\\ln\\left(\\frac{8}{3}\\right)}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic11a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Set $$P=1500$$: $$1+4e^{\\left(-r t\\right)}=\\frac{4}{3}$$, so $$e^{\\left(-r t\\right)}=\\frac{1}{12}$$. Then $$t=\\frac{\\ln\\left(12\\right)}{r}=\\frac{2\\ln\\left(12\\right)}{\\ln\\left(\\frac{8}{3}\\right)}$$, which is about $$5.07$$ months.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "The amount changes by $$r$$ coming in minus $$d y$$ going out: $$y'=r-d y$$, with $$y(0)=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable13a-h1"
+        ],
+        "title": "Separate and solve",
+        "text": "Integrating both sides of $$\\frac{dy}{r-d y}=dt$$ gives $$-\\frac{1}{d}\\ln|r-dy|=t+C$$ and using $$y(0)=0$$ and solving for $$y$$ gives $$y=\\frac{r}{d} \\left(1-e^{\\left(-d t\\right)}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

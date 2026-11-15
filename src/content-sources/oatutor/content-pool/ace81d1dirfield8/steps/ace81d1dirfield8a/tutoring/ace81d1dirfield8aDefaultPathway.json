@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integrate by parts",
+        "text": "Use integration by parts with $$u=t$$ and $$dv=e^t$$ dt.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield8a-h1"
+        ],
+        "title": "Finish the integral",
+        "text": "The integral is $$t e^t$$ minus the integral of $$e^t$$, which is $$t e^t-e^t$$. So $$y=e^t \\left(t-1\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

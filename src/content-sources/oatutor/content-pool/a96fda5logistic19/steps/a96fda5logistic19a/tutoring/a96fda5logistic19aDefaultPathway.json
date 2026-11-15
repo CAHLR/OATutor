@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Simplify",
+        "text": "$$r P \\left(1-\\frac{T}{P}\\right)=r \\left(P-T\\right)$$, so $$P'=r \\left(P-T\\right) \\left(1-\\frac{P}{K}\\right)$$, which is a quadratic in $$P$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic19a-h1"
+        ],
+        "title": "Maximize",
+        "text": "The quadratic $$r \\left(P-T\\right) \\left(1-\\frac{P}{K}\\right)$$ is zero at $$P=T$$ and $$P=K$$. A parabola peaks halfway between its zeros, at $$P=\\frac{K+T}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

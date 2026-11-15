@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic13b-h1"
+        ],
+        "title": "Test values near $$7500$$",
+        "text": "For $$P$$ a little above $$7500$$, $$P'<0$$, and for $$P$$ a little below $$7500$$, $$P'>0$$. Both push toward $$7500$$, so it is stable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

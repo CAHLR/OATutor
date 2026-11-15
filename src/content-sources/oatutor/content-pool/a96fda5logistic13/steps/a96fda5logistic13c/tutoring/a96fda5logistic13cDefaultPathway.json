@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic13c-h1"
+        ],
+        "title": "Test values near $$0$$",
+        "text": "When $$P$$ is small and positive, $$P'>0$$ so the population grows away from $$0$$. When $$P$$ is small and negative, $$P'<0$$ so $$P$$ moves away from $$0$$ on that side too. So $$P=0$$ is unstable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

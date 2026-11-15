@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde10a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "In standard form $$y'-y=2x^2$$, and the integrating factor is $$e^{\\left(-x\\right)}$$. Integrating $$2x^2 e^{\\left(-x\\right)}$$ by parts twice gives $$e^{\\left(-x\\right)} y=-e^{\\left(-x\\right)} \\left(2x^2+4x+4\\right)+C$$. So $$y=-2x^2-4x-4+C e^x$$, and $$y(0)=0$$ gives $$C=4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

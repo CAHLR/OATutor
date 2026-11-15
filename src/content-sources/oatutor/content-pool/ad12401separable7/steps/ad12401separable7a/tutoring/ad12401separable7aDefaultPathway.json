@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate and use partial fractions",
+        "text": "Separate to get $$\\frac{dy}{y \\left(1+2y\\right)}=2x$$ dx. Partial fractions give $$\\frac{1}{y \\left(1+2y\\right)}=\\frac{1}{y}-\\frac{2}{1+2y}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable7a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "Integrating gives $$\\ln\\left(|\\frac{y}{1+2y}|\\right)=x^2+C$$ and at $$x=0$$ the fraction $$\\frac{y}{1+2y}$$ equals $$1$$, so $$C=0$$ and $$\\frac{y}{1+2y}=e^{x^2}$$. Solving for $$y$$ gives $$y=\\frac{e^{x^2}}{1-2e^{x^2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

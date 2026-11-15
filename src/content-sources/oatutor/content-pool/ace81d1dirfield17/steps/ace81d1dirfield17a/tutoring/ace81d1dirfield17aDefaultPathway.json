@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use Euler's formula",
+        "text": "Each step uses $$y_{n+1}=y_n+hf(t_n,y_n)$$ where $$f(t,y)$$ is the right side of the differential equation.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield17a-h1"
+        ],
+        "title": "Notice the pattern",
+        "text": "Each step multiplies $$y$$ by $$1+0.2=1.2$$, so $$y(1)$$ is about $$-1\\times{1.2}^5=-2.48832$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

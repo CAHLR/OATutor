@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the equation",
+        "text": "Salt comes in at $$0.2\\times20+0.05\\times5=4.25$$ kg per minute. The volume stays at $$1000$$ liters, so salt leaves at $$\\frac{25y}{1000}=\\frac{y}{40}$$ kg per minute. So $$y'=4.25-\\frac{y}{40}$$, with $$y(0)=10$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable15a-h1"
+        ],
+        "title": "Separate and solve",
+        "text": "Rewrite as $$y'=\\frac{170-y}{40}$$. Separating and integrating gives $$170-y=A e^{\\left(-\\frac{t}{40}\\right)}$$, and $$y(0)=10$$ gives $$A=160$$. So $$y=170-160e^{\\left(-\\frac{t}{40}\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

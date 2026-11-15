@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the solution",
+        "text": "With $$K=25$$ and $$P_0=2$$, the solution can be written as $$P=\\frac{25}{1+11.5e^{\\left(-r t\\right)}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic10a-h1"
+        ],
+        "title": "Use the population at $$5$$ years",
+        "text": "$$P(5)=8$$ means $$1+11.5e^{\\left(-5r\\right)}=\\frac{25}{8}$$, so $$e^{\\left(-5r\\right)}=\\frac{17}{92}$$ and $$r=\\frac{\\ln\\left(\\frac{92}{17}\\right)}{5}$$, which is about $$0.3377$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

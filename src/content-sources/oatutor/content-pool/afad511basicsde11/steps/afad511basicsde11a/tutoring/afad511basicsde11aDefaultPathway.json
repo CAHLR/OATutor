@@ -1,0 +1,24 @@
+[
+    {
+        "id": "afad511basicsde11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integrate both sides",
+        "text": "Integrate $$4^x$$ with respect to $$x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "afad511basicsde11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "afad511basicsde11a-h1"
+        ],
+        "title": "Integral of an exponential",
+        "text": "The integral of $$a^x$$ is $$\\frac{a^x}{\\ln\\left(a\\right)}$$, so $$y=\\frac{4^x}{\\ln\\left(4\\right)}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

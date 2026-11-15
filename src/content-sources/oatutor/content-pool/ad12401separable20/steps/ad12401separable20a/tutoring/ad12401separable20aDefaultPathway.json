@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ad12401separable20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Separate the variables",
+        "text": "Separate to get $$\\frac{dy}{a y+b}=dx$$. The left side integrates to $$\\frac{1}{a}\\ln|ay+b|$$",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ad12401separable20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ad12401separable20a-h1"
+        ],
+        "title": "Solve and use the initial condition",
+        "text": "So $$a y+b=A e^{a x}$$, and at $$x=0$$ we get $$A=a c+b$$. Dividing by $$a$$ gives $$y=\\left(c+\\frac{b}{a}\\right) e^{a x}-\\frac{b}{a}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

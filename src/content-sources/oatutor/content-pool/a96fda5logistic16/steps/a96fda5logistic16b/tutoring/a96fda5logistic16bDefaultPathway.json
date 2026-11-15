@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic16b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Use the logistic solution",
+        "text": "The solution of $$P'=r P \\left(1-\\frac{P}{K}\\right)$$ with $$P(0)=P_0$$ is $$P(t)=\\frac{P_0 K e^{r t}}{K-P_0+P_0 e^{r t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic16b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic16b-h1"
+        ],
+        "title": "Plug in the values",
+        "text": "With $$r=0.35$$, $$K=8750$$, and $$P_0=5000$$, $$P=\\frac{8750}{1+0.75e^{-0.35 t}}$$. Multiplying the top and bottom by $$4$$ gives $$P=\\frac{35000}{4+3e^{-0.35 t}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

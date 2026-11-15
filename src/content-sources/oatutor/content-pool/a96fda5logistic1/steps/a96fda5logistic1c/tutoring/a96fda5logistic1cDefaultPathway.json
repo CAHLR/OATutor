@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic1c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic1c-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic1c-h1"
+        ],
+        "title": "Test values near $$0$$",
+        "text": "At $$P=1$$, $$P'=2>0$$, so $$P$$ moves away from $$0$$. At $$P=-1$$, $$P'=-4<0$$, so $$P$$ also moves away. So $$P=0$$ is unstable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

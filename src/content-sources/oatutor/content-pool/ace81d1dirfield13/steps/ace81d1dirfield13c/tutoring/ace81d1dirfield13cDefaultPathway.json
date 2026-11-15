@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield13c-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug in $$t=1$$",
+        "text": "Use the exact solution $$y=5e^t-2-t^2-2t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield13c-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield13c-h1"
+        ],
+        "title": "Simplify",
+        "text": "$$y(1)=5e-2-1-2=5e-5=5\\left(e-1\\right)$$, which is about $$8.5914$$. Euler's estimate is too low.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

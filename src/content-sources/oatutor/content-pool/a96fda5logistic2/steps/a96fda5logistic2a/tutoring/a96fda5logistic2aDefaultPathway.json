@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a96fda5logistic2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check the sign on each side",
+        "text": "If the derivative pushes nearby values toward the equilibrium from both sides, it is stable. If it pushes them away it is unstable. If it pushes toward it on one side and away on the other, it is semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a96fda5logistic2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a96fda5logistic2a-h1"
+        ],
+        "title": "Test values near $$0$$",
+        "text": "$$-P^2$$ is negative whenever $$P$$ is not $$0$$. So for $$P>0$$ the population falls toward $$0$$, but for $$P<0$$ it falls away from $$0$$. That makes $$P=0$$ semistable.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

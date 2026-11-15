@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ace81d1dirfield19b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Plug in $$t=1$$",
+        "text": "$$y(1)=2e^{\\frac{1}{2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ace81d1dirfield19b-h2",
+        "type": "hint",
+        "dependencies": [
+            "ace81d1dirfield19b-h1"
+        ],
+        "title": "Simplify",
+        "text": "$$e^{\\frac{1}{2}}=\\sqrt{e}$$, so $$y(1)=2\\sqrt{e}$$, which is about $$3.2974$$. One big step of Euler's method misses by a lot.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

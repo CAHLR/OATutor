@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the integrating factor",
+        "text": "Put the equation in the form $$y'+p\\left(x\\right) y=q(x)$$, then multiply by the integrating factor so the left side becomes the derivative of the integrating factor times $$y$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde17a-h1"
+        ],
+        "title": "Integrate and solve",
+        "text": "In standard form $$y'-2y=x e^x$$, and the integrating factor is $$e^{\\left(-2x\\right)}$$. Then the derivative of $$e^{\\left(-2x\\right)} y$$ is $$x e^{\\left(-x\\right)}$$, so $$e^{\\left(-2x\\right)} y=-x e^{\\left(-x\\right)}-e^{\\left(-x\\right)}+C$$. $$y(0)=-1$$ gives $$C=0$$, so $$y=-\\left(x+1\\right) e^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a0269fblinearde8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Get standard form",
+        "text": "Move the $$e^t y$$ term to the left: $$\\frac{dy}{dt}+\\left(3t-e^t\\right) y=0$$. So $$p(t)=3t-e^t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a0269fblinearde8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a0269fblinearde8a-h1"
+        ],
+        "title": "Integrate $$p(t)$$",
+        "text": "The integral of $$3t-e^t$$ is $$\\frac{3t^2}{2}-e^t$$, so the integrating factor is $$e^{\\frac{3t^2}{2}-e^t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
