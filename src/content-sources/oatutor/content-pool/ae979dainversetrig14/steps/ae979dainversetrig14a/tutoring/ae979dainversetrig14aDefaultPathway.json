@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=\\arctan\\left(t^2\\right)$$, so $$du=\\frac{2t dt}{1+t^4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig14a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{1}{2}$$ times the integral of u du is $$\\frac{u^2}{4}$$, so the answer is $$\\frac{{\\arctan\\left(t^2\\right)}^2}{4}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

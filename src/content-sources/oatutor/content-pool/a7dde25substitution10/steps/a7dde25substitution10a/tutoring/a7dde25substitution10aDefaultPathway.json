@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=1-t^2$$, so $$du=-2t dt$$ and $$t dt=\\frac{-du}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution10a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{-\\left(\\frac{1}{2}\\right) u^{11}}{11}=\\frac{-u^{11}}{22}$$, so the answer is $$\\frac{-\\left(1-t^2\\right)^{11}}{22}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

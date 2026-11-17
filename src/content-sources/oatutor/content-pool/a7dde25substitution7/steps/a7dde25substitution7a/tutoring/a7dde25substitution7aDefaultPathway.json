@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=x^3-3x^2$$, $$du=\\left(3x^2-6x\\right) dx=3\\left(x^2-2x\\right) dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution7a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{\\frac{1}{3} u^3}{3}=\\frac{u^3}{9}$$, so the answer is $$\\frac{\\left(x^3-3x^2\\right)^3}{9}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

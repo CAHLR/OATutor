@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Inverse sine formula",
+        "text": "The integral of $$\\frac{du}{\\sqrt{a^2-u^2}}$$ is $$\\arcsin\\left(\\frac{u}{a}\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig6a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=4x$$, so $$du=4dx$$. The integral becomes $$\\frac{1}{4}$$ times the integral of $$\\frac{du}{\\sqrt{1-u^2}}$$, which is $$\\frac{1}{4} \\arcsin\\left(4x\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

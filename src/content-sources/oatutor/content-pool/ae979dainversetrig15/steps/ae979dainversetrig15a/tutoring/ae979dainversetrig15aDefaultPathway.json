@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=e^t$$, so $$du=e^t dt$$ and $$e^{2t}=u^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig15a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$\\frac{du}{\\sqrt{1-u^2}}$$ is arcsin(u), so the answer is $$\\arcsin\\left(e^t\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

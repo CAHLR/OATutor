@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum formulas",
+        "text": "The sum of i from $$1$$ to $$n$$ is $$\\frac{n\\left(n+1\\right)}{2}$$, and the sum of $$i^2$$ from $$1$$ to $$n$$ is $$\\frac{n\\left(n+1\\right) \\left(2n+1\\right)}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx6a-h1"
+        ],
+        "title": "Subtract the first ten terms",
+        "text": "From $$11$$ to $$20$$, the sum of $$j^2$$ is $$2870-385=2485$$ and the sum of j is $$210-55=155$$. So the sum is $$2485-10\\times155=935$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

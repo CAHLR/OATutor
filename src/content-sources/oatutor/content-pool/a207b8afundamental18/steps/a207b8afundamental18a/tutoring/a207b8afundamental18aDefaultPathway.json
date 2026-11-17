@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Fundamental Theorem, Part $$2$$",
+        "text": "Find an antiderivative F of the integrand. The integral from a to $$b$$ equals $$F(b)-F(a)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental18a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "An antiderivative of sin(t) is $$-cos(t)$$, so the integral is $$-cos\\left(x\\right)+cos\\left(-x\\right)=0$$, since cos is even.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

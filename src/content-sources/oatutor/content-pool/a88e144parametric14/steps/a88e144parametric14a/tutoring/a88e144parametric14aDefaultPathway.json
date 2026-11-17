@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$t$$",
+        "text": "From $$x=\\frac{1}{\\sqrt{t+1}}$$, we get $$t+1=\\frac{1}{x^2}$$, so $$t=\\frac{1}{x^2}-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric14a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Then $$y=\\frac{t}{1+t}=\\left(\\frac{1}{x^2}-1\\right) x^2=1-x^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

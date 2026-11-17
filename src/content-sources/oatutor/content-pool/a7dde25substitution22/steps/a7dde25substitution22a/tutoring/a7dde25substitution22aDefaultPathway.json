@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution22a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and change the limits",
+        "text": "Let $$u=1-x^2$$, so $$du=-2x dx$$. When $$x=-1$$, $$u=0$$, and when $$x=2$$, $$u=-3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution22a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution22a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral becomes $$-\\left(\\frac{1}{2}\\right)$$ times the integral of $$u^3$$ from $$0$$ to $$-3$$, which is $$-\\left(\\frac{1}{2}\\right) \\frac{81}{4}=\\frac{-81}{8}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

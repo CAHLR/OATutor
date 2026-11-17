@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Right-endpoint sum",
+        "text": "Divide [a,b] into $$n$$ equal pieces of width $$dx=\\frac{b-a}{n}$$. $$R_n$$ adds f at the right end of each piece, then multiplies by dx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx9a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "$$dx=0.25$$ and the right endpoints are $$0.25$$, $$0.5$$, $$0.75$$, $$1$$. The values of g are $$\\frac{\\sqrt{2}}{2}$$, $$0$$, $$\\frac{-\\sqrt{2}}{2}$$, $$-1$$, which add to $$-1$$. Multiply by $$0.25$$ to get $$-0.25$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

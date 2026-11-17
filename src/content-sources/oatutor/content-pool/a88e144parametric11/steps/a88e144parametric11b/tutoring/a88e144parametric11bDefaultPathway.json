@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric11b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the possible x-values",
+        "text": "Since ln(t) requires $$t>0$$, $$x=t^3$$ takes every positive value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric11b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric11b-h1"
+        ],
+        "title": "Check the ends",
+        "text": "As $$x$$ approaches $$0$$ from the right, ln(x) goes to $$-\\infty$$, so $$x=0$$ (the y-axis) is a vertical asymptote. As $$x$$ goes to $$\\infty$$, ln(x) grows without bound, so there is no horizontal asymptote.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

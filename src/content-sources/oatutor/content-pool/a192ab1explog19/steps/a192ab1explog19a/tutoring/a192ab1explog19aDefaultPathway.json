@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=x-100$$, $$x=u+100$$ and $$dx=du$$, so the integrand becomes $$\\frac{u+100}{u}=1+\\frac{100}{u}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog19a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "This gives $$u+100\\ln\\left(|u|\\right)$$. Since $$u=x-100$$ and constants can be absorbed into C, the answer is $$x+100\\ln\\left(|x-100|\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

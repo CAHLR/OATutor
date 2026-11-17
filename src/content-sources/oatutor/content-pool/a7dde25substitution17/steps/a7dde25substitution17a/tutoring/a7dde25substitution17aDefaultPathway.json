@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and change the limits",
+        "text": "Let $$u=1-x^2$$, so $$du=-2x dx$$. When $$x=0$$, $$u=1$$, and when $$x=1$$, $$u=0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution17a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral becomes $$\\frac{1}{2}$$ times the integral of $$u^{\\frac{1}{2}}$$ from $$0$$ to $$1$$, which is $$\\frac{1}{2} \\frac{2}{3}=\\frac{1}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

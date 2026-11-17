@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Chain rule",
+        "text": "If the upper limit is u(x), then the derivative is $$f{\\left(u\\left(x\\right)\\right)} \\operatorname{u'}\\left(x\\right)$$. If the lower limit is v(x), subtract $$f{\\left(v\\left(x\\right)\\right)} \\operatorname{v'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental9a-h1"
+        ],
+        "title": "Use the upper limit $$e^x$$",
+        "text": "The derivative is $$\\ln\\left(\\left(e^x\\right)^2\\right)$$ times $$e^x$$. Since $$\\ln\\left(e^{2x}\\right)=2x$$, this is $$2x e^x$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

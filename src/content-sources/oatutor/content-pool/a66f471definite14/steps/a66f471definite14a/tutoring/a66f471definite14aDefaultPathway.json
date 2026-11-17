@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a66f471definite14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Check for symmetry",
+        "text": "Since $$sin(-t)=-sin(t)$$ and $${\\left(-t\\right)}^2=t^2$$, the integrand is an odd function.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a66f471definite14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a66f471definite14a-h1"
+        ],
+        "title": "Conclude",
+        "text": "The integral of an odd function over [-A,A] is $$0$$, because the areas on the two sides cancel.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Exponential rule",
+        "text": "An antiderivative of $$e^{k x}$$ is $$\\frac{e^{k x}}{k}$$, and an antiderivative of $$a^x$$ is $$\\frac{a^x}{\\ln\\left(a\\right)}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog3a-h1"
+        ],
+        "title": "Apply",
+        "text": "With $$a=2$$, the answer is $$\\frac{2^x}{\\ln\\left(2\\right)}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

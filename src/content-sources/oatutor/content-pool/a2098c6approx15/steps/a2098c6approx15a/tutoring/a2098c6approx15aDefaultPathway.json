@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the width",
+        "text": "$$dx=\\frac{2-1}{30}=\\frac{1}{30}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx15a-h1"
+        ],
+        "title": "Left endpoints",
+        "text": "The left endpoint of the i-th piece is $$1+\\frac{i-1}{30}$$, so $$L_{30}$$ is $$\\frac{1}{30}$$ times the sum of $$\\left(1+\\frac{i-1}{30}\\right)^2$$ for i from $$1$$ to $$30$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

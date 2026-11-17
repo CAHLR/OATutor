@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=cos\\left(t^2\\right)$$, so $$du=-2t sin\\left(t^2\\right) dt$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution14a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{-\\left(\\frac{1}{2}\\right) u^2}{2}=\\frac{-u^2}{4}$$, so the answer is $$\\frac{-cos^2\\left(t^2\\right)}{4}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

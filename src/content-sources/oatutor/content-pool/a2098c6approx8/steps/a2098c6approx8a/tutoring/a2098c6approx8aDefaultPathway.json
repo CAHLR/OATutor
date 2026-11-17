@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Left-endpoint sum",
+        "text": "Divide [a,b] into $$n$$ equal pieces of width $$dx=\\frac{b-a}{n}$$. $$L_n$$ adds f at the left end of each piece, then multiplies by dx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx8a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "$$dx=0.25$$ and the left endpoints are $$2$$, $$2.25$$, $$2.5$$, $$2.75$$. The values of f are $$1$$, $$0.8$$, $$0.6667$$, $$0.5714$$, which add to $$3.0381$$. Multiply by $$0.25$$ to get about $$0.7595$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

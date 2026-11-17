@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution2a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=2x-3$$, $$du=2dx$$, so $$dx=\\frac{du}{2}$$ and the integral becomes $$\\frac{1}{2}$$ times the integral of $$u^{\\left(-7\\right)}$$ du.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution2a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution2a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{\\frac{1}{2} u^{\\left(-6\\right)}}{\\left(-6\\right)}=\\frac{-1}{12u^6}$$, so the answer is $$\\frac{-1}{12\\left(2x-3\\right)^6}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

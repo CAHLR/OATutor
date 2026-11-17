@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$\\frac{dy}{dx}$$",
+        "text": "$$\\frac{dx}{dt}=-4sin\\left(t\\right)$$ and $$\\frac{dy}{dt}=4cos\\left(t\\right)$$, so $$\\frac{dy}{dx}=-\\cot$$ $$t$$ .",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc6a-h1"
+        ],
+        "title": "Solve for $$t$$",
+        "text": "Setting $$-cot(t)=\\frac{1}{2}$$ gives $$tan(t)=-2$$, so either $$cos(t)=\\frac{1}{\\sqrt{5}}$$ and $$sin(t)=\\frac{-2}{\\sqrt{5}}$$, or $$cos(t)=\\frac{-1}{\\sqrt{5}}$$ and $$sin(t)=\\frac{2}{\\sqrt{5}}$$. Multiply by $$4$$ to get the points.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the slope",
+        "text": "For a parametric curve, $$\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc13a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{dx}{dtheta}$$ is $$\\sec\\theta\\tan\\theta$$ and $$\\frac{dy}{dtheta}$$ is $$2\\sec**2\\theta$$ , so $$\\frac{dy}{dx}=2\\csc\\theta$$ , which equals $$4$$ at $$theta=\\frac{\\pi}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

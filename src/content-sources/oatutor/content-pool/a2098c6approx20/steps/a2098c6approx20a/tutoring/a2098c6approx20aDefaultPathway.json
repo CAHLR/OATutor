@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Left-endpoint sum",
+        "text": "Divide [a,b] into $$n$$ equal pieces of width $$dx=\\frac{b-a}{n}$$. $$L_n$$ adds f at the left end of each piece, then multiplies by dx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx20a-h1"
+        ],
+        "title": "Use symmetry",
+        "text": "The values of $$cos\\left(\\pi x\\right)$$ at $$0.1$$, ..., $$0.9$$ cancel in pairs, leaving only $$cos(0)=1$$. So $$L_{10}=0.1\\times1=0.1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

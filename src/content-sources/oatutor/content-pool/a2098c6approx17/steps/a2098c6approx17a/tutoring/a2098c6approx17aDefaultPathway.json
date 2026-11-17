@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Write the sum",
+        "text": "Each week has $$7$$ days, so the total is $$7$$ times the sum of $$1+\\frac{i-1}{10}$$ for i from $$1$$ to $$25$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx17a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The sum of $$1$$ is $$25$$, and the sum of $$(i-1)$$ is $$0+1+...+24=300$$. So the total is $$7\\left(25+\\frac{300}{10}\\right)=7\\times55=385$$ miles.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric9b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the possible x-values",
+        "text": "As $$t$$ ranges over all positive numbers, $$x=\\ln\\left(2t\\right)$$ takes every real value.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric9b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric9b-h1"
+        ],
+        "title": "Check the ends",
+        "text": "As $$x$$ goes to $$-\\infty$$, $$\\frac{e^{2x}}{4}$$ approaches $$0$$, so $$y=0$$ is a horizontal asymptote. As $$x$$ goes to $$\\infty$$, $$y$$ grows without bound, and there is no vertical asymptote.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

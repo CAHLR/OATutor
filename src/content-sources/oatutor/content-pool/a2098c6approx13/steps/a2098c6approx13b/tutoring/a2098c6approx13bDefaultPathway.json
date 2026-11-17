@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Right-endpoint sum",
+        "text": "Divide [a,b] into $$n$$ equal pieces of width $$dx=\\frac{b-a}{n}$$. $$R_n$$ adds f at the right end of each piece, then multiplies by dx.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx13b-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The right endpoints are $$-1$$, $$0$$, $$1$$, $$2$$. The values of f are $$1$$, $$2$$, $$1$$, $$0$$, which add to $$4$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc13b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Second derivative formula",
+        "text": "For a parametric curve, $$\\frac{d2 y}{dx2}$$ is the derivative of $$\\frac{dy}{dx}$$ with respect to $$t$$, divided by $$\\frac{dx}{dt}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc13b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc13b-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The derivative of $$2\\csc\\theta$$ is $$-2\\csc\\theta\\cot\\theta$$ . Dividing by $$\\sec\\theta\\tan\\theta$$ gives $$-2\\cot**3\\theta$$ . At $$theta=\\frac{\\pi}{6}$$, $$cot(theta)=\\sqrt{3}$$, so the value is $$-6\\sqrt{3}$$ and the curve is concave down.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

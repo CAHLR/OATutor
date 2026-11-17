@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Arc length formula",
+        "text": "The arc length is the integral of $$\\sqrt{\\left(\\frac{dx}{dt}\\right)^2+\\left(\\frac{dy}{dt}\\right)^2}$$ over the interval.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc20a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\frac{dx}{dt}=e^t \\left(cos\\left(t\\right)-sin\\left(t\\right)\\right)$$ and $$\\frac{dy}{dt}=e^t \\left(sin\\left(t\\right)+cos\\left(t\\right)\\right)$$. Their squares add to $$2e^{2t}$$, so the integrand is $$\\sqrt{2} e^t$$. The arc length is $$\\sqrt{2} \\left(e^{\\frac{\\pi}{2}}-1\\right)$$, which is about $$5.389$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

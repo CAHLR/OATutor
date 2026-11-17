@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc17a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "Integrate with respect to y: the area is the integral of $$x \\frac{dy}{dt}$$ for $$t$$ from $$0$$ to $$\\frac{\\pi}{2}$$, which is the integral of $$cos\\left(t\\right) e^t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc17a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc17a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "An antiderivative of $$e^t cos\\left(t\\right)$$ is $$\\frac{e^t \\left(sin\\left(t\\right)+cos\\left(t\\right)\\right)}{2}$$. Evaluating from $$0$$ to $$\\frac{\\pi}{2}$$ gives $$\\frac{e^{\\frac{\\pi}{2}}-1}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

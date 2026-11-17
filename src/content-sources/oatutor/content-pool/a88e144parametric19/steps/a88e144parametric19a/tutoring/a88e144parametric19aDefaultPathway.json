@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$t$$",
+        "text": "From $$x=\\ln\\left(5t\\right)$$, we get $$5t=e^x$$, so $$ln(t)=x-ln(5)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric19a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Then $$y=\\ln\\left(t^2\\right)=2\\ln\\left(t\\right)=2\\left(x-\\ln\\left(5\\right)\\right)=2x-2\\ln\\left(5\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

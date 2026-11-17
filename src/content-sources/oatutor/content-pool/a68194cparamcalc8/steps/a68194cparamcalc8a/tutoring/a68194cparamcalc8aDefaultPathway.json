@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the point and derivatives",
+        "text": "At $$t=1$$, $$x=e$$ and $$y=1$$. Also $$\\frac{dx}{dt}=\\frac{e^{\\sqrt{t}}}{2\\sqrt{t}}=\\frac{e}{2}$$ and $$\\frac{dy}{dt}=\\frac{-2}{t}=-2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc8a-h1"
+        ],
+        "title": "Find the slope and line",
+        "text": "$$\\frac{dy}{dx}=\\frac{-2}{\\frac{e}{2}}=\\frac{-4}{e}$$, so $$y-1=\\left(-\\frac{4}{e}\\right) \\left(x-e\\right)$$, which simplifies to $$y=\\left(-\\frac{4}{e}\\right) x+5$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

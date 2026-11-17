@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Chain rule",
+        "text": "If the upper limit is u(x), then the derivative is $$f{\\left(u\\left(x\\right)\\right)} \\operatorname{u'}\\left(x\\right)$$. If the lower limit is v(x), subtract $$f{\\left(v\\left(x\\right)\\right)} \\operatorname{v'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental8a-h1"
+        ],
+        "title": "Use the upper limit $$u(x)=ln(x)$$",
+        "text": "The derivative is $$e^{\\ln\\left(x\\right)}$$ times $$\\frac{1}{x}$$, which is $$x \\frac{1}{x}=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

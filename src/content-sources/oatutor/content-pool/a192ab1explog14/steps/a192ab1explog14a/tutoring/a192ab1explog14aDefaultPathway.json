@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=e^x+e^{\\left(-x\\right)}$$, so $$du=\\left(e^x-e^{\\left(-x\\right)}\\right) dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog14a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$\\frac{du}{u}$$ is $$\\ln\\left(|u|\\right)$$. Since $$u>0$$, the answer is $$\\ln\\left(e^x+e^{\\left(-x\\right)}\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

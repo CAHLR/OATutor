@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Inverse tangent formula",
+        "text": "The integral of $$\\frac{du}{a^2+u^2}$$ is $$\\frac{1}{a} \\arctan\\left(\\frac{u}{a}\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig8a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Let $$u=4x$$, so $$du=4dx$$. The integral becomes $$\\frac{1}{4}$$ times the integral of $$\\frac{du}{25+u^2}$$, which is $$\\frac{1}{4} \\frac{1}{5} \\arctan\\left(\\frac{u}{5}\\right)=\\frac{1}{20} \\arctan\\left(\\frac{4x}{5}\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the roots",
+        "text": "$$t^2-2t-3=\\left(t-3\\right) \\left(t+1\\right)$$ is $$0$$ at $$t=-1$$ and $$t=3$$. It is negative on $$(-1,3)$$ and positive elsewhere.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental20a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "Integrate $$t^2-2t-3$$ on [-2,-1] $$\\frac{7}{3}$$, its negative on [-1,3] $$\\frac{32}{3}$$, and itself on [3,4] $$\\frac{7}{3}$$. The total is $$\\frac{46}{3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

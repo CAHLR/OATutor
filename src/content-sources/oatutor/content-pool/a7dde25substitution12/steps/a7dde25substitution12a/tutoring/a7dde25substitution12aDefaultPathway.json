@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution12a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=cos(theta)$$, so $$du=-sin\\left(\\theta\\right) d\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution12a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution12a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral becomes -(integral of $$u^3$$ $$du)=\\frac{-u^4}{4}$$, so the answer is $$\\frac{-cos^4\\left(\\theta\\right)}{4}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

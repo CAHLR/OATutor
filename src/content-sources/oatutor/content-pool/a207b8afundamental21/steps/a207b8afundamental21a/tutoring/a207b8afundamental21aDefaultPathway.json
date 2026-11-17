@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental21a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Split at the root",
+        "text": "cos(t) is positive on $$[0,\\frac{\\pi}{2})$$ and negative on $$(\\frac{\\pi}{2},pi]$$, so split the integral at $$t=\\frac{\\pi}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental21a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental21a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral of cos(t) from $$0$$ to $$\\frac{\\pi}{2}$$ is $$1$$, and the integral of $$-cos(t)$$ from $$\\frac{\\pi}{2}$$ to pi is $$1$$. The total is $$2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

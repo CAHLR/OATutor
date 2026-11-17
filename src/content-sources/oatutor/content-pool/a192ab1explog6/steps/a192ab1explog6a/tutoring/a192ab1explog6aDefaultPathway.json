@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=ln(x)$$, so $$du=\\frac{dx}{x}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog6a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$u^{\\left(-2\\right)}$$ du is $$\\frac{-1}{u}$$, so the answer is $$\\frac{-1}{\\ln\\left(x\\right)}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

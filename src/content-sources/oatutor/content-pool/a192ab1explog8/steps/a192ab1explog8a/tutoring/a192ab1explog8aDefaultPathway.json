@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "$$tan(theta)=\\fracsin^c\\left(\\theta\\right)os\\left(\\theta\\right)}$$. Let $$u=cos(theta)$$, so $$du=-sin\\left(\\theta\\right) d\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog8a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral becomes -(integral of du/u)=-ln(abs(u)), so the answer is $$-\\ln\\left(|cos\\left(\\theta\\right)|\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

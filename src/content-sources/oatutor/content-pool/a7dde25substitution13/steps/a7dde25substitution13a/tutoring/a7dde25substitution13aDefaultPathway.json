@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution13a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=cos\\left(\\pi t\\right)$$, so $$du=-\\pi sin\\left(\\pi t\\right) dt$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution13a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution13a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{-\\left(\\frac{1}{\\pi}\\right) u^3}{3}$$, so the answer is $$\\frac{-cos^3\\left(\\pi t\\right)}{3\\pi}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

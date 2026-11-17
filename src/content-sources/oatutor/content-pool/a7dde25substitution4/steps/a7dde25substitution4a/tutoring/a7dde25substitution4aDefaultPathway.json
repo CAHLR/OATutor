@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution4a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=x^2+1$$, $$du=2x dx$$, so $$x dx=\\frac{du}{2}$$ and the integral becomes $$\\frac{1}{2}$$ times the integral of $$u^{\\left(-\\frac{1}{2}\\right)}$$ du.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution4a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution4a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$2\\frac{1}{2} u^{\\frac{1}{2}}=\\sqrt{u}$$, so the answer is $$\\sqrt{x^2+1}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

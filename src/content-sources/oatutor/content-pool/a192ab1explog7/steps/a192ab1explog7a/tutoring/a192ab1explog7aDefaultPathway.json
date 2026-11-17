@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=ln(x)$$, so $$du=\\frac{dx}{x}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog7a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$\\frac{du}{u}$$ is $$\\ln\\left(|u|\\right)$$. Since $$\\ln\\left(x\\right)>0$$ for $$x>1$$, the answer is $$\\ln\\left(\\ln\\left(x\\right)\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

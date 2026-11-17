@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution6a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=x^2-2x$$, $$du=\\left(2x-2\\right) dx=2\\left(x-1\\right) dx$$, so $$\\left(x-1\\right) dx=\\frac{du}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution6a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution6a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{\\frac{1}{2} u^4}{4}=\\frac{u^4}{8}$$, so the answer is $$\\frac{\\left(x^2-2x\\right)^4}{8}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$t$$",
+        "text": "The point $$(1,1)$$ corresponds to $$t=0$$, since $$e^0=1$$ and $$\\left(0-1\\right)^2=1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc9a-h1"
+        ],
+        "title": "Find the slope and line",
+        "text": "$$\\frac{dx}{dt}=e^t=1$$ and $$\\frac{dy}{dt}=2\\left(t-1\\right)=-2$$ at $$t=0$$, so $$\\frac{dy}{dx}=-2$$. Then $$y-1=-2\\left(x-1\\right)$$, which simplifies to $$y=-2x+3$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

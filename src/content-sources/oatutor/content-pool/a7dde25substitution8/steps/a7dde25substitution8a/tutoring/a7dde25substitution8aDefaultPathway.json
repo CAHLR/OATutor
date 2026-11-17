@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution8a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Rewrite",
+        "text": "$$cos^3\\left(\\theta\\right)=\\left(1-sin^2\\left(\\theta\\right)\\right) cos\\left(\\theta\\right)$$. With $$u=sin(theta)$$, $$du=cos\\left(\\theta\\right) d\\left(\\theta\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution8a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution8a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$1-u^2$$ du is $$u-\\frac{u^3}{3}$$, so the answer is $$sin\\left(\\theta\\right)-\\frac{sin^3\\left(\\theta\\right)}{3}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

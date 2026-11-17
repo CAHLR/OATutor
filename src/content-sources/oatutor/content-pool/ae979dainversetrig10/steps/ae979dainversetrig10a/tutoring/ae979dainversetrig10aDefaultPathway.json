@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig10a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Factor out the constant",
+        "text": "$$\\sqrt{4x^2-16}=2\\sqrt{x^2-4}$$, so the integral is $$\\frac{1}{2}$$ times the integral of $$\\frac{dx}{x \\sqrt{x^2-4}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig10a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig10a-h1"
+        ],
+        "title": "Apply the inverse secant formula",
+        "text": "With $$a=2$$, the integral of $$\\frac{dx}{x \\sqrt{x^2-4}}$$ is $$\\frac{1}{2} \\operatorname{arcsec}\\left(\\frac{|x|}{2}\\right)$$. Multiply by $$\\frac{1}{2}$$ to get $$\\frac{1}{4} \\operatorname{arcsec}\\left(\\frac{|x|}{2}\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

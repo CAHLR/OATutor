@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a1374bcnetchange1a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Integrate term by term",
+        "text": "Find an antiderivative of each term separately, then add the constant of integration C.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a1374bcnetchange1a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a1374bcnetchange1a-h1"
+        ],
+        "title": "Integrate each exponential",
+        "text": "An antiderivative of $$e^{k x}$$ is $$\\frac{e^{k x}}{k}$$. So $$e^{2x}$$ gives $$\\frac{e^{2x}}{2}$$, and $$\\frac{1}{2} e^{\\frac{x}{2}}$$ gives $$2\\frac{1}{2} e^{\\frac{x}{2}}=e^{\\frac{x}{2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Sum formulas",
+        "text": "The sum of i from $$1$$ to $$n$$ is $$\\frac{n\\left(n+1\\right)}{2}$$, and the sum of $$i^2$$ from $$1$$ to $$n$$ is $$\\frac{n\\left(n+1\\right) \\left(2n+1\\right)}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx7a-h1"
+        ],
+        "title": "Evaluate each piece",
+        "text": "Rewrite $$\\left(2k\\right)^2$$ as $$4k^2$$. With $$n=25$$: $$4$$ times the sum of $$k^2$$ is $$4\\times5525=22100$$, and $$100$$ times the sum of k is $$100\\times325=32500$$. So the sum is $$22100-32500=-10400$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

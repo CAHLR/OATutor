@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc10b-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Condition for a vertical tangent",
+        "text": "A vertical tangent occurs where $$\\frac{dx}{dt}=0$$ and $$\\frac{dy}{dt}$$ is not $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc10b-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc10b-h1"
+        ],
+        "title": "Solve",
+        "text": "$$\\frac{dx}{dt}=2cos\\left(2t\\right)=0$$ when $$2t$$ is an odd multiple of $$\\frac{\\pi}{2}$$, that is, $$t=\\frac{\\pi}{4}$$, $$\\frac{3\\pi}{4}$$, $$\\frac{5\\pi}{4}$$, $$\\frac{7\\pi}{4}$$. At these values cos(t) is not $$0$$, so $$\\frac{dy}{dt}$$ is not $$0$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

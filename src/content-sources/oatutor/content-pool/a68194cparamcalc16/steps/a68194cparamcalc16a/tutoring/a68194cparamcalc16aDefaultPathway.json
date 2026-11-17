@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Set up the integral",
+        "text": "One arch corresponds to $$0 \\leq theta \\leq 2\\pi$$. The area is the integral of $$y \\frac{dx}{dtheta}$$ from $$0$$ to $$2\\pi$$, which is the integral of $$r^2 \\left(1-cos\\left(\\theta\\right)\\right)^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc16a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "$$\\left(1-cos\\left(\\theta\\right)\\right)^2=1-2cos\\left(\\theta\\right)+cos^2\\left(\\theta\\right)$$. Over $$[0,2\\pi]$$ these terms integrate to $$2\\pi$$, $$0$$, and pi, so the area is $$r^2 \\left(2\\pi+\\pi\\right)=3\\pi r^2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

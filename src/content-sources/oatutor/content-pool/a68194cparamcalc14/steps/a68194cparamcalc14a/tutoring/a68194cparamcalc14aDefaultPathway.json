@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc14a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$\\frac{dy}{dx}$$",
+        "text": "$$\\frac{dx}{dt}=4t^3$$ and $$\\frac{dy}{dt}=1-2t$$, so $$\\frac{dy}{dx}=\\frac{1-2t}{4t^3}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc14a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc14a-h1"
+        ],
+        "title": "Differentiate again",
+        "text": "The derivative of $$\\frac{1-2t}{4t^3}$$ with respect to $$t$$ is $$\\frac{4t-3}{4t^4}$$. Divide by $$\\frac{dx}{dt}=4t^3$$ to get $$\\frac{4t-3}{16t^7}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

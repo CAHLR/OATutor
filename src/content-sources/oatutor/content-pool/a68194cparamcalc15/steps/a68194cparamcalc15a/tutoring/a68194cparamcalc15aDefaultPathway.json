@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a68194cparamcalc15a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find $$\\frac{dy}{dx}$$",
+        "text": "$$\\frac{dx}{dt}=t$$ and $$\\frac{dy}{dt}=t^2$$, so $$\\frac{dy}{dx}=t$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a68194cparamcalc15a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a68194cparamcalc15a-h1"
+        ],
+        "title": "Differentiate again",
+        "text": "The derivative of $$t$$ with respect to $$t$$ is $$1$$. Divide by $$\\frac{dx}{dt}=t$$ to get $$\\frac{1}{t}$$, which equals $$\\frac{1}{2}$$ at $$t=2$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

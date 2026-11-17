@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=3x-2$$, $$du=3dx$$, so the integral becomes $$\\frac{1}{3}$$ times the integral of $$u^{\\left(-11\\right)}$$ du.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution3a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "$$\\frac{\\frac{1}{3} u^{\\left(-10\\right)}}{\\left(-10\\right)}=\\frac{-1}{30u^{10}}$$, so the answer is $$\\frac{-1}{30\\left(3x-2\\right)^{10}}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

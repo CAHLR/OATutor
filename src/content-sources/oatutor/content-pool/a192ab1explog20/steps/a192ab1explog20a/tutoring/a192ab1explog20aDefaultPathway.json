@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog20a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Substitute",
+        "text": "With $$u=y+1$$, $$y-1=u-2$$ and $$dy=du$$, so the integrand becomes $$\\frac{u-2}{u}=1-\\frac{2}{u}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog20a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog20a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "This gives $$u-2\\ln\\left(|u|\\right)$$. Since $$u=y+1$$ and constants can be absorbed into C, the answer is $$y-2\\ln\\left(|y+1|\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

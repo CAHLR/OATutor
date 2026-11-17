@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig18a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=ln(t)$$, so $$du=\\frac{dt}{t}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig18a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig18a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$\\frac{du}{1+u^2}$$ is arctan(u), so the answer is $$\\arctan\\left(\\ln\\left(t\\right)\\right)+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

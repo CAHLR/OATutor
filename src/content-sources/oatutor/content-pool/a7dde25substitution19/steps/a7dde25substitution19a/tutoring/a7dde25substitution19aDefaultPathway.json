@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a7dde25substitution19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u and change the limits",
+        "text": "Let $$u=5+t^2$$, so $$du=2t dt$$. The limits become $$u=5$$ and $$u=9$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a7dde25substitution19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a7dde25substitution19a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral becomes $$\\frac{1}{2}$$ times the integral of $$u^{\\left(-\\frac{1}{2}\\right)}$$ from $$5$$ to $$9$$, which is $$\\sqrt{9}-\\sqrt{5}=3-\\sqrt{5}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

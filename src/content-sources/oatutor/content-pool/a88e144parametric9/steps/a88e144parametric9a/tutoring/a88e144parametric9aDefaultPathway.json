@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric9a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$t$$",
+        "text": "From $$x=\\ln\\left(2t\\right)$$, we get $$2t=e^x$$, so $$t=\\frac{e^x}{2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric9a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric9a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Then $$y=t^2=\\left(\\frac{e^x}{2}\\right)^2=\\frac{e^{2x}}{4}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

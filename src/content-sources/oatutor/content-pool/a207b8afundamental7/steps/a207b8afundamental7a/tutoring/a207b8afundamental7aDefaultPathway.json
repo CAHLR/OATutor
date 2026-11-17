@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a207b8afundamental7a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Chain rule",
+        "text": "If the upper limit is u(x), then the derivative is $$f{\\left(u\\left(x\\right)\\right)} \\operatorname{u'}\\left(x\\right)$$. If the lower limit is v(x), subtract $$f{\\left(v\\left(x\\right)\\right)} \\operatorname{v'}\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a207b8afundamental7a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a207b8afundamental7a-h1"
+        ],
+        "title": "Use the upper limit $$u(x)=x^2$$",
+        "text": "The derivative is $$\\frac{\\sqrt{x^2}}{1+x^2}$$ times $$2x$$. Since $$\\sqrt{x^2}=|x|$$, this is $$\\frac{2x |x|}{1+x^2}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

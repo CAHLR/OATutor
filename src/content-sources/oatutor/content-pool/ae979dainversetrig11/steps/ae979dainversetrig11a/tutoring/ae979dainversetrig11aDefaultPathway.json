@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=arcsin(t)$$, so $$du=\\frac{dt}{\\sqrt{1-t^2}}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig11a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of u du is $$\\frac{u^2}{2}$$, so the answer is $$\\frac{{\\arcsin\\left(t\\right)}^2}{2}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

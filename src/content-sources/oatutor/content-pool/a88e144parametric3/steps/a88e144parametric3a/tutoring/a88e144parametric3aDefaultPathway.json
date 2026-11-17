@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a88e144parametric3a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Solve for $$t$$",
+        "text": "From $$y=t+1$$, we get $$t=y-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a88e144parametric3a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a88e144parametric3a-h1"
+        ],
+        "title": "Substitute",
+        "text": "Substitute into $$x=t^2+2t$$ to get $$x=\\left(y-1\\right)^2+2\\left(y-1\\right)=y^2-2y+1+2y-2$$, which simplifies to $$x=y^2-1$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

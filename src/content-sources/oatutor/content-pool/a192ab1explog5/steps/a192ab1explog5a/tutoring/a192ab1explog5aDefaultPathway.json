@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog5a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=ln(x)$$, so $$du=\\frac{dx}{x}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog5a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog5a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of u du is $$\\frac{u^2}{2}$$, so the answer is $$\\frac{{\\ln\\left(x\\right)}^2}{2}+C$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

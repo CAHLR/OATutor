@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a2098c6approx16a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Find the width",
+        "text": "$$dx=\\frac{\\pi-0}{20}=\\frac{\\pi}{20}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a2098c6approx16a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a2098c6approx16a-h1"
+        ],
+        "title": "Right endpoints",
+        "text": "The right endpoint of the i-th piece is $$\\frac{\\pi i}{20}$$, so $$R_{20}$$ is $$\\frac{\\pi}{20}$$ times the sum of $$sin\\left(\\frac{\\pi i}{20}\\right)$$ for i from $$1$$ to $$20$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

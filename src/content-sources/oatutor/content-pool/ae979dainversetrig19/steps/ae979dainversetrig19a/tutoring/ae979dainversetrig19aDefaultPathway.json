@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ae979dainversetrig19a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=arcsin(t)$$, so $$du=\\frac{dt}{\\sqrt{1-t^2}}$$. The limits become $$u=0$$ and $$u=\\frac{\\pi}{6}$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "ae979dainversetrig19a-h2",
+        "type": "hint",
+        "dependencies": [
+            "ae979dainversetrig19a-h1"
+        ],
+        "title": "Evaluate",
+        "text": "The integral of tan(u) from $$0$$ to $$\\frac{\\pi}{6}$$ is $$-\\ln\\left(cos\\left(\\frac{\\pi}{6}\\right)\\right)=-\\ln\\left(\\frac{\\sqrt{3}}{2}\\right)=\\frac{1}{2} \\ln\\left(\\frac{4}{3}\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

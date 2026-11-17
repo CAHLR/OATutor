@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a192ab1explog11a-h1",
+        "type": "hint",
+        "dependencies": [],
+        "title": "Choose u",
+        "text": "Let $$u=sin(x)$$, so $$du=cos\\left(x\\right) dx$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    },
+    {
+        "id": "a192ab1explog11a-h2",
+        "type": "hint",
+        "dependencies": [
+            "a192ab1explog11a-h1"
+        ],
+        "title": "Integrate and back-substitute",
+        "text": "The integral of $$e^u$$ du is $$e^u$$, so the answer is $$e^sin^C\\left(x\\right)$$.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]
