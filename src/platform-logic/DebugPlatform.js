@@ -22,6 +22,32 @@ let problemPool = require(`@generated/processed-content-pool/${CONTENT_SOURCE}.j
 let seed = Date.now().toString();
 console.log("Generated seed");
 
+export const compareDebugProblemIDs = (a, b) => {
+    const aNum = parseInt(a.match(/\d+$/)?.[0], 10);
+    const bNum = parseInt(b.match(/\d+$/)?.[0], 10);
+    const aName = a.match(/^[^0-9]+/)?.[0] || a;
+    const bName = b.match(/^[^0-9]+/)?.[0] || b;
+
+    if (aName !== bName) return aName.localeCompare(bName);
+    if (Number.isNaN(aNum) || Number.isNaN(bNum)) return a.localeCompare(b);
+    return aNum - bNum;
+};
+
+export const getScopedDebugProblemIDs = (problems, currentProblem) => {
+    if (!currentProblem) return [];
+
+    // Topics are authored on lessons, so this course + lesson scope is also
+    // the current problem's lesson/topic pool.
+    const scopedProblems = currentProblem.lessonId
+        ? problems.filter((problem) =>
+            problem.lessonId === currentProblem.lessonId &&
+            (!currentProblem.courseName || problem.courseName === currentProblem.courseName)
+        )
+        : problems;
+
+    return scopedProblems.map((problem) => problem.id).sort(compareDebugProblemIDs);
+};
+
 export class DebugPlatform extends React.Component {
     static contextType = ThemeContext;
 
@@ -35,10 +61,8 @@ export class DebugPlatform extends React.Component {
         this.lesson = null;
 
         let chosenProblem = null;
-        const problemIDs = [];
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
-            problemIDs.push(problem.id)
             if (problem.id === this.props.problemID) {
                 chosenProblem = problem;
             }
@@ -48,7 +72,7 @@ export class DebugPlatform extends React.Component {
             }
         }
         context.problemID = this.props.problemID
-        context.problemIDs = problemIDs.sort(this.__compareProblemID)
+        context.problemIDs = getScopedDebugProblemIDs(this.problemIndex.problems, chosenProblem)
 
         this.state = {
             currProblem: chosenProblem,
@@ -92,10 +116,8 @@ export class DebugPlatform extends React.Component {
         this.lesson = null;
 
         let chosenProblem = null;
-        const problemIDs = [];
         // Add each Q Matrix skill model attribute to each step
         for (const problem of this.problemIndex.problems) {
-            problemIDs.push(problem.id)
             if (problem.id === problemID) {
                 chosenProblem = problem;
             }
@@ -105,41 +127,13 @@ export class DebugPlatform extends React.Component {
             }
         }
         context.problemID = problemID;
-        context.problemIDs = problemIDs.sort(this.__compareProblemID);
+        context.problemIDs = getScopedDebugProblemIDs(this.problemIndex.problems, chosenProblem);
 
         this.setState({
             currProblem: chosenProblem,
             status: "learning",
             seed: seed
         })
-    }
-
-    __compareProblemID = (a, b) => {
-        var aNum = a.match(/\d+$/);
-        if (aNum) {
-            aNum = parseInt(aNum[0]);
-        }
-
-        var bNum = b.match(/\d+$/);
-        if (bNum) {
-            bNum = parseInt(bNum[0]);
-        }
-
-        var aName = a.match(/^[^0-9]+/);
-        if (aName) {
-            aName = aName[0];
-        }
-
-        var bName = b.match(/^[^0-9]+/);
-        if (bName) {
-            bName = bName[0];
-        }
-
-        if (aName !== bName) {
-            return aName.localeCompare(bName);
-        } else {
-            return aNum - bNum;
-        }
     }
 
     _nextProblem = (context, problemID) => {
@@ -255,14 +249,13 @@ export class DebugPlatform extends React.Component {
                             <Grid item xs={isMobile ? 5 : 7}>
                                 <div style={{ display: "flex", alignItems: "center", minWidth: 0, gap: isMobile ? 8 : 12 }}>
                                     <Button
-                                        aria-label="Return to home"
-                                        aria-roledescription="Return to the home page"
+                                        aria-label="Return to debug directory"
+                                        aria-roledescription="Return to the Debug Links Directory"
                                         role="link"
                                         variant="contained"
                                         color="primary"
                                         onClick={() => {
-                                            this.props.history.push("/")
-                                            this.setState({ status: "lessonSelection" })
+                                            this.props.history.push("/debug")
                                         }}
                                         style={{
                                             width: isMobile ? 92 : 176,

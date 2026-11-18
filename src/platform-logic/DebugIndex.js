@@ -72,7 +72,8 @@ export default function DebugIndex({ history }) {
 
     const course = directory.find((entry) => entry.course === selectedCourse);
     const lessons = course?.lessons || [];
-    const topics = [...new Set(lessons.map((lesson) => lesson.topic))].sort();
+    // Set preserves first occurrence, matching the authored course/lesson order.
+    const topics = [...new Set(lessons.map((lesson) => lesson.topic))];
 
     const problems = useMemo(() => {
         if (!selectedCourse) return [];
