@@ -15,7 +15,7 @@ person has to decide which:
     - the grader rejects a correct answer written another way
 
 Setup (from this folder):
-    pip install anthropic             (only for Claude)
+    pip install playwright anthropic  (anthropic only for Claude)
     npm install                       (in the repo root, once: the grader needs it)
 
     Claude:  export ANTHROPIC_API_KEY=...        (costs money per question)
@@ -366,7 +366,9 @@ def main():
             done += 1
             if done % 10 == 0 or done == len(jobs):
                 print(f"[{done}/{len(jobs)}] questions answered", flush=True)
-                json.dump(cache, open(CACHE, "w"))      # save as we go in case it stops
+                # save as we go in case it stops. dict() makes a copy first, since
+                # the other threads can still be adding answers while it saves
+                json.dump(dict(cache), open(CACHE, "w"))
 
     # 2. grade the AI answers, and the stored answers too (to know if those work at all)
     asked = [j for j in jobs if j["ai_answer"]]
