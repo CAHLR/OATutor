@@ -3,9 +3,14 @@
     "stepAnswer": [
         "DNE"
     ],
-    "problemType": "TextBox",
-    "stepTitle": "Evaluate the following using a table of functional values. If the limit does not exist, write 'DNE'.",
+    "problemType": "MultipleChoice",
+    "stepTitle": "Use the table to evaluate lim_x->0 $$sin\\left(\\frac{1}{x}\\right)$$.",
     "stepBody": "##figure1.gif## ",
     "answerType": "string",
-    "variabilization": {}
+    "variabilization": {},
+    "choices": [
+        "DNE",
+        "$$0$$",
+        "$$1$$"
+    ]
 }

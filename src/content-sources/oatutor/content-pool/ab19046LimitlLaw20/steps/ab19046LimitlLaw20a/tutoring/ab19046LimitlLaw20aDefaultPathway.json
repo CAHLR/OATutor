@@ -37,8 +37,8 @@
         "dependencies": [
             "ab19046LimitlLaw20a-h2"
         ],
-        "title": "Multiply Both Sides by $$1=\\frac{\\sqrt{x+4}+1}{\\sqrt{x+4}+1}$$",
-        "text": "$$\\frac{\\sqrt{x+4}-1}{x+3}=\\frac{\\sqrt{x+4}-1}{x+3} \\frac{\\sqrt{x+4}+1}{\\sqrt{x+4}+1}$$",
+        "title": "Multiply by the Conjugate",
+        "text": "Multiply by $$\\frac{\\sqrt{x+4}+1}{\\sqrt{x+4}+1}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -50,7 +50,7 @@
             "ab19046LimitlLaw20a-h3"
         ],
         "title": "Simplify the Expression",
-        "text": "$$\\frac{\\left(\\sqrt{x+4}-1\\right) \\left(\\sqrt{x+4}+1\\right)}{\\left(x+3\\right) \\left(\\sqrt{x+4}+1\\right)}$$",
+        "text": "The numerator becomes $$\\left(\\sqrt{x+4}-1\\right) \\left(\\sqrt{x+4}+1\\right)=x+3$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -61,8 +61,8 @@
         "dependencies": [
             "ab19046LimitlLaw20a-h4"
         ],
-        "title": "The Numerator Follows Square Difference Formula",
-        "text": "$$\\frac{\\left(\\sqrt{x+4}-1\\right) \\left(\\sqrt{x+4}+1\\right)}{\\left(x+3\\right) \\left(\\sqrt{x+4}+1\\right)}=\\frac{x+4-1}{\\left(x+3\\right) \\left(\\sqrt{x+4}+1\\right)}$$",
+        "title": "Cancel the Common Factor",
+        "text": "For $$x \\neq -3$$, $$\\frac{x+3}{\\left(x+3\\right) \\left(\\sqrt{x+4}+1\\right)}=\\frac{1}{\\sqrt{x+4}+1}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -73,8 +73,8 @@
         "dependencies": [
             "ab19046LimitlLaw20a-h5"
         ],
-        "title": "Simplify the Whole Expression",
-        "text": "$$\\frac{x+4-1}{\\left(x+3\\right) \\left(\\sqrt{x+4}+1\\right)}=\\frac{1}{\\sqrt{x+4}+1}$$",
+        "title": "Evaluate the Simplified Limit",
+        "text": "Substitute $$x=-3$$ into $$\\frac{1}{\\sqrt{x+4}+1}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -86,7 +86,7 @@
             "ab19046LimitlLaw20a-h6"
         ],
         "title": "Plug In $$x=-3$$ Values for Result",
-        "text": "$$\\frac{1}{1+1}=0.5$$",
+        "text": "$$\\frac{1}{\\sqrt{1}+1}=\\frac{1}{2}=0.5$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

@@ -3,8 +3,8 @@
         "id": "a342e92limit2a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Functional Values Table",
-        "text": "The values of $$f(x)=\\frac{\\sqrt{x}-2}{x-4}$$ as $$x$$ approaches $$4$$ are listed in Table $$2.3$$. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure2.gif##",
+        "title": "Read Both Sides of the Table",
+        "text": "Compare function values for x-values approaching $$4$$ from below and above.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,23 +20,25 @@
         "dependencies": [
             "a342e92limit2a-h1"
         ],
-        "title": "The Approaching Limit",
-        "text": "As we read down each (sqrt(x) - 2)/(x - 4) column, what number are the values in each column approaching? Round to the nearest hundredths place.",
+        "title": "Identify the Common Value",
+        "text": "What value do both columns approach? Round to the nearest hundredth.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "a342e92limit2a-h2-s1",
+                "id": "a342e92limit2a-h2-h3",
                 "type": "scaffold",
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
                     "$$0.25$$"
                 ],
-                "dependencies": [],
-                "title": "Graphing the Function",
-                "text": "The values of (sqrt(x) - 2)/(x - 4) as $$x$$ approaches $$4$$ range from $$0.251582341869$$ to $$0.24999984$$. A calculator or computer-generated graph of f(x) $$=$$ (sqrt(x) - 2)/(x - 4) can also be used to determine the value we are approaching. Around what y-value does the graph intersect?",
+                "dependencies": [
+                    "a342e92limit2a-h2"
+                ],
+                "title": "Confirm with the Graph",
+                "text": "Near $$x=4$$, the graph approaches $$y=0.25$$ from both sides. What is the limit?",
                 "variabilization": {},
                 "oer": "",
                 "license": ""
@@ -44,13 +46,13 @@
         ]
     },
     {
-        "id": "a342e92limit2a-h3",
+        "id": "a342e92limit2a-h4",
         "type": "hint",
         "dependencies": [
-            "a342e92limit2a-h2"
+            "a342e92limit2a-h2-h3"
         ],
-        "title": "Finding $$\\lim_{x\\to4} \\frac{\\sqrt{x}-2}{x-4}$$",
-        "text": "After inspecting the table, we see that the functional values less than $$4$$ appear to be decreasing toward $$0.25$$ whereas the functional values greater than $$4$$ appear to be increasing toward $$0.25$$. We conclude that $$/lim{x,4,(sqrt(x)$$ - 2)/(x - $$4)=0.25$$. We confirm this estimate using the graph of f(x)=(sqrt(x) - 2)/(x - 4) shown in the following figure.\\n##figure3.gif##",
+        "title": "State the Limit",
+        "text": "The left- and right-hand values both approach $$0.25$$, so lim_x->4 $$\\frac{\\sqrt{x}-2}{x-4}=0.25$$.\\n##figure3.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""

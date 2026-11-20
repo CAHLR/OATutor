@@ -3,8 +3,8 @@
         "id": "ac48862calc2_8b-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Secant Line Slope",
-        "text": "The secant to the function f(x) through the points (a, f(a)) and (x, f(x)) is the line passing through these points. Its slope is given by: $$m_{sec}=\\frac{f{\\left(x\\right)}-f{\\left(a\\right)}}{x-a}$$.",
+        "title": "Use the Secant-Slope Formula",
+        "text": "For P(a,f(a)) and Q(x,f(x)), use $$m_{sec}=\\frac{f{\\left(x\\right)}-f{\\left(a\\right)}}{x-a}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "ac48862calc2_8b-h1"
         ],
-        "title": "Finding the Slope",
-        "text": "Given the equation to the secant line slope, what is the slope?",
+        "title": "Substitute the Coordinates",
+        "text": "Compute $$\\frac{2.002001-2}{1.001-1}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -33,11 +33,13 @@
         ],
         "subHints": [
             {
-                "id": "ac48862calc2_8b-h2-s1",
+                "id": "ac48862calc2_8b-h2-h3",
                 "type": "hint",
-                "dependencies": [],
-                "title": "Finding the Slope",
-                "text": "$$\\frac{2.002001-2}{1.001-1}=2.001$$",
+                "dependencies": [
+                    "ac48862calc2_8b-h2"
+                ],
+                "title": "Evaluate the Quotient",
+                "text": "$$\\frac{2.002001-2}{1.001-1}=\\frac{0.002001}{0.001}=2.001$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

@@ -5,18 +5,18 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "$$e^9$$"
+            "$$\\ln\\left(e^9\\right)$$"
         ],
         "dependencies": [],
-        "title": "Plug In $$x=3$$ and Solve",
-        "text": "Attempt to plug in the $$x$$ value into the equation, what do you get?",
+        "title": "Substitute $$x=3$$",
+        "text": "What expression results after substituting $$x=3$$?",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "choices": [
-            "$$e^3$$",
-            "$$e^9$$",
-            "$$e^6$$"
+            "$$\\ln\\left(e^3\\right)$$",
+            "$$\\ln\\left(e^9\\right)$$",
+            "$$\\ln\\left(e^6\\right)$$"
         ]
     },
     {
@@ -30,8 +30,8 @@
         "dependencies": [
             "ab19046LimitLaw10a-h1"
         ],
-        "title": "Simplify to integer",
-        "text": "What's $$\\ln\\left(e^9\\right)$$",
+        "title": "Use the Inverse Relationship",
+        "text": "Since $$\\ln\\left(e^k\\right)=k$$, evaluate $$\\ln\\left(e^9\\right)$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""

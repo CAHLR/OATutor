@@ -3,8 +3,8 @@
         "id": "a342e92limit23a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding the Function and Graph",
-        "text": "$$\\lim_{x\\to-2} f(x)$$ from the right is the value of f(x) as $$x$$ approaches $$-2$$ from the right. Locate $$x$$ $$=$$ $$-2$$ on the graph and observe the values of f(x) from the right.\\n##figure2.gif##",
+        "title": "Read the Relevant Part of the Graph",
+        "text": "Trace the graph toward $$x=-2$$ from values greater than $$-2$$.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -12,19 +12,23 @@
     {
         "id": "a342e92limit23a-h2",
         "type": "scaffold",
-        "problemType": "TextBox",
-        "answerType": "arithmetic",
+        "problemType": "MultipleChoice",
+        "answerType": "string",
         "hintAnswer": [
-            "$$+\\infty$$"
+            "False"
         ],
         "dependencies": [
             "a342e92limit23a-h1"
         ],
-        "title": "Finding the Limit",
-        "text": "What value is f(x) approaching when $$x$$ approaches $$-2$$ from the right? If the limit is $$\\infty$$, write $$-\\infty$$ or $$+\\infty$$. If the limit does not exist, write 'DNE'.",
+        "title": "Identify the Requested Value",
+        "text": "Is the statement lim_x->-2+ $$f(x)=3$$ true or false?",
         "variabilization": {},
         "oer": "",
-        "license": ""
+        "license": "",
+        "choices": [
+            "True",
+            "False"
+        ]
     },
     {
         "id": "a342e92limit23a-h3",
@@ -32,8 +36,8 @@
         "dependencies": [
             "a342e92limit23a-h2"
         ],
-        "title": "Limit Value",
-        "text": "$$\\lim_{x\\to-2} f(x)(from$$ the $$right)=+\\infty$$. Looking at the right side of the function as $$x$$ approaches $$-2$$, we can see that the values of f(x) continuously goes up into the positives.\\n##figure3.gif##",
+        "title": "State the Result",
+        "text": "The graph increases without bound from the right, so lim_x->-2+ $$f(x)=+\\infty$$, not $$3$$.\\n##figure3.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""

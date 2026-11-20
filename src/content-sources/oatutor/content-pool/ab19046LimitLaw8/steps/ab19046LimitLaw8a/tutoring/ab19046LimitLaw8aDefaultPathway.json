@@ -5,21 +5,23 @@
         "problemType": "TextBox",
         "answerType": "arithmetic",
         "hintAnswer": [
-            "$$1$$"
+            "$$0$$"
         ],
         "dependencies": [],
-        "title": "Plug In $$x=0$$ and Solve",
-        "text": "Attempt to plug in the $$x$$ value into the equation, what do you get?",
+        "title": "Evaluate the Exponent",
+        "text": "At $$x=0$$, $$2x-x^2=0$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
         "subHints": [
             {
-                "id": "ab19046LimitLaw8a-h1-s1",
+                "id": "ab19046LimitLaw8a-h1-h2",
                 "type": "hint",
-                "dependencies": [],
-                "title": "Simplify to Integer",
-                "text": "$$e^0=1$$",
+                "dependencies": [
+                    "ab19046LimitLaw8a-h1"
+                ],
+                "title": "Evaluate the Exponential",
+                "text": "$$e^0=1$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

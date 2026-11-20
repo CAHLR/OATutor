@@ -3,8 +3,8 @@
         "id": "a342e92limit1a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Functional Values Table",
-        "text": "The values of $$f(x)=\\fracsin^x\\left(x\\right)}$$ and $$x$$ are listed in Table $$2.2$$. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure2.gif##",
+        "title": "Read Both Sides of the Table",
+        "text": "Compare values of $$\\fracsin^x\\left(x\\right)}$$ for x-values approaching $$0$$ from below and above.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,23 +20,25 @@
         "dependencies": [
             "a342e92limit1a-h1"
         ],
-        "title": "The Approaching Limit",
-        "text": "As we read down each (sin x)/x column, what number are the values in each column approaching?",
+        "title": "Identify the Common Value",
+        "text": "What single number do both columns approach?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "subHints": [
             {
-                "id": "a342e92limit1a-h2-s1",
+                "id": "a342e92limit1a-h2-h3",
                 "type": "scaffold",
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
                     "$$1$$"
                 ],
-                "dependencies": [],
-                "title": "Graphing the Function",
-                "text": "The values of (sin x)/x are as follows: $$0.998334166468$$, $$0.999983333417$$, $$0.999999833333$$, $$0.999999998333$$, $$0.999999998333$$. A calculator or computer-generated graph of f(x) $$=$$ $$\\frac{sinx}{x}$$ can also be used to determine the value we are approaching. Around what y-value does the graph intersect?",
+                "dependencies": [
+                    "a342e92limit1a-h2"
+                ],
+                "title": "Confirm with the Values",
+                "text": "The listed outputs get closer to $$1$$ from both sides of $$x=0$$. What is the limit?",
                 "variabilization": {},
                 "oer": "",
                 "license": ""
@@ -44,13 +46,13 @@
         ]
     },
     {
-        "id": "a342e92limit1a-h3",
+        "id": "a342e92limit1a-h4",
         "type": "hint",
         "dependencies": [
-            "a342e92limit1a-h2"
+            "a342e92limit1a-h2-h3"
         ],
-        "title": "Finding $$\\lim_{x\\to0} \\fracsin^x\\left(x\\right)}$$",
-        "text": "The values are approaching $$1$$. Thus, it is fairly reasonable to conclude that $$\\lim_{x\\to0} \\frac{sinx}{x}=1$$. A calculator or computer-generated graph of f(x) $$=$$ (sin x)/x would be similar to the figure shown, and it confirms our estimate.\\n##figure3.gif##",
+        "title": "State the Limit",
+        "text": "Because both one-sided values approach $$1$$, lim_x->0 $$\\fracsin^x\\left(x\\right)}=1$$.\\n##figure3.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""

@@ -3,8 +3,8 @@
         "id": "a342e92limit9a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Functional Values Table",
-        "text": "The functional values are shown in the table. Note: the values in this table were obtained using a calculator and using all the places given in the calculator output.\\n##figure1.gif##",
+        "title": "Compare the One-Sided Limits",
+        "text": "From the table, the left-hand behavior is $$-\\infty$$ and the right-hand behavior is $$+\\infty$$.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "a342e92limit9a-h1"
         ],
-        "title": "The Approaching Limit",
-        "text": "As we read down the $$\\frac{1}{x}$$ columns, does /lim{x,0**-,1/x} and /lim{x,0**+,1/x} approach the same values?",
+        "title": "Check Whether the Sides Agree",
+        "text": "Do lim_x->0- $$\\frac{1}{x}$$ and lim_x->0+ $$\\frac{1}{x}$$ have the same value?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -36,8 +36,8 @@
         "dependencies": [
             "a342e92limit9a-h2"
         ],
-        "title": "Finding $$/lim{x$$ ,0,1/x}",
-        "text": "Since /lim{x,0**-,1/x}=-inf and /lim{x,0**+,1/x}=+inf have different values, we conclude that $$/lim(x$$ , $$0$$, $$\\frac{1}{x}$$ )DNE. The graph of $$f(x)=\\frac{1}{x}$$ in the figure confirms these conclusions.\\n##figure2.gif##",
+        "title": "State the Two-Sided Result",
+        "text": "The one-sided behaviors differ, so lim_x->0 $$\\frac{1}{x}$$ does not exist.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""

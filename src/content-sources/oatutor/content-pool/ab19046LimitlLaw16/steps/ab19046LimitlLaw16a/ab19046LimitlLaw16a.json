@@ -1,17 +1,17 @@
 {
     "id": "ab19046LimitlLaw16a",
     "stepAnswer": [
-        "$$\\frac{1}{a^2}$$"
+        "$$\\frac{\\left(-1\\right)}{a^2}$$"
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "Use direct substitution to show that each limit leads to the indeterminate form 0/0.Then, evaluate the limit.",
-    "stepBody": "$$\\lim_{h\\to0} \\frac{\\frac{1}{a+h}-\\frac{1}{a}}{h}$$ where a is a non-zero real-valued constant",
+    "stepTitle": "Use direct substitution to verify the indeterminate form $$\\frac{0}{0}$$, then evaluate the limit.",
+    "stepBody": "lim_h->0 $$\\frac{\\frac{1}{a+h}-\\frac{1}{a}}{h}$$, where $$a \\neq 0$$",
     "answerType": "string",
     "variabilization": {},
-    "answerLatex": "$$\\frac{1}{a^2}$$",
+    "answerLatex": "$$\\frac{\\left(-1\\right)}{a^2}$$",
     "choices": [
+        "$$\\frac{\\left(-1\\right)}{a^2}$$",
         "$$\\frac{1}{a^2}$$",
-        "$$h^2$$",
         "$$\\frac{1}{h^2}$$",
         "DNE"
     ]

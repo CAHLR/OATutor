@@ -3,8 +3,8 @@
         "id": "a342e92limit24a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Understanding the Function and Graph",
-        "text": "$$\\lim_{x\\to6} f(x)$$ is the value of f(x) as $$x$$ approaches $$6$$ from both sides. Locate $$x=6$$ on the graph and observe the value of f(x) from both sides.\\n##figure2.gif##",
+        "title": "Read the Relevant Part of the Graph",
+        "text": "Compare the values approached from the left and right of $$x=6$$.\\n##figure2.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -15,20 +15,19 @@
         "problemType": "MultipleChoice",
         "answerType": "string",
         "hintAnswer": [
-            "DNE"
+            "False"
         ],
         "dependencies": [
             "a342e92limit24a-h1"
         ],
-        "title": "Finding the Limit",
-        "text": "What value is f(x) approaching when $$x$$ approaches $$6$$ from both sides? If the limit is $$\\infty$$, write $$-\\infty$$ or $$+\\infty$$. If the limit does not exist, write 'DNE'.",
+        "title": "Identify the Requested Value",
+        "text": "Is the statement lim_x->6 $$f(x)=5$$ true or false?",
         "variabilization": {},
         "oer": "",
         "license": "",
         "choices": [
-            "$$-\\infty$$",
-            "$$+\\infty$$",
-            "DNE"
+            "True",
+            "False"
         ]
     },
     {
@@ -37,8 +36,8 @@
         "dependencies": [
             "a342e92limit24a-h2"
         ],
-        "title": "Limit Value",
-        "text": "$$\\lim_{x\\to6} f(x)$$ DNE because $$\\lim_{x\\to6} f(x)=2$$ (from the left) and $$\\lim_{x\\to6} f(x)=5$$ (from the right).\\n##figure3.gif##",
+        "title": "State the Result",
+        "text": "The left-hand limit is $$2$$ and the right-hand limit is $$5$$. Because they differ, lim_x->6 f(x) does not exist.\\n##figure3.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""

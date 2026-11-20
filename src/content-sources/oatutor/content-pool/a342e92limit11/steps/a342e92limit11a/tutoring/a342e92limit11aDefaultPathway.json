@@ -3,8 +3,8 @@
         "id": "a342e92limit11a-h1",
         "type": "hint",
         "dependencies": [],
-        "title": "Infinite Limits from Positive Integers",
-        "text": "Use the table to guide your answer.\\n##figure1.gif##",
+        "title": "Identify the Power",
+        "text": "Compare the function with $$\\frac{1}{\\left(x-a\\right)^n}$$.\\n##figure1.gif##",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -20,8 +20,8 @@
         "dependencies": [
             "a342e92limit11a-h1"
         ],
-        "title": "Positive Even or Odd Integer",
-        "text": "Is $$n$$ an even or odd integer?",
+        "title": "Classify the Exponent",
+        "text": "Is $$n=4$$ even or odd?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -31,16 +31,18 @@
         ],
         "subHints": [
             {
-                "id": "a342e92limit11a-h2-s1",
+                "id": "a342e92limit11a-h2-h3",
                 "type": "scaffold",
                 "problemType": "TextBox",
                 "answerType": "arithmetic",
                 "hintAnswer": [
                     "$$4$$"
                 ],
-                "dependencies": [],
-                "title": "Determining $$n$$",
-                "text": "Using the function $$\\lim_{x\\toa} \\frac{1}{\\left(x-a\\right)^n}$$, what is $$n$$ in /lim{x,-3**+,1/(x+3)**4}?",
+                "dependencies": [
+                    "a342e92limit11a-h2"
+                ],
+                "title": "State the Exponent",
+                "text": "What is $$n$$ in the denominator $$\\left(x+3\\right)^4$$?",
                 "variabilization": {},
                 "oer": "",
                 "license": ""
@@ -48,7 +50,7 @@
         ]
     },
     {
-        "id": "a342e92limit11a-h3",
+        "id": "a342e92limit11a-h4",
         "type": "scaffold",
         "problemType": "MultipleChoice",
         "answerType": "string",
@@ -56,10 +58,10 @@
             "$$+\\infty$$"
         ],
         "dependencies": [
-            "a342e92limit11a-h2"
+            "a342e92limit11a-h2-h3"
         ],
-        "title": "Finding $$\\lim_{x\\to-3} \\frac{1}{\\left(x+3\\right)^4}$$ from the right",
-        "text": "Given that $$n$$ is a positive even integer, what is the limit?",
+        "title": "Determine the Infinite Behavior",
+        "text": "An even power makes the denominator positive on both sides of $$-3$$. What does the function approach?",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -70,13 +72,13 @@
         ]
     },
     {
-        "id": "a342e92limit11a-h4",
+        "id": "a342e92limit11a-h5",
         "type": "hint",
         "dependencies": [
-            "a342e92limit11a-h3"
+            "a342e92limit11a-h4"
         ],
-        "title": "Explanation Previous Limit",
-        "text": "From the function $$\\lim_{x\\toa} \\frac{1}{\\left(x-a\\right)^n}$$, we know that $$n$$ $$=$$ $$4$$ in $$\\lim_{x\\to-3} \\frac{1}{\\left(x+3\\right)^4}$$ from the right. According to the Infinite Limits from Positive Integers Theorem, if $$n$$ is a positive even integer, then $$\\lim_{x\\toa} \\frac{1}{\\left(x-a\\right)^n}=+\\infty$$. Since $$4$$ is a positive even integer, this means that $$\\lim_{x\\to-3} \\frac{1}{\\left(x+3\\right)^4}$$ from the right is $$+\\infty$$.",
+        "title": "State the Limit",
+        "text": "Because $$4$$ is a positive even integer, lim_x->-3+ $$\\frac{1}{\\left(x+3\\right)^4}=+\\infty$$.",
         "variabilization": {},
         "oer": "",
         "license": ""

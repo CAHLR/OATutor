@@ -9,7 +9,7 @@
         ],
         "dependencies": [],
         "title": "Compute h(9)",
-        "text": "What is the value of h(9)?",
+        "text": "Evaluate h(9).",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -30,7 +30,7 @@
             "ac48862calc2_11a-h1"
         ],
         "title": "Compute $$h(9.01)$$",
-        "text": "What is the value of $$h(9.01)$$?",
+        "text": "Evaluate $$h(9.01)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -45,8 +45,8 @@
         "dependencies": [
             "ac48862calc2_11a-h2"
         ],
-        "title": "Average Velocity",
-        "text": "Let f(x) be the position of an object moving along a coordinate axis at time $$t$$. The average velocity of the object over a time interval [a,t] is: $$v_{avg}=\\frac{f{\\left(t\\right)}-f{\\left(a\\right)}}{t-a}$$.",
+        "title": "Use the Average-Velocity Formula",
+        "text": "Use $$v_{avg}=\\frac{h{\\left(9.01\\right)}-h{\\left(9\\right)}}{9.01-9}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -62,8 +62,8 @@
         "dependencies": [
             "ac48862calc2_11a-h3"
         ],
-        "title": "Plug-in and Solve",
-        "text": "Given the equation, plug in the given interval into the equations to solve for the average velocity. What is the answer of the average velocity?",
+        "title": "Compute the Average Velocity",
+        "text": "Evaluate $$\\frac{908.60151-908.7}{9.01-9}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -75,11 +75,13 @@
         ],
         "subHints": [
             {
-                "id": "ac48862calc2_11a-h4-s1",
+                "id": "ac48862calc2_11a-h4-h5",
                 "type": "hint",
-                "dependencies": [],
-                "title": "Plug-in and Solve",
-                "text": "$$\\frac{908.60151-908.7}{9.01-9}=-9.849$$",
+                "dependencies": [
+                    "ac48862calc2_11a-h4"
+                ],
+                "title": "Interpret the Result",
+                "text": "The average velocity is $$-9.849$$ meters per second; the negative sign means the rocket is moving downward.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

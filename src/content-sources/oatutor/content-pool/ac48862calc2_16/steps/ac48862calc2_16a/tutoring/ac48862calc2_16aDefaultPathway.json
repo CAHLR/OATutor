@@ -8,8 +8,8 @@
             "$$60$$"
         ],
         "dependencies": [],
-        "title": "Compute $$S(0.5)$$",
-        "text": "What is the value of $$S(0.5)$$?",
+        "title": "Compute $$s(0.5)$$",
+        "text": "Evaluate $$s(0.5)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -31,8 +31,8 @@
         "dependencies": [
             "ac48862calc2_16a-h1"
         ],
-        "title": "Compute $$S(0.51)$$",
-        "text": "What is the value of $$S(0.51)$$?",
+        "title": "Compute $$s(0.51)$$",
+        "text": "Evaluate $$s(0.51)$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
@@ -49,8 +49,8 @@
         "dependencies": [
             "ac48862calc2_16a-h2"
         ],
-        "title": "Average Velocity",
-        "text": "Let f(x) be the position of an object moving along a coordinate axis at time $$t$$. The average velocity of the object over a time interval [a,t] is: $$v_{avg}=\\frac{f{\\left(t\\right)}-f{\\left(a\\right)}}{t-a}$$.",
+        "title": "Use the Average-Velocity Formula",
+        "text": "Use $$v_{avg}=\\frac{s\\left(0.51\\right)-s\\left(0.5\\right)}{0.51-0.5}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -66,8 +66,8 @@
         "dependencies": [
             "ac48862calc2_16a-h3"
         ],
-        "title": "Plug in and Solve",
-        "text": "Given the equation, plug in the given interval into the equations to solve for the average velocity. What is the answer of the average velocity?",
+        "title": "Compute the Average Velocity",
+        "text": "Evaluate $$\\frac{59.8384-60}{0.51-0.5}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "",
@@ -79,11 +79,13 @@
         ],
         "subHints": [
             {
-                "id": "ac48862calc2_16a-h4-s1",
+                "id": "ac48862calc2_16a-h4-h5",
                 "type": "hint",
-                "dependencies": [],
-                "title": "Plug in and Solve",
-                "text": "$$\\frac{59.8384-60}{0.51-0.5}=-16.16$$",
+                "dependencies": [
+                    "ac48862calc2_16a-h4"
+                ],
+                "title": "Interpret the Result",
+                "text": "The average velocity is $$-16.16$$ feet per second; the negative sign means the rock is moving downward.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
                 "license": ""

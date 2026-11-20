@@ -8,8 +8,8 @@
             "$$0$$"
         ],
         "dependencies": [],
-        "title": "Plug In $$h=0$$ and Solve for $$\\frac{1}{a+h}-\\frac{1}{a}$$",
-        "text": "Plug in the $$h$$ value to the function $$\\frac{1}{a+h}-\\frac{1}{a}$$",
+        "title": "Evaluate the Numerator",
+        "text": "At $$h=0$$, $$\\frac{1}{a+h}-\\frac{1}{a}=0$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -25,8 +25,8 @@
         "dependencies": [
             "ab19046LimitlLaw16a-h1"
         ],
-        "title": "Plug In $$h=0$$ and Solve for $$h$$",
-        "text": "Plug in the $$h$$ value to the function $$h$$",
+        "title": "Evaluate the Denominator",
+        "text": "At $$h=0$$, the denominator $$h$$ is $$0$$.",
         "variabilization": {},
         "oer": "",
         "license": ""
@@ -38,7 +38,7 @@
             "ab19046LimitlLaw16a-h2"
         ],
         "title": "Combine the Numerator",
-        "text": "$$\\frac{1}{a+h}-\\frac{1}{a}=\\frac{a+h-a}{a \\left(a+h\\right)}=\\frac{h}{a \\left(a+h\\right)}$$",
+        "text": "$$\\frac{1}{a+h}-\\frac{1}{a}=\\frac{a-a+h}{a \\left(a+h\\right)}=\\frac{\\left(-h\\right)}{a \\left(a+h\\right)}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -50,7 +50,7 @@
             "ab19046LimitlLaw16a-h3"
         ],
         "title": "Simplify the Whole Function",
-        "text": "$$\\frac{\\frac{h}{a \\left(a+h\\right)}}{h}=\\frac{1}{a \\left(a+h\\right)}$$",
+        "text": "For $$h \\neq 0$$, $$\\frac{\\frac{\\left(-h\\right)}{a \\left(a+h\\right)}}{h}=\\frac{\\left(-1\\right)}{a \\left(a+h\\right)}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
@@ -62,7 +62,7 @@
             "ab19046LimitlLaw16a-h4"
         ],
         "title": "Plug In $$h=0$$ Values for Result",
-        "text": "$$\\frac{1}{a a}=\\frac{1}{a^2}$$",
+        "text": "lim_h->0 $$\\frac{\\left(-1\\right)}{a \\left(a+h\\right)}=\\frac{\\left(-1\\right)}{a^2}$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": ""
