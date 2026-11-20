@@ -208,7 +208,7 @@ website for more info on this syntax.
 #### Markdown Support
 
 - All `\` must be escaped as `\\` because values are strings
-- Wrap Latex in `$` for inline LaTeX
+- Wrap LaTeX in `$$` for inline LaTeX, e.g. `"The area is $$\\pi r^2$$"`. A single `$` is not treated as a LaTeX delimiter in problem content.
 - Newlines can be created with `\n`, escaped as `\\n`
 
 ### ./config [Configurable]
