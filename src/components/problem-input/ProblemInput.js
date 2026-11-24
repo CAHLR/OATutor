@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import MultipleChoice from "./MultipleChoice";
 import GridInput from "./GridInput";
 import MatrixInput from "./MatrixInput";
+import MultiAnswerInput from "./MultiAnswerInput";
 import { renderText } from "../../platform-logic/renderText";
 import clsx from "clsx";
 import "mathlive";
@@ -224,6 +225,23 @@ class ProblemInput extends React.Component {
                 className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={false} md={problemType === "TextBox" ? leftMd : false}/>
                 <Grid item xs={12} sm={isMobile ? 12 : 9} md={problemType === "TextBox" ? mainMd : 12}>
+                    {problemType === "MultiAnswer" && (
+                        <MultiAnswerInput
+                            index={index}
+                            multiAnswer={this.props.step.multiAnswer}
+                            value={(use_expanded_view && debug) ?
+                                (this.props.step.multiAnswer.layout === "combined"
+                                    ? this.props.step.multiAnswer.parts.map(part => part.answers[0]).join(" ")
+                                    : this.props.step.multiAnswer.parts.map(part => part.answers[0]))
+                                : state.inputVal}
+                            onChange={this.props.setInputValState}
+                            onKeyPress={this.props.handleKey}
+                            disabled={disableInput || (use_expanded_view && debug)}
+                            showFeedback={showCorrectness}
+                            results={state.multiAnswerResults}
+                            errorMessage={state.multiAnswerError}
+                        />
+                    )}
                     {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
                         <math-field
                             ref={this.mathFieldRef}
