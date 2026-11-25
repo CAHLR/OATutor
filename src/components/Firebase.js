@@ -288,7 +288,8 @@ class Firebase {
         dynamicHint,
         bioInfo,
         masteryScore = null,
-        kcMastery = null
+        kcMastery = null,
+        multiAnswerResults = null
     ) {
         if (!DO_LOG_DATA) {
             console.debug("Not using firebase for logging (2)");
@@ -306,6 +307,11 @@ class Firebase {
             input: inputVal?.toString(),
             correctAnswer: step?.stepAnswer?.toString(),
             isCorrect,
+            ...(multiAnswerResults ? { multiAnswerResults: multiAnswerResults.map(result => ({
+                label: result.label,
+                attempt: result.attempt,
+                isCorrect: result.isCorrect,
+            })) } : {}),
             hintInput: null,
             hintAnswer: null,
             hintIsCorrect: null,

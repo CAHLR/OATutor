@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { fetchDynamicHint } from "./DynamicHintHelper";
 
 import { checkAnswer } from "../../platform-logic/checkAnswer.js";
+import { checkMultiAnswer, hasCompleteMultiAnswer } from "../../platform-logic/multiAnswer.js";
 import styles from "./common-styles.js";
 import { withStyles } from "@material-ui/core/styles";
 import HintSystem from "./HintSystem.js";
@@ -113,7 +114,9 @@ class ProblemCard extends React.Component {
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length + 1),
                 title: this.translate('hintsystem.answer'),
-                text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
+                text: this.translate('hintsystem.answerIs') + (this.step.multiAnswer
+                    ? this.step.multiAnswer.parts.map(part => part.answers[0]).join(" ")
+                    : this.step.stepAnswer),
                 type: "bottomOut",
                 dependencies: Array.from(Array(this.hints.length).keys()),
             });
@@ -137,6 +140,8 @@ class ProblemCard extends React.Component {
             isGeneratingHint: false, 
             lastAIHintHash: null,
             answerSelected: false,
+            multiAnswerResults: [],
+            multiAnswerError: "",
         };
 
          // This is used for AI hint generation
@@ -154,7 +159,7 @@ class ProblemCard extends React.Component {
     }
 
     hashAnswer = (answer) => {
-        return CryptoJS.SHA256(answer).toString();
+        return CryptoJS.SHA256(Array.isArray(answer) ? JSON.stringify(answer) : answer).toString();
     };
 
     /**
@@ -326,12 +331,32 @@ class ProblemCard extends React.Component {
         const { seed, problemVars, problemID, courseName, answerMade, lesson, getMasteryData } =
             this.props;
 
-        if (inputVal == '') {
+        const multiAnswer = this.step.multiAnswer;
+        if (multiAnswer && !hasCompleteMultiAnswer(inputVal, multiAnswer)) {
+            this.setState({ multiAnswerError: "Enter all parts of the answer." });
+            toastNotifyEmpty(this.translate);
+            return;
+        }
+        if (!multiAnswer && inputVal == '') {
             toastNotifyEmpty(this.translate)
             return;
         }
 
-        const [parsed, correctAnswer, reason] = checkAnswer({
+        const multiResult = multiAnswer ? checkMultiAnswer({
+            value: inputVal,
+            multiAnswer,
+            variabilization: chooseVariables(
+                Object.assign({}, problemVars, variabilization), seed
+            ),
+            questionText: stepBody.trim() || stepTitle.trim(),
+        }) : null;
+        if (multiResult && !multiResult.valid) {
+            this.setState({ multiAnswerError: "Enter a number followed by a unit." });
+            return;
+        }
+        const [parsed, correctAnswer, reason] = multiResult ? [
+            JSON.stringify(multiResult.attempts), multiResult.isCorrect, null
+        ] : checkAnswer({
             attempt: inputVal,
             actual: stepAnswer,
             answerType: answerType,
@@ -355,6 +380,8 @@ class ProblemCard extends React.Component {
         this.setState({
             isCorrect,
             checkMarkOpacity: isCorrect ? "100" : "0",
+            multiAnswerResults: multiResult ? multiResult.results : [],
+            multiAnswerError: "",
         });
         
         // Pass attempt info to Problem.js for tracking
@@ -384,7 +411,8 @@ class ProblemCard extends React.Component {
             this.state.dynamicHint,
             this.state.bioInfo,
             masteryScore, 
-            kcMastery
+            kcMastery,
+            multiResult?.results
         );
     };
 
@@ -399,7 +427,11 @@ class ProblemCard extends React.Component {
         this.setState(({ isCorrect }) => ({
             inputVal,
             isCorrect: isCorrect ? true : null,
-            answerSelected: inputVal.trim() !== ""
+            answerSelected: Array.isArray(inputVal)
+                ? inputVal.some(part => part.trim() !== "")
+                : inputVal.trim() !== "",
+            multiAnswerResults: [],
+            multiAnswerError: "",
         }));
     };
 
@@ -564,7 +596,9 @@ class ProblemCard extends React.Component {
 
     generateGPTHintParameters = (prompt_template, bio_info) => {
         let inputVal = this.state.inputVal || "The student did not provide an answer.";
-        let correctAnswer = Array.isArray(this.step.stepAnswer) ? this.step.stepAnswer[0] : "";
+        let correctAnswer = this.step.multiAnswer
+            ? this.step.multiAnswer.parts.map(part => part.answers[0]).join(" ")
+            : (Array.isArray(this.step.stepAnswer) ? this.step.stepAnswer[0] : "");
         const problemTitle = this.problemTitle || "Problem Title";
         const problemSubTitle = this.problemSubTitle || "Problem Subtitle";
         const questionTitle = this.step.stepTitle || "Question Title";
@@ -576,7 +610,7 @@ class ProblemCard extends React.Component {
             .replace("{problem_subtitle}", problemSubTitle)
             .replace("{question_title}", questionTitle)
             .replace("{question_subtitle}", questionSubTitle)
-            .replace("{student_answer}", inputVal)
+            .replace("{student_answer}", Array.isArray(inputVal) ? inputVal.join(" ") : inputVal)
             .replace("{correct_answer}", correctAnswer);
         return  {
             role: "user",
@@ -608,7 +642,16 @@ class ProblemCard extends React.Component {
             lastAIHintHash: currentHash,
         });
     
-        const [parsed, correctAnswer, reason] = checkAnswer({
+        const [parsed, correctAnswer, reason] = this.step.multiAnswer ? (() => {
+            const result = checkMultiAnswer({
+                value: this.state.inputVal,
+                multiAnswer: this.step.multiAnswer,
+                variabilization: chooseVariables(Object.assign({}, this.props.problemVars,
+                    this.step.variabilization), this.props.seed),
+                questionText: this.step.stepBody.trim() || this.step.stepTitle.trim(),
+            });
+            return [JSON.stringify(result.attempts), result.isCorrect, null];
+        })() : checkAnswer({
             attempt: this.state.inputVal,
             actual: this.step.stepAnswer,
             answerType: this.step.answerType,
@@ -681,7 +724,9 @@ class ProblemCard extends React.Component {
                 this.hints.push({
                     id: this.step.id + "-h" + (this.hints.length + 1),
                     title: this.translate('hintsystem.answer'),
-                    text: this.translate('hintsystem.answerIs') + this.step.stepAnswer,
+                    text: this.translate('hintsystem.answerIs') + (this.step.multiAnswer
+                        ? this.step.multiAnswer.parts.map(part => part.answers[0]).join(" ")
+                        : this.step.stepAnswer),
                     type: "bottomOut",
                     dependencies: Array.from(Array(this.hints.length).keys()),
                 });
@@ -993,7 +1038,10 @@ class ProblemCard extends React.Component {
                                         size="small"
                                         onClick={this.submit}
                                         disabled={
-                                            !this.state.inputVal ||
+                                            (this.step.multiAnswer
+                                                ? !hasCompleteMultiAnswer(this.state.inputVal,
+                                                    this.step.multiAnswer)
+                                                : !this.state.inputVal) ||
                                             (use_expanded_view && debug) ||
                                             (!this.allowRetry && problemAttempted)
                                         }
