@@ -107,6 +107,7 @@ class Platform extends React.Component {
     this.metaLesson = null;
     this.metaLessonLessons = [];
     this.currentMetaLessonIndex = -1;
+    this.furthestMetaLessonIndex = -1;
     this.completedMetaLessonLessons = new Set();
 
     // Tracks the platform-level language captured just before we override it
@@ -407,7 +408,13 @@ class Platform extends React.Component {
       currProblem: nextProblem,
     });
     if (!nextProblem && this.lesson?.isPartOfMetaLesson && this.metaLesson) {
-      await this.handleMetaSubLessonComplete();
+      if (this.currentMetaLessonIndex < this.furthestMetaLessonIndex) {
+        // Revisiting an earlier, already-completed sub-lesson: show the
+        // progress screen rather than advancing past where they are.
+        this.setState({ status: "metaLessonProgress", currProblem: null });
+      } else {
+        await this.handleMetaSubLessonComplete();
+      }
     }
   }
 
@@ -551,6 +558,8 @@ class Platform extends React.Component {
       }
     }
 
+    this.furthestMetaLessonIndex = Math.max(this.furthestMetaLessonIndex, this.currentMetaLessonIndex);
+
     if (this.currentMetaLessonIndex < this.metaLessonLessons.length) {
       const firstLessonId = this.metaLessonLessons[this.currentMetaLessonIndex];
       const firstLesson = findLessonById(firstLessonId);
@@ -597,6 +606,7 @@ class Platform extends React.Component {
     this.metaLesson = null;
     this.metaLessonLessons = [];
     this.currentMetaLessonIndex = -1;
+    this.furthestMetaLessonIndex = -1;
     this.completedMetaLessonLessons = new Set();
   };
 
@@ -604,10 +614,43 @@ class Platform extends React.Component {
     await this.nextMetaLessonLesson();
   };
 
+  /**
+   * Jump to a sub-lesson the student has already reached. Navigation is capped
+   * at furthestMetaLessonIndex so they cannot skip ahead of their own progress.
+   */
+  goToMetaLessonIndex = async (targetIndex) => {
+    if (!this.metaLesson || this.metaLessonLessons.length === 0) return;
+    if (targetIndex < 0 || targetIndex > this.furthestMetaLessonIndex) return;
+    if (targetIndex >= this.metaLessonLessons.length) return;
+    if (targetIndex === this.currentMetaLessonIndex) return;
+
+    const targetLessonId = this.metaLessonLessons[targetIndex];
+    const targetLesson = findLessonById(targetLessonId);
+    if (!targetLesson) return;
+
+    this.currentMetaLessonIndex = targetIndex;
+    this.completedProbs = new Set();
+
+    await this.selectLesson(
+      {
+        ...targetLesson,
+        isPartOfMetaLesson: true,
+        metaLessonId: this.metaLesson.id,
+        metaLessonName: this.metaLesson.name,
+      },
+      false
+    );
+
+    if (this._isMounted && this.state.status !== "metaLessonProgress") {
+      this.setState({ status: "learning" });
+    }
+  };
+
   async nextMetaLessonLesson() {
     if (!this.metaLesson || this.metaLessonLessons.length === 0) return;
 
     this.currentMetaLessonIndex++;
+    this.furthestMetaLessonIndex = Math.max(this.furthestMetaLessonIndex, this.currentMetaLessonIndex);
 
     while (this.currentMetaLessonIndex < this.metaLessonLessons.length) {
       const nextLessonId = this.metaLessonLessons[this.currentMetaLessonIndex];
@@ -626,18 +669,24 @@ class Platform extends React.Component {
           false
         );
 
-        if (this._isMounted) {
+        if (
+          this._isMounted &&
+          this.state.status !== "metaLessonProgress" &&
+          this.state.status !== "graduated"
+        ) {
           this.setState({ status: "learning" });
         }
         return;
       }
       this.currentMetaLessonIndex++;
+      this.furthestMetaLessonIndex = Math.max(this.furthestMetaLessonIndex, this.currentMetaLessonIndex);
     }
 
     this.setState({ status: "graduated", currProblem: null });
     this.metaLesson = null;
     this.metaLessonLessons = [];
     this.currentMetaLessonIndex = -1;
+    this.furthestMetaLessonIndex = -1;
     this.completedMetaLessonLessons = new Set();
   }
 
@@ -996,6 +1045,7 @@ class Platform extends React.Component {
             const label = lesson?.displayName || lesson?.name || lesson?.topics || (lesson ? lesson.id : null) || "Unavailable lesson";
             const isCompleted = this.completedMetaLessonLessons.has(lessonId);
             const isCurrent = index === currentIndex;
+            const isNavigable = index <= this.furthestMetaLessonIndex && index !== currentIndex;
             const borderColor = isCurrent ? "#0B9B8A" : isCompleted ? "#0B9B8A" : "#EBEFF2";
             const backgroundColor = isCurrent ? "#F0FAF8" : "#FFFFFF";
             const opacity = isCompleted && !isCurrent ? 0.75 : 1;
@@ -1003,6 +1053,10 @@ class Platform extends React.Component {
             return (
               <div
                 key={lessonId}
+                onClick={isNavigable ? () => this.goToMetaLessonIndex(index) : undefined}
+                role={isNavigable ? "button" : undefined}
+                tabIndex={isNavigable ? 0 : undefined}
+                onKeyDown={isNavigable ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); this.goToMetaLessonIndex(index); } } : undefined}
                 style={{
                   backgroundColor,
                   padding: "6px 12px",
@@ -1014,6 +1068,7 @@ class Platform extends React.Component {
                   display: "flex",
                   alignItems: "center",
                   gap: 6,
+                  cursor: isNavigable ? "pointer" : "default",
                 }}
               >
                 {label}
@@ -1030,6 +1085,9 @@ class Platform extends React.Component {
     const completedCount = this.completedMetaLessonLessons.size;
     const totalCount = this.metaLessonLessons.length;
     const metaName = this.metaLesson?.name || "Meta lesson";
+    const currentIndex = this.currentMetaLessonIndex;
+    const hasNext = currentIndex >= 0 && currentIndex < totalCount - 1;
+    const hasPrevious = currentIndex > 0;
 
     return (
       <div
@@ -1046,9 +1104,20 @@ class Platform extends React.Component {
         <p>{metaName}</p>
         <p>{completedCount} of {totalCount} lessons completed</p>
         <div style={{ display: "flex", gap: 20, marginTop: 36 }}>
-          <Button variant="contained" color="primary" onClick={this.continueMetaLesson}>
-            Continue to Next Lesson
-          </Button>
+          {hasPrevious && (
+            <Button
+              variant="outlined"
+              color="primary"
+              onClick={() => this.goToMetaLessonIndex(currentIndex - 1)}
+            >
+              Previous Lesson
+            </Button>
+          )}
+          {hasNext && (
+            <Button variant="contained" color="primary" onClick={this.continueMetaLesson}>
+              Continue to Next Lesson
+            </Button>
+          )}
           <Button variant="outlined" color="primary" onClick={() => this.props.history.push("/")}>
             Back to Home
           </Button>
