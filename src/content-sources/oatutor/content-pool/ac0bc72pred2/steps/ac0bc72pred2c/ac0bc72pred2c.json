@@ -1,0 +1,17 @@
+{
+    "id": "ac0bc72pred2c",
+    "stepAnswer": [
+        "Not reasonable because with an even k, the nearest neighbors could split evenly between the two classes, creating a tie with no clear majority vote when classifying a new point."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "c) Brandon suggests that Dagny should use a different k for her classifier like k $$=$$ $$4$$ or k $$=$$ $$8$$. Is Brandon\u2019s suggestion reasonable?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Reasonable because a larger k is always better as using more neighbors gives a more accurate classification regardless of whether k is odd or even.",
+        "Reasonable because if there is a tie with an even k, we can just randomly assign the new point to either class without any downside.",
+        "Not reasonable because even values of k cause the algorithm to only look at points from one class, causing bias toward a certain prediction.",
+        "Not reasonable because with an even k, the nearest neighbors could split evenly between the two classes, creating a tie with no clear majority vote when classifying a new point."
+    ]
+}
